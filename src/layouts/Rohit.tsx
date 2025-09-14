@@ -190,13 +190,13 @@ const Skills = () => {
             <span className="text-pink-800"></span>
           </h2>
 
-           <h2 className="p-0 m-0">
-              <span className="md:text-6xl text-5xl text-gray-800 font-extralight font-natosans">
-                Skills
-              </span>
-              <span className="text-pink-800"> Me .</span>
-              <span className="text-pink-800"></span>
-            </h2>
+          <h2 className="p-0 m-0">
+            <span className="md:text-6xl text-5xl text-gray-800 font-extralight font-natosans">
+              Skills
+            </span>
+            <span className="text-pink-800"> Me .</span>
+            <span className="text-pink-800"></span>
+          </h2>
         </div>
 
         <div className="px-20 rounded-2xl my-[-0.8rem] mb-5">
