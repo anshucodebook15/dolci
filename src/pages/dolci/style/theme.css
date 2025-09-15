@@ -2,7 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 @import url("https://db.onlinewebfonts.com/c/9e65328448e32690935f5e0dec7e40be?family=PP+Hatton+Medium");
-@import url('https://fonts.cdnfonts.com/css/cabinet-grotesk');
+@import url("https://db.onlinewebfonts.com/c/b75ac497f8189c60b43d8f9d052d8a8c?family=Cabinet+Grotesk+Medium");
+@import url("https://db.onlinewebfonts.com/c/63e7e31dbe7aa38c7c04b413ef841103?family=Cabinet+Grotesk+Variable");
+@import url("https://db.onlinewebfonts.com/c/46ba2f9f15aa5c3da7df3e38fe5487f7?family=Cabinet+Grotesk+Light");
 
 @import "tailwindcss";
 
