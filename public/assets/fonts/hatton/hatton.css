@@ -3,10 +3,18 @@
 
 @font-face {
   font-family: "PP Hatton";
-  /* src: url("/fonts/PP Hatton Medium.woff2") format("woff2"),
-       url("/fonts/PP Hatton Medium.woff")  format("woff"); */
   src: url("./PP\ Hatton\ Medium.woff2") format("woff2"),
     url("./PP\ Hatton\ Medium.woff") format("woff");
+  font-weight: 500; /* medium weight — change to 600 if you prefer */
+  font-style: normal;
+  font-display: swap; /* good for performance / avoids FOIT */
+  unicode-range: U+000-5FF; /* basic Latin + Latin-1 Supplement (optional) */
+}
+
+@font-face {
+  font-family: "PP Hatton";
+  src: url("./PP_Hatton_Medium.woff2") format("woff2"),
+    url("./PP_Hatton_Medium.woff") format("woff");
   font-weight: 500; /* medium weight — change to 600 if you prefer */
   font-style: normal;
   font-display: swap; /* good for performance / avoids FOIT */

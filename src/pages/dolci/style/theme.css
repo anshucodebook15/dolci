@@ -1,14 +1,23 @@
 /* Inlcude all the Fonts */
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
-@import "../../../assets/fonts/Cabinate_grotesk/cabinet-grotesk.css";
-@import "../../../assets/fonts/hatton/hatton.css";
+@import url("https://db.onlinewebfonts.com/c/9e65328448e32690935f5e0dec7e40be?family=PP+Hatton+Medium");
 
 @import "tailwindcss";
 
 @font-face {
-  font-family: "Modern Negra";
-  src: url("/fonts/Modern Negra Demo.ttf") format("truetype");
+  font-family: "PP Hatton Medium";
+  src: url("https://db.onlinewebfonts.com/t/9e65328448e32690935f5e0dec7e40be.eot");
+  src: url("https://db.onlinewebfonts.com/t/9e65328448e32690935f5e0dec7e40be.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/9e65328448e32690935f5e0dec7e40be.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/9e65328448e32690935f5e0dec7e40be.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/9e65328448e32690935f5e0dec7e40be.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/9e65328448e32690935f5e0dec7e40be.svg#PP Hatton Medium")
+      format("svg");
 }
 
 @theme {
@@ -58,8 +67,6 @@ html,
 body {
   width: 100%;
   font-family: var(--font-cabinate-grotesk-400);
-  /* background-color: black; */
-  /* color: white; */
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
@@ -158,6 +165,5 @@ body {
 }
 
 .clipname {
- clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
-
+  clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
 }
