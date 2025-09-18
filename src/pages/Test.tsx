@@ -1,4 +1,6 @@
-import Dolci from "./dolci/dolci";
+// import { Layout } from "lucide-react";
+import Emergent from "./emergent/Emergent";
+// import Dolci from "./dolci/dolci";
 // import { Rohitdev } from "../layouts/Rohit/Rohitdev";
 
 const Test = () => {
@@ -10,7 +12,10 @@ const Test = () => {
       {/* <GsapFlow /> */}
 
       {/* <Rohitdev /> */}
-      <Dolci />
+      {/* <Dolci /> */}
+
+      <Emergent />
+
     </div>
   );
 };

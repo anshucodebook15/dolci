@@ -1,18 +1,18 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
 import "./styles/fonts.css";
-import './index.css'
-import App from './App.tsx'
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import AppWrapper from './hooks/AppWrapper.tsx';
+import "./index.css";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import AppWrapper from "./hooks/AppWrapper.tsx";
+import AppRouter from "./router/AppRouter.tsx";
 
 gsap.registerPlugin(ScrollTrigger);
 
-createRoot(document.getElementById('root')!).render(
+createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <AppWrapper>
-      <App />
+      <AppRouter />
     </AppWrapper>
-  </StrictMode>,
-)
+  </StrictMode>
+);

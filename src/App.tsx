@@ -1,11 +1,13 @@
 import "./App.css";
-import Test from "./pages/Test";
 
 function App() {
   return (
     <>
       <div className="typography">
-        <Test />
+        <h1>Home</h1>
+        <a href="/emergent">emergent</a>
+        <a href="/emergent2">emergent2</a>
+        <a href="/dolci">dolci</a>
       </div>
     </>
   );
