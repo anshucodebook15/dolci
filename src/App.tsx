@@ -4,10 +4,17 @@ function App() {
   return (
     <>
       <div className="typography">
-        <h1>Home</h1>
-        <a href="/emergent">emergent</a>
-        <a href="/emergent2">emergent2</a>
-        <a href="/dolci">dolci</a>
+        <h1>Test Links</h1>
+        <button className="border-1 m-2">
+          <a href="/emergent">Dolci Home</a>
+        </button>
+
+        
+
+        <button className="border-1 m-2">
+          <a href="/b2b">B2B Dolci</a>
+        </button>
+       
       </div>
     </>
   );

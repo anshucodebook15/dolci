@@ -1,8 +1,8 @@
-import React from "react";
-import Layout from "../layout/layout";
-import About from "../components/About";
+// import React from "react";
+// import Layout from "../layout/layout";
+// import About from "../components/About";
 import { useAssets } from "../../../hooks/useAssets";
-import HeaderTwo from "../components/HeaderTwo";
+// import HeaderTwo from "../components/HeaderTwo";
 import LayoutTwo from "../layout/layoutTwo";
 
 const B2b = () => {

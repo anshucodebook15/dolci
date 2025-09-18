@@ -5,7 +5,7 @@ import { useAssets } from "../../../hooks/useAssets";
 
 const HeaderTwo = () => {
     const { images } = useAssets();
-    const [isScrolled, setIsScrolled] = useState(false);
+    // const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const location = useLocation();
 
@@ -23,7 +23,7 @@ const HeaderTwo = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            setIsScrolled(window.scrollY > 50);
+            // setIsScrolled(window.scrollY > 50);
         };
 
         window.addEventListener("scroll", handleScroll);
