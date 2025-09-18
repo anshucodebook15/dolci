@@ -9,6 +9,8 @@ const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
 
+  console.log("location", location);
+
   const navigationItems = [
     { name: "Home", href: "/" },
     { name: "About", href: "/#about" },
@@ -47,8 +49,9 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition duration-300 ${isScrolled ? "bg-white shadow-lg" : "bg-transparent"
-        }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition duration-300 ${
+        isScrolled ? "bg-white shadow-lg" : "bg-transparent"
+      } `}
     >
       <div className="contain mx-auto">
         <div className="flex items-center justify-between h-16 lg:h-20">
@@ -62,7 +65,6 @@ const Header = () => {
             </div>
           </Link>
 
-
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex  gap-6">
             {navigationItems.map((item) =>
@@ -70,10 +72,11 @@ const Header = () => {
                 <button
                   key={item.name}
                   onClick={() => scrollToSection(item.href)}
-                  className={`font-montserrat font-medium transition-colors duration-300 ${isScrolled
-                    ? "text-gray-700 hover:text-midnight-blue"
-                    : "text-white hover:text-dolci-blue"
-                    }`}
+                  className={`font-montserrat font-medium transition-colors duration-300 ${
+                    isScrolled
+                      ? "text-gray-700 hover:text-midnight-blue"
+                      : "text-white hover:text-dolci-blue"
+                  }`}
                 >
                   {item.name}
                 </button>
@@ -81,12 +84,13 @@ const Header = () => {
                 <Link
                   key={item.name}
                   to={item.href}
-                  className={`font-montserrat font-medium transition-colors duration-300 ${isActiveLink(item.href)
-                    ? "text-dolci-blue"
-                    : isScrolled
+                  className={`font-montserrat font-medium transition-colors duration-300 ${
+                    isActiveLink(item.href)
+                      ? "text-dolci-blue"
+                      : isScrolled
                       ? "text-gray-700 hover:text-midnight-blue"
                       : "text-white hover:text-dolci-blue"
-                    }`}
+                  }`}
                 >
                   {item.name}
                 </Link>
@@ -96,14 +100,19 @@ const Header = () => {
 
           {/* CTA Buttons */}
           <div className="hidden lg:flex gap-2">
-            <button className="border-1 border-dolci-blue text-dolci-blue px-4 rounded-full py-2">Call</button>
-            <button className=" border-1 border-dolci-blue bg-dolci-blue text-dolci-blue px-4 rounded-full ">Visit</button>
+            <button className="border-1 border-dolci-blue text-dolci-blue px-4 rounded-full py-2">
+              Call
+            </button>
+            <button className=" border-1 border-dolci-blue bg-dolci-blue text-dolci-blue px-4 rounded-full ">
+              Visit
+            </button>
           </div>
 
           {/* Mobile Menu Button */}
           <button
-            className={`lg:hidden p-2 ${isScrolled ? "text-gray-700" : "text-white"
-              }`}
+            className={`lg:hidden p-2 ${
+              isScrolled ? "text-gray-700" : "text-white"
+            } `}
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? (
@@ -133,10 +142,11 @@ const Header = () => {
                   key={item.name}
                   to={item.href}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className={`block py-2 px-4 font-montserrat rounded transition-colors ${isActiveLink(item.href)
-                    ? "text-midnight-blue bg-dolci-blue"
-                    : "text-gray-700 hover:text-midnight-blue hover:bg-arctic-blue"
-                    }`}
+                  className={`block py-2 px-4 font-montserrat rounded transition-colors ${
+                    isActiveLink(item.href)
+                      ? "text-midnight-blue bg-dolci-blue"
+                      : "text-gray-700 hover:text-midnight-blue hover:bg-arctic-blue"
+                  }`}
                 >
                   {item.name}
                 </Link>
