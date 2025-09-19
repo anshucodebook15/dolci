@@ -49,21 +49,22 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition duration-300 ${
-        isScrolled ? "bg-white shadow-lg" : "bg-transparent"
-      } `}
+      className={`fixed top-0 left-0 right-0 z-50 transition duration-300 ${isScrolled ? "bg-white shadow-lg" : "bg-transparent"
+        } `}
     >
       <div className="contain mx-auto">
-        <div className="flex items-center justify-between h-16 lg:h-20">
+        <div className="flex items-center justify-between ">
           {/* Logo */}
-          <Link
-            to="/"
-            className="text-2xl lg:text-3xl font-playfair font-bold transition-colors duration-300 text-midnight-blue"
-          >
-            <div className="text-shadow-initial">
-              <img src={images.dolcilogo} alt="" className="w-16 md:w-18" />
-            </div>
-          </Link>
+          <div className="py-2">
+            <Link
+              to="/"
+              className="text-2xl lg:text-3xl font-playfair font-bold transition-colors duration-300 text-midnight-blue"
+            >
+              <div className="text-shadow-initial">
+                <img src={images.dolcilogo} alt="" className="w-16 md:w-18" />
+              </div>
+            </Link>
+          </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex  gap-6">
@@ -72,11 +73,10 @@ const Header = () => {
                 <button
                   key={item.name}
                   onClick={() => scrollToSection(item.href)}
-                  className={`font-montserrat font-medium transition-colors duration-300 ${
-                    isScrolled
-                      ? "text-gray-700 hover:text-midnight-blue"
-                      : "text-white hover:text-dolci-blue"
-                  }`}
+                  className={`font-montserrat font-medium transition-colors duration-300 ${isScrolled
+                    ? "text-gray-700 hover:text-midnight-blue"
+                    : "text-white hover:text-dolci-blue"
+                    }`}
                 >
                   {item.name}
                 </button>
@@ -84,13 +84,12 @@ const Header = () => {
                 <Link
                   key={item.name}
                   to={item.href}
-                  className={`font-montserrat font-medium transition-colors duration-300 ${
-                    isActiveLink(item.href)
-                      ? "text-dolci-blue"
-                      : isScrolled
+                  className={`font-montserrat font-medium transition-colors duration-300 ${isActiveLink(item.href)
+                    ? "text-dolci-blue"
+                    : isScrolled
                       ? "text-gray-700 hover:text-midnight-blue"
                       : "text-white hover:text-dolci-blue"
-                  }`}
+                    }`}
                 >
                   {item.name}
                 </Link>
@@ -99,20 +98,40 @@ const Header = () => {
           </nav>
 
           {/* CTA Buttons */}
-          <div className="hidden lg:flex gap-2">
-            <button className="border-1 border-dolci-blue text-dolci-blue px-4 rounded-full py-2">
+          <div className="hidden lg:flex gap-1">
+            {/* <button className="border-1 border-dolci-blue text-dolci-blue px-4 rounded-full py-2 ">
               Call
             </button>
-            <button className=" border-1 border-dolci-blue bg-dolci-blue text-dolci-blue px-4 rounded-full ">
+            <button className=" border-1 border-dolci-blue bg-dolci-blue text-black px-4 rounded-full ">
+              Visit
+            </button> */}
+
+            <button
+              className="bg-dolci-blue font-montserrat font-medium text-lg px-6 py-1 rounded-full cursor-pointer"
+            // onClick={() =>
+            //   document
+            //     .getElementById("location")
+            //     ?.scrollIntoView({ behavior: "smooth" })
+            // }
+            >
+              Call
+            </button>
+            <button
+              className="border-1 font-montserrat font-medium text-lg px-6 py-1 rounded-full cursor-pointer text-gray-800 bg-white border-gray-300 hover:bg-white hover:text-midnight-blue"
+            // onClick={() =>
+            //   document
+            //     .getElementById("menu")
+            //     ?.scrollIntoView({ behavior: "smooth" })
+            // }
+            >
               Visit
             </button>
           </div>
 
           {/* Mobile Menu Button */}
           <button
-            className={`lg:hidden p-2 ${
-              isScrolled ? "text-gray-700" : "text-white"
-            } `}
+            className={`lg:hidden p-2 ${isScrolled ? "text-gray-700" : "text-white"
+              } `}
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? (
@@ -142,11 +161,10 @@ const Header = () => {
                   key={item.name}
                   to={item.href}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className={`block py-2 px-4 font-montserrat rounded transition-colors ${
-                    isActiveLink(item.href)
-                      ? "text-midnight-blue bg-dolci-blue"
-                      : "text-gray-700 hover:text-midnight-blue hover:bg-arctic-blue"
-                  }`}
+                  className={`block py-2 px-4 font-montserrat rounded transition-colors ${isActiveLink(item.href)
+                    ? "text-midnight-blue bg-dolci-blue"
+                    : "text-gray-700 hover:text-midnight-blue hover:bg-arctic-blue"
+                    }`}
                 >
                   {item.name}
                 </Link>

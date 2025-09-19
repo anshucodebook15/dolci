@@ -6,13 +6,26 @@ import { testimonialsData } from '../../../data/mock';
 const Testimonials = () => {
     return (
         <section id="testimonials" className="py-20 bg-white">
-            <div className="max-w-7xl mx-auto container-padding">
-                <div className="text-center mb-16">
+            <div className="max-w-7xl mx-auto contain px-4">
+                {/* <div className="text-center mb-16">
                     <h2 className="font-playfair text-4xl md:text-5xl font-bold text-midnight-blue mb-4">
                         What Our Guests Say
                     </h2>
                     <p className="font-montserrat text-xl text-gray-600 max-w-3xl mx-auto">
                         Don't just take our word for it. Hear from our delighted customers who have
+                        experienced the magic of Dolci.
+                    </p>
+                </div> */}
+
+                <div className="text-center mb-16">
+                    <p className="font-great-vibes text-2xl text-dark-accent font-medium mb-2">
+                        our happy customers
+                    </p>
+                    <h2 className="font-playfair text-4xl md:text-5xl font-bold text-midnight-blue mb-4">
+                         What Our Guests Say
+                    </h2>
+                    <p className="font-montserrat text-lg text-gray-600 max-w-3xl mx-auto">
+                       Don't just take our word for it. Hear from our delighted customers who have
                         experienced the magic of Dolci.
                     </p>
                 </div>

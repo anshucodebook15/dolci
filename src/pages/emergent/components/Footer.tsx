@@ -45,14 +45,15 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-midnight-blue text-white">
       <div className="py-16">
-        <div className="contain">
+        <div className="contain px-4 md:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-6">
             {/* Brand Section */}
             <div className="space-y-4">
               <h3 className="font-playfair text-3xl font-bold text-dolci-blue">
                 Dolci
               </h3>
-              <p className="font-montserrat text-gray-300 leading-relaxed">
+
+              <p className="font-montserrat text-lg text-gray-300  max-w-3xl mx-auto">
                 Where flavor meets ambience. Experience the perfect blend of
                 Greek-inspired café culture and handcrafted treats in the heart
                 of Bangalore.
@@ -147,7 +148,7 @@ const Footer: React.FC = () => {
                     <p className="font-montserrat text-gray-300 text-sm">
                       Weekdays
                     </p>
-                    <p className="font-montserrat text-white font-medium">
+                    <p className="font-montserrat text-white font-medium text-[16px]">
                       8:00 AM - 10:00 PM
                     </p>
                   </div>
@@ -158,7 +159,7 @@ const Footer: React.FC = () => {
                     <p className="font-montserrat text-gray-300 text-sm">
                       Weekends
                     </p>
-                    <p className="font-montserrat text-white font-medium">
+                    <p className="font-montserrat text-white font-medium text-[16px]">
                       8:00 AM - 11:00 PM
                     </p>
                   </div>

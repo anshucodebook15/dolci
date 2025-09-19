@@ -69,7 +69,7 @@ const About = () => {
   return (
     <>
       <section id="about" className=" py-20 bg-white">
-        <div className="contain">
+        <div className="contain px-6">
           <div className="text-center mb-20">
             <h2 className="font-playfair-display text-4xl md:text-5xl font-bold text-midnight-blue mb-6">
               {title}
@@ -98,10 +98,10 @@ const About = () => {
                           className={`absolute inset-0 bg-gradient-to-t ${item.gradient} transition-all duration-300`}
                         ></div>
                         <div className="absolute bottom-6 left-6 right-6 text-white">
-                          <h4 className="font-playfair-display text-[18px] font-bold mb-2">
+                          <h4 className="font-playfair-display text-[22px] md:text-[18px] font-bold mb-2">
                             {item.title}
                           </h4>
-                          <p className="font-montserrat text-gray-100 text-sm opacity-90">
+                          <p className="font-montserrat text-gray-100 md:text-sm text-[16px] opacity-90 leading-4">
                             {item.subtitle}
                           </p>
                         </div>

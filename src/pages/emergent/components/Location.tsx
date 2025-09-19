@@ -70,12 +70,26 @@ const Location = () => {
 
   return (
     <section id="location" className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto container-padding">
-        <div className="text-center mb-16">
+      <div className="max-w-7xl mx-auto contain md:px-4 px-6">
+        {/* <div className="text-center mb-16">
           <h2 className="font-playfair text-4xl md:text-5xl font-bold text-midnight-blue mb-4">
             Visit Dolci Today
           </h2>
           <p className="font-montserrat text-xl text-gray-600 max-w-3xl mx-auto">
+            Experience the finest coffee and desserts at any of our three
+            Bangalore locations, each offering the same exceptional quality in a
+            cozy, welcoming atmosphere.
+          </p>
+        </div> */}
+
+        <div className="text-center mb-16">
+          <p className="font-great-vibes text-2xl text-dark-accent font-medium mb-2">
+            your cafe destination
+          </p>
+          <h2 className="font-playfair text-4xl md:text-5xl font-bold text-midnight-blue mb-4">
+            Visit Dolci Today
+          </h2>
+          <p className="font-montserrat text-lg text-gray-600 max-w-3xl mx-auto">
             Experience the finest coffee and desserts at any of our three
             Bangalore locations, each offering the same exceptional quality in a
             cozy, welcoming atmosphere.
@@ -86,22 +100,38 @@ const Location = () => {
         <div className="mb-12">
           <div className="flex flex-wrap gap-4 justify-center">
             {locationData.locations.map((location) => (
-              <button
-                key={location.id}
-                onClick={() => setSelectedLocation(location)}
-                className={`btn-secondary ${selectedLocation.id === location.id
+              <>
+                {/* <button
+                  key={location.id}
+                  onClick={() => setSelectedLocation(location)}
+                  className={`btn-secondary ${selectedLocation.id === location.id
                     ? "bg-dolci-blue text-midnight-blue hover:bg-dark-accent"
                     : "text-dolci-blue hover:bg-dolci-blue hover:text-midnight-blue"
-                  }`}
-              >
-                <MapPin className="mr-2 h-5 w-5 flex-shrink-0" />
-                {location.name}
-                {location.isMain && (
-                  <span className="ml-2 text-xs bg-dark-accent text-midnight-blue px-2 py-0.5 rounded-full">
-                    Main
-                  </span>
-                )}
-              </button>
+                    }`}
+                >
+                  <MapPin className="mr-2 h-5 w-5 flex-shrink-0" />
+                  {location.name}
+                  {location.isMain && (
+                    <span className="ml-2 text-xs bg-dark-accent text-midnight-blue px-2 py-0.5 rounded-full">
+                      Main
+                    </span>
+                  )}
+                </button> */}
+
+                <button
+                  key={location.id}
+                  onClick={() => setSelectedLocation(location)}
+                  className="btn btn-primary text-lg px-8 py-4"
+                >
+                  <MapPin className="mr-2 h-5 w-5 flex-shrink-0" />
+                  {location.name}
+                  {location.isMain && (
+                    <span className="ml-2 text-xs bg-dark-accent text-midnight-blue px-2 py-0.5 rounded-full">
+                      Main
+                    </span>
+                  )}
+                </button>
+              </>
             ))}
           </div>
         </div>
@@ -118,22 +148,26 @@ const Location = () => {
               return (
                 <div
                   key={index}
-                  className={`group transition-all duration-300 hover:shadow-lg border-l-4 border-l-dolci-blue ${item.action ? "cursor-pointer hover:-translate-y-1" : ""
-                    }`}
+                  className={`group transition-all duration-300 hover:shadow-lg border-l-2 border-l-dolci-blue ${
+                    item.action ? "cursor-pointer hover:-translate-y-1" : ""
+                  }`}
                   onClick={() => item.action}
                 >
-                  <div className="card-padding">
+                  <div className="p-4">
                     <div className="flex items-start space-x-4">
                       <div className="flex-shrink-0">
-                        <div className="w-12 h-12 bg-arctic-blue rounded-lg flex items-center justify-center group-hover:bg-dolci-blue transition-colors">
-                          <IconComponent className="h-6 w-6 text-midnight-blue" />
+                        <div className="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center group-hover:bg-dolci-blue transition-colors">
+                          <IconComponent
+                            strokeWidth={1.5}
+                            className="h-6 w-6 text-midnight-blue"
+                          />
                         </div>
                       </div>
                       <div className="flex-1">
-                        <h4 className="font-playfair text-lg font-semibold text-midnight-blue mb-1">
+                        <h4 className="font-playfair text-lg font-semibold text-midnight-blue ">
                           {item.title}
                         </h4>
-                        <p className="font-montserrat text-gray-600 whitespace-pre-line">
+                        <p className="font-montserrat text-[16px] text-gray-600 whitespace-pre-line">
                           {item.content}
                         </p>
                       </div>
@@ -238,6 +272,14 @@ const Location = () => {
                   <p className="font-montserrat text-midnight-blue/80 px-4">
                     Click to get directions to our {selectedLocation.name} café
                   </p>
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62197.75330666482!2d77.53835806953127!3d13.012758550377209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1668f2dec3f7%3A0x6555d5dac4ac1bce!2sDolci%20-%20Cunningham%20Road!5e0!3m2!1sen!2sin!4v1758256618661!5m2!1sen!2sin"
+                    width={600}
+                    height={450}
+                    style={{ border: 0 }}
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                  />
                 </div>
               </div>
             </div>
@@ -253,7 +295,7 @@ const Location = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <button
-                  className="btn-secondary bg-white text-midnight-blue hover:bg-white-sand"
+                  className="border-1 font-montserrat font-medium text-lg px-4 py-2 rounded-full cursor-pointer text-gray-800 bg-white border-gray-300 hover:bg-white hover:text-midnight-blue flex items-center"
                   onClick={() =>
                     window.open(
                       `https://maps.google.com?q=${encodeURIComponent(
@@ -263,14 +305,14 @@ const Location = () => {
                     )
                   }
                 >
-                  <MapPin className="mr-2 h-5 w-5 flex-shrink-0" />
+                  <MapPin strokeWidth={1.5} className="mr-2" size={20} />
                   Get Directions
                 </button>
                 <button
-                  className="btn-secondary border-white text-white hover:bg-white hover:text-midnight-blue"
+                  className="border-1 font-montserrat font-medium text-lg px-4 py-2 rounded-full cursor-pointer text-gray-800 bg-white border-gray-300 hover:bg-white hover:text-midnight-blue flex items-center"
                   onClick={() => window.open(`tel:${selectedLocation.phone}`)}
                 >
-                  <Phone className="mr-2 h-5 w-5 flex-shrink-0" />
+                  <Phone strokeWidth={1.5} className="mr-2" size={20} />
                   Call Now
                 </button>
               </div>

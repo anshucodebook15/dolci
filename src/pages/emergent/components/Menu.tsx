@@ -3,12 +3,14 @@ import { useState } from "react";
 import {
   Star,
   Clock,
-//   MapPin,
+  //   MapPin,
   Leaf,
   Coffee,
   Cake,
   Sandwich,
-//   LucideIcon,
+  Store,
+  SquareMenu,
+  //   LucideIcon,
 } from "lucide-react";
 import { completeMenuData } from "../../../data/menu";
 
@@ -53,20 +55,26 @@ const Menu = () => {
   };
 
   return (
-    <section id="menu" className="py-20 bg-white">
+    <section id="menu" className="py-20 md:px-4 px-4 bg-white">
       <div className="max-w-7xl mx-auto container-padding">
         <div className="text-center mb-20">
           <div className="group inline-block cursor-pointer mb-6">
             <h2 className="font-playfair text-4xl md:text-5xl font-bold text-midnight-blue mb-4 transition-colors duration-300 group-hover:text-dark-accent relative">
               Our Artisan Menu
-              <div className="absolute bottom-0 left-0 w-0 h-1 bg-gradient-to-r from-dolci-blue to-dark-accent group-hover:w-full transition-all duration-500 rounded-full"></div>
+              {/* <div className="absolute bottom-0 left-0 w-0 h-1 bg-gradient-to-r from-dolci-blue to-dark-accent group-hover:w-full transition-all duration-500 rounded-full"></div> */}
             </h2>
+            <p className="font-great-vibes text-2xl text-dark-accent mb-2">
+              Brewing comfort in every cup
+            </p>
           </div>
-          <p className="font-montserrat text-xl text-gray-600 max-w-3xl mx-auto mb-12">
-            Discover our carefully curated selection of French viennoiserie,
-            artisan desserts, premium coffee blends, and gourmet favorites that
-            celebrate authentic flavors.
-          </p>
+
+          <div className="max-w-5xl mx-auto">
+            <p className="font-montserrat text-lg text-gray-700 leading-relaxed mb-12">
+              Discover our carefully curated selection of French viennoiserie,
+              artisan desserts, premium coffee blends, and gourmet favorites
+              that celebrate authentic flavors.
+            </p>
+          </div>
         </div>
 
         {/* <Tabs
@@ -77,36 +85,33 @@ const Menu = () => {
 
                 </Tabs> */}
         {/* Category Navigation */}
-        <div className="mb-20">
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-8 gap-6 lg:gap-8 max-w-6xl mx-auto">
+        <div className="mb-20 md:px-2 px-3">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-8 gap-3 lg:gap-3 max-w-6xl mx-auto">
             {completeMenuData.categories.map((category: any) => {
               const IconComponent = getCategoryIcon(category.id);
               const isActive = selectedCategory === category.id;
               return (
-                <div key={category.id} className="py-2 px-1">
+                <div key={category.id} className="">
                   <button
                     onClick={() => setSelectedCategory(category.id)}
                     className={`
-                        group relative overflow-hidden rounded-2xl p-5 lg:p-6 transition-all duration-300 transform hover:scale-102 hover:-translate-y-1
-                        ${
-                          isActive
-                            ? "bg-dolci-blue text-midnight-blue shadow-xl scale-102"
-                            : "bg-arctic-blue hover:bg-dolci-blue/50 text-gray-700 hover:text-midnight-blue hover:shadow-lg"
-                        }
+                        group relative cursor-pointer overflow-hidden rounded-2xl md:p-5 p-2 lg:p-6 transition-all duration-300 transform hover:scale-102 hover:-translate-y-1
+                        ${isActive
+                        ? "bg-dolci-blue text-midnight-blue shadow-xl scale-102"
+                        : "bg-arctic-blue hover:bg-dolci-blue/50 text-gray-700 hover:text-midnight-blue hover:shadow-lg"
+                      }
                         flex flex-col items-center justify-center text-center min-h-[120px] w-full border-2 
-                        ${
-                          isActive
-                            ? "border-dark-accent"
-                            : "border-transparent hover:border-dolci-blue/30"
-                        }
+                        ${isActive
+                        ? "border-dark-accent"
+                        : "border-transparent hover:border-dolci-blue/30"
+                      }
                       `}
                   >
                     <IconComponent
-                      className={`h-7 w-7 mb-3 transition-colors ${
-                        isActive
-                          ? "text-midnight-blue"
-                          : "text-gray-600 group-hover:text-midnight-blue"
-                      }`}
+                      className={`md:h-7 h-9 w-9 md:w-7 mb-3 transition-colors ${isActive
+                        ? "text-midnight-blue"
+                        : "text-gray-600 group-hover:text-midnight-blue"
+                        }`}
                     />
                     <span className="font-montserrat font-medium text-sm leading-tight">
                       {category.name}
@@ -127,16 +132,26 @@ const Menu = () => {
 
           return (
             <div key={category.id} className="space-y-8">
-              <div className="text-center mb-8">
+              {/* <div className="text-center mb-8">
                 <h3 className="font-playfair text-3xl font-bold text-midnight-blue mb-2">
                   {category.name}
                 </h3>
                 <p className="font-montserrat text-gray-600 text-lg">
                   {category.description}
                 </p>
+              </div> */}
+
+              <div className="text-center mb-4">
+                <h3 className="font-playfair text-3xl font-bold text-midnight-blue mb-2 leading-normal">
+                  {category.name}
+                </h3>
+
+                <p className="font-montserrat text-lg text-gray-700 leading-relaxed mb-12">
+                  {category.description}
+                </p>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 lg:gap-8">
+              <div className="md:px-0 px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 lg:gap-8">
                 {category.items.map((item: any) => (
                   <div key={item.id} className="safe-spacing">
                     <div className="group hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 hover:scale-102 border-0 overflow-hidden bg-white shadow-lg h-full">
@@ -168,7 +183,7 @@ const Menu = () => {
                         <h4 className="font-playfair text-xl font-bold text-midnight-blue mb-3 group-hover:text-dark-accent transition-colors line-clamp-1">
                           {item.name}
                         </h4>
-                        <p className="font-montserrat text-gray-600 text-sm leading-relaxed mb-4 line-clamp-3">
+                        <p className="font-montserrat text-gray-600  md:text-[16px] text-[16px] leading-normal mb-4 line-clamp-3">
                           {item.description}
                         </p>
                         <div className="flex items-center justify-between">
@@ -195,12 +210,13 @@ const Menu = () => {
         })}
 
         {/* Featured Items - Chef's Signature Selection with Images */}
-        <div className="mt-24  rounded-3xl p-10 lg:p-12">
+        <div className="mt-24 rounded-3xl px-4 lg:p-12">
           <div className="text-center mb-12">
-            <h3 className="font-playfair text-3xl font-bold text-midnight-blue mb-6">
+            <h3 className="font-playfair text-3xl font-bold text-midnight-blue mb-4 leading-normal">
               Chef's Signature Selection
             </h3>
-            <p className="font-montserrat text-gray-600 max-w-2xl mx-auto text-lg">
+
+            <p className="font-montserrat text-lg text-gray-700 leading-relaxed mb-12">
               Must-try specialties that define the Dolci experience - crafted
               with passion since 2008.
             </p>
@@ -221,10 +237,10 @@ const Menu = () => {
                   </div>
                 </div>
               </div>
-              <h4 className="font-playfair text-xl font-bold text-midnight-blue mb-3 transition-colors duration-300 group-hover:text-dark-accent">
+              <h4 className="font-playfair text-[22px] font-bold text-midnight-blue mb-3 transition-colors duration-300 group-hover:text-dark-accent">
                 Dolci's Signature Tiramisu
               </h4>
-              <p className="font-montserrat text-gray-600 transition-colors duration-300 group-hover:text-gray-700">
+              <p className="font-montserrat text-[18px] text-gray-600 transition-colors duration-300 group-hover:text-gray-700">
                 Coffee-soaked perfection that started our legacy
               </p>
             </div>
@@ -243,10 +259,11 @@ const Menu = () => {
                   </div>
                 </div>
               </div>
-              <h4 className="font-playfair text-xl font-bold text-midnight-blue mb-3 transition-colors duration-300 group-hover:text-dark-accent">
+
+              <h4 className="font-playfair text-[22px] font-bold text-midnight-blue mb-3 transition-colors duration-300 group-hover:text-dark-accent">
                 French Classic Croissant
               </h4>
-              <p className="font-montserrat text-gray-600 transition-colors duration-300 group-hover:text-gray-700">
+              <p className="font-montserrat text-[18px] text-gray-600 transition-colors duration-300 group-hover:text-gray-700">
                 Authentic Parisian mornings in every flaky bite
               </p>
             </div>
@@ -265,10 +282,11 @@ const Menu = () => {
                   </div>
                 </div>
               </div>
-              <h4 className="font-playfair text-xl font-bold text-midnight-blue mb-3 transition-colors duration-300 group-hover:text-dark-accent">
+
+              <h4 className="font-playfair text-[22px] font-bold text-midnight-blue mb-3 transition-colors duration-300 group-hover:text-dark-accent">
                 Tres Leches Coconut
               </h4>
-              <p className="font-montserrat text-gray-600 transition-colors duration-300 group-hover:text-gray-700">
+              <p className="font-montserrat text-[18px] text-gray-600 transition-colors duration-300 group-hover:text-gray-700">
                 Our signature fusion of Latin American & tropical flavors
               </p>
             </div>
@@ -276,7 +294,7 @@ const Menu = () => {
         </div>
 
         {/* CTA Section */}
-        <div className="mt-24 text-center rounded-3xl p-10 lg:p-12 text-midnight-blue">
+        <div className="mt-24 text-center rounded-3xl p-10 lg:p-12 text-midnight-blue herobg">
           <h3 className="font-playfair text-2xl lg:text-3xl font-bold mb-6">
             Ready to Experience Dolci's Artisan Creations?
           </h3>
@@ -285,15 +303,32 @@ const Menu = () => {
             favorite artisan destination since 2008. Every creation tells a
             story of passion, tradition, and innovation.
           </p>
-          {/* <div className="flex flex-col sm:flex-row gap-6 justify-center">
-                        <button className="btn-secondary bg-white text-midnight-blue hover:bg-white-sand">
-                            <MapPin className="mr-2 h-5 w-5 flex-shrink-0" />
-                            Visit Our Café
-                        </button>
-                        <button className="btn-secondary border-white text-white hover:bg-white hover:text-midnight-blue">
-                            Call to Reserve
-                        </button>
-                    </div> */}
+
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <button
+              className="btn btn-primary text-lg px-8 py-4"
+              onClick={() =>
+                document
+                  .getElementById("location")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
+            >
+              <Store strokeWidth={1.2} className="mr-2" />  Visit Our Café
+            </button>
+            <button
+              className="btn btn-primary text-lg px-8 py-4"
+              onClick={() =>
+                document
+                  .getElementById("location")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
+            >
+              <SquareMenu strokeWidth={1.2} className="mr-2" />
+              Explore Menu
+            </button>
+           
+          </div>
+          
         </div>
       </div>
     </section>

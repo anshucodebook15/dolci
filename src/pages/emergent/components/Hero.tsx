@@ -39,7 +39,7 @@ const Hero = () => {
                     Discovering
                 </h1>
 
-                <p className="font-montserrat text-lg md:text-xl mb-8 max-w-2xl mx-auto opacity-90">
+                <p className="font-montserrat text-gray-200 text-lg md:text-xl mb-8 max-w-2xl mx-auto opacity-90">
                     Where flavor meets ambience in the heart of Bangalore
                 </p>
 

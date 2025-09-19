@@ -2,7 +2,7 @@ import { useState } from "react";
 // import { Badge } from './ui/badge';
 // import { Card, CardContent } from './ui/card';
 // import { Dialog, DialogContent, DialogTrigger } from './ui/dialog';
-import { ZoomIn } from "lucide-react";
+import { Phone, ZoomIn } from "lucide-react";
 import { galleryData } from "../../../data/mock";
 // import { galleryData } from '../data/mock';
 
@@ -45,7 +45,7 @@ const Delights = () => {
 
   return (
     <section id="gallery" className="bg-white py-20">
-      <div className="max-w-7xl mx-auto container-spacing">
+      <div className="max-w-7xl mx-auto contain px-4 md:px-0">
         <div className="text-center mb-16">
           <h2 className="font-playfair text-4xl md:text-5xl font-bold text-midnight-blue mb-4">
             {galleryData.title}
@@ -60,18 +60,17 @@ const Delights = () => {
         </div>
 
         {/* Category Filter */}
-        <div className="flex flex-wrap gap-3 justify-center mb-12">
+        <div className="flex flex-wrap gap-2 justify-center mb-12">
           {categories.map((category) => (
             <div
               key={category.id}
               // variant={
               //     selectedCategory === category.id ? 'default' : 'secondary'
               // }
-              className={`cursor-pointer px-6 py-2 text-sm font-montserrat font-medium transition-all duration-300 ${
-                selectedCategory === category.id
+              className={`cursor-pointer px-6 py-2 text-sm font-montserrat font-medium transition-all duration-300 ${selectedCategory === category.id
                   ? "bg-dolci-blue text-midnight-blue hover:bg-dark-accent"
                   : "bg-gray-200 text-gray-700 hover:bg-arctic-blue hover:text-midnight-blue"
-              }`}
+                }`}
               onClick={() => setSelectedCategory(category.id)}
             >
               {category.name} ({category.count})
@@ -124,7 +123,7 @@ const Delights = () => {
         </div>
 
         {/* Bottom CTA */}
-        <div className="mt-16 text-center">
+        {/* <div className="mt-16 text-center">
           <div className="bg-white rounded-2xl shadow-lg p-8 max-w-2xl mx-auto border border-dolci-blue/20">
             <h3 className="font-playfair text-2xl font-bold text-midnight-blue mb-4">
               Experience These Delights in Person
@@ -133,6 +132,31 @@ const Delights = () => {
               Our gallery only captures a glimpse of the magic. Visit Dolci to
               experience the full sensory journey of taste, aroma, and ambiance.
             </p>
+          </div>
+        </div> */}
+
+        {/* CTA Section */}
+        <div className="mt-24 text-center rounded-3xl p-10 lg:p-12 text-midnight-blue max-w-2xl mx-auto border-1 border-dolci-blue">
+          <h3 className="font-playfair text-2xl lg:text-3xl font-bold mb-6 leading-normal">
+            Experience These Delights in Person
+          </h3>
+          <p className="font-montserrat text-midnight-blue/80 mb-10 max-w-3xl mx-auto text-base lg:text-lg">
+            Our gallery only captures a glimpse of the magic. Visit Dolci to
+            experience the full sensory journey of taste, aroma, and ambiance.
+          </p>
+
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <button
+              className="btn btn-primary text-lg px-8 py-4"
+              onClick={() =>
+                document
+                  .getElementById("location")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
+            >
+              <Phone strokeWidth={1.2} className="mr-2" />
+              Call To Reserve
+            </button>
           </div>
         </div>
       </div>
