@@ -49,9 +49,9 @@ const B2b = () => {
   const TeamSection = ({ images }: { images: Record<string, string> }) => {
     return (
       <div className="max-w-6xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 lg:gap-0">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 lg:gap-0 items-start">
           {teamMembers.map((member, index) => (
-            <div key={index} className="px-10 flex flex-col justify-center">
+            <div key={index} className="px-10 flex flex-col justify-center items-center text-center">
               <div className="w-60 h-60 rounded-full overflow-hidden mb-4">
                 <img
                   src={images[member.image]}
@@ -59,9 +59,10 @@ const B2b = () => {
                   className="w-full"
                 />
               </div>
-              <h4 className="mb-2 font-bold">
-                {member.name} {member.role && <span>{member.role}</span>}
+              <h4 className=" font-bold">
+                {member.name}
               </h4>
+              <h5 className="mb-4">{member.role && <span>{member.role}</span>}</h5>
               <p className="text-[14px] leading-5 font-montserrat">
                 {member.description}
               </p>
@@ -85,7 +86,6 @@ const B2b = () => {
               Our Directors
             </h2>
           </div>
-
           <TeamSection images={images} />
         </section>
 
@@ -97,7 +97,7 @@ const B2b = () => {
             From Home Baking to Beloved Café Chain
           </p>
           <div className="max-w-5xl mx-auto">
-            <p className="font-montserrat text-lg text-gray-700 leading-relaxed mb-12">
+            <p className="font-montserrat text-[18px] text-gray-700 leading-relaxed mb-12">
               At Dolci we power some of the biggest brands with our expertise in
               baking and food innovation. As a trusted white label bakery
               supplier and private label bakery manufacturer for B2B, we create
@@ -120,7 +120,7 @@ const B2b = () => {
             White Label Solutions
           </h3>
           <div className="max-w-5xl mx-auto">
-            <p className="font-montserrat text-lg text-gray-700 leading-relaxed mb-12">
+            <p className="font-montserrat text-[18px] text-gray-700 leading-relaxed mb-12">
               We specialize in white label baked goods manufacturing. From
               breads, cakes, cookies, and pastries to savory items, every
               product can be exclusively branded under your label, with our team
@@ -133,7 +133,7 @@ const B2b = () => {
             Custom Product Development
           </h3>
           <div className="max-w-5xl mx-auto">
-            <p className="font-montserrat text-lg text-gray-700 leading-relaxed mb-12">
+            <p className="font-montserrat text-[18px] text-gray-700 leading-relaxed mb-12">
               Looking for innovation? Our custom bakery solutions in India are
               designed for brands that want unique recipes, specialized product
               lines, or dietary-specific ranges like gluten-free and vegan
@@ -147,7 +147,7 @@ const B2b = () => {
             Large-Scale Supply
           </h3>
           <div className="max-w-5xl mx-auto">
-            <p className="font-montserrat text-lg text-gray-700 leading-relaxed mb-12">
+            <p className="font-montserrat text-[18px] text-gray-700 leading-relaxed mb-12">
               With two state-of-the-art facilities, we are the reliable bakery
               contract manufacturing partner for businesses that demand scale
               without compromise. As a bulk baked goods supplier and industrial
@@ -179,13 +179,14 @@ const B2b = () => {
             </ol>
           </div>
         </section>
-        <section className="text-center mb-20 bg-white">
+
+        <section className="text-center bg-white">
           <h3 className="font-playfair-display text-3xl md:text-3xl font-bold text-midnight-blue mb-6">
             Why Partner With Dolci?
           </h3>
 
           <div className="max-w-5xl mx-auto">
-            <ul className="font-montserrat text-lg text-gray-700 leading-relaxed mb-12">
+            <ul className="font-montserrat text-[18px] text-gray-700 leading-relaxed mb-12 ">
               <li>
                 Expertise in <strong>white label bakery partnerships</strong> in
                 India
@@ -204,6 +205,23 @@ const B2b = () => {
               </li>
               <li>Commitment to quality, innovation, and consistency</li>
             </ul>
+          </div>
+        </section>
+
+        <section className="mb-20">
+          {/* CTA Section */}
+          <div className="mt-24 text-center rounded-3xl p-10 lg:p-12 text-midnight-blue max-w-2xl mx-auto border-1 border-dolci-blue">
+
+            <p className="font-montserrat text-midnight-blue/80 mb-10 max-w-3xl mx-auto text-base lg:text-lg">
+              Get in touch today to discuss your requirements
+              and explore how we can create the perfect baked products for your brand.
+            </p>
+
+            <h3 className="font-playfair text-2xl lg:text-3xl font-bold mb-6 leading-normal">
+              I AM INTERESTED
+            </h3>
+
+
           </div>
         </section>
       </LayoutTwo>
