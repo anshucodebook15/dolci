@@ -1,12 +1,6 @@
 import { useState } from "react";
 
-import {
-  MapPin,
-  Clock,
-  Phone,
-  Mail,
-
-} from "lucide-react";
+import { MapPin, Clock, Phone, Mail } from "lucide-react";
 import { locationData } from "../../../data/mock";
 import { useAssets } from "../../../hooks/useAssets";
 // import { locationData } from '../data/mock';
@@ -120,11 +114,11 @@ const Location = () => {
                 >
                   <MapPin className="mr-2 h-5 w-5 flex-shrink-0" />
                   {location.name}
-                  {location.isMain && (
+                  {/* {location.isMain && (
                     <span className="ml-2  text-xs bg-dark-accent text-midnight-blue px-2 py-0.5 rounded-full">
                       Main
                     </span>
-                  )}
+                  )} */}
                 </button>
               </>
             ))}
@@ -278,6 +272,22 @@ const Location = () => {
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
                   />
+                  {/* <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62192.444719676845!2d77.52771695857626!3d13.033901967044734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae175f77e07cbd%3A0x187fa97ab322a9b3!2sDolci%20-%20New%20Bel%20Road!5e0!3m2!1sen!2sin!4v1758557853299!5m2!1sen!2sin"
+                    width={600}
+                    height={450}
+                    style={{ border: 0 }}
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                  />
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d972.0051354374839!2d77.59709426956587!3d12.970537306096654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae179a0d17925f%3A0x779ee1d3e740b9a3!2sDolci%20-%20Lavelle%20Road!5e0!3m2!1sen!2sin!4v1758558100980!5m2!1sen!2sin"
+                    width={600}
+                    height={450}
+                    style={{ border: 0 }}
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                  /> */}
                 </div>
               </div>
             </div>

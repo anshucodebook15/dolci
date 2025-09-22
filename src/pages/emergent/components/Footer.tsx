@@ -55,8 +55,8 @@ const Footer: React.FC = () => {
 
               <p className="font-montserrat text-[16px] text-gray-300  max-w-3xl mx-auto leading-6">
                 Where flavor meets ambience. Experience the perfect blend of
-                Greek-inspired café culture and handcrafted treats in the heart
-                of Bangalore.
+                European-inspired café culture and handcrafted treats in the
+                heart of Bangalore.
               </p>
               <div className="flex space-x-4">
                 {/* {socialLinks.map((social, index) => {
@@ -112,7 +112,8 @@ const Footer: React.FC = () => {
                 <div className="flex items-start space-x-3">
                   <MapPin className="h-5 w-5 text-dolci-blue flex-shrink-0 mt-0.5" />
                   <p className="font-montserrat text-gray-300 text-sm leading-relaxed">
-                    67/3, Cunningham Road, Vasanth Nagar, Bengaluru - 560052
+                    206/6, Main Road, Canara Bank Layout, Rajiv Gandhi Nagar,
+                    Kodigehalli, Bengaluru, Karnataka 560097
                   </p>
                 </div>
                 <div className="flex items-center space-x-3">

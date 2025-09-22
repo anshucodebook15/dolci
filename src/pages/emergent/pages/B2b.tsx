@@ -263,7 +263,7 @@ const B2b = () => {
 
           <section className="text-center mb-20 bg-white">
             <h2 className="font-playfair-display text-4xl md:text-4xl font-bold text-midnight-blue mb-6 underline">
-              More about what we do
+              We’ve got everything you need to grow your brand
             </h2>
             <div className="max-w-5xl mx-auto">
               <p className="font-montserrat text-[18px] text-gray-700 leading-relaxed mb-12">
@@ -373,6 +373,11 @@ const B2b = () => {
                   placeholder="Phone Number"
                   className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-midnight-blue focus:outline-none"
                 />
+                {/* <input
+                  type="text"
+                  placeholder="Name"
+                  className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-midnight-blue focus:outline-none"
+                /> */}
                 <input
                   type="email"
                   placeholder="Email Address"
@@ -414,12 +419,17 @@ const B2b = () => {
             {/* 🔹 Modal Content */}
             <div className="p-8">
               <h3 className="text-2xl font-bold font-playfair-display text-midnight-blue mb-4 text-center">
-                Lets Connect for B2B plan
+                Have a question?
               </h3>
               <p className="text-gray-600 text-sm mb-6 text-center">
-                Enter your phone number and email to receive updates from Dolci.
+                Fill up the below credentials and we will get in touch with you ASAP!
               </p>
               <form className="space-y-4">
+                <input
+                  type="text"
+                  placeholder="Name"
+                  className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-midnight-blue focus:outline-none"
+                />
                 <input
                   type="tel"
                   placeholder="Phone Number"

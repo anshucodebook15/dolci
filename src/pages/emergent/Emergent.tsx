@@ -1,5 +1,5 @@
-import { lazy, Suspense } from "react";
 import "./Emergent.css";
+import { lazy, Suspense } from "react";
 import Layout from "./layout/layout";
 // import About from "./components/About";
 // import Menu from "./components/Menu";
@@ -7,6 +7,8 @@ import Layout from "./layout/layout";
 // import Testimonials from "./components/Testimonials";
 // import Location from "./components/Location";
 // import Hero from "./components/Hero";
+
+
 
 // 🔹 Lazy imports
 const Hero = lazy(() => import("./components/Hero"));

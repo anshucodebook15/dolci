@@ -21,7 +21,7 @@ const About = () => {
       icon: <Cake strokeWidth={1} className="w-10 h-10" />,
       title: "Artisan Desserts",
       description:
-        "Greek-inspired pastries and cakes that tell a story of tradition",
+        "European-inspired pastries and cakes that tell a story of tradition",
     },
     {
       icon: <Users strokeWidth={1} className="w-10 h-10" />,
@@ -35,7 +35,7 @@ const About = () => {
     {
       id: 1,
       title: "Inspired by",
-      subtitle: "Greek café culture",
+      subtitle: "European café culture",
       image:
         "https://images.unsplash.com/photo-1718143801531-b6f3a2d958a9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njd8MHwxfHNlYXJjaHwxfHxncmVlayUyMGNhZmV8ZW58MHx8fHwxNzU1NDcxODA5fDA&ixlib=rb-4.1.0&q=85",
       gradient: "",

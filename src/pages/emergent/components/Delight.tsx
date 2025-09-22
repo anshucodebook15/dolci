@@ -2,8 +2,8 @@ import { useState } from "react";
 // import { Badge } from './ui/badge';
 // import { Card, CardContent } from './ui/card';
 // import { Dialog, DialogContent, DialogTrigger } from './ui/dialog';
-import { Phone, ZoomIn } from "lucide-react";
 import { galleryData } from "../../../data/mock";
+import { ZoomIn } from "lucide-react";
 // import { galleryData } from '../data/mock';
 
 const Delights = () => {
@@ -67,10 +67,11 @@ const Delights = () => {
               // variant={
               //     selectedCategory === category.id ? 'default' : 'secondary'
               // }
-              className={`cursor-pointer px-6 py-2 text-sm font-montserrat font-medium transition-all duration-300 ${selectedCategory === category.id
+              className={`cursor-pointer px-6 py-2 text-sm font-montserrat font-medium transition-all duration-300 ${
+                selectedCategory === category.id
                   ? "bg-dolci-blue text-midnight-blue hover:bg-dark-accent"
                   : "bg-gray-200 text-gray-700 hover:bg-arctic-blue hover:text-midnight-blue"
-                }`}
+              }`}
               onClick={() => setSelectedCategory(category.id)}
             >
               {category.name} ({category.count})
@@ -136,7 +137,7 @@ const Delights = () => {
         </div> */}
 
         {/* CTA Section */}
-        <div className="mt-24 text-center rounded-3xl p-10 lg:p-12 text-midnight-blue max-w-2xl mx-auto border-1 border-dolci-blue">
+        {/* <div className="mt-24 text-center rounded-3xl p-10 lg:p-12 text-midnight-blue max-w-2xl mx-auto border-1 border-dolci-blue">
           <h3 className="font-playfair text-2xl lg:text-3xl font-bold mb-6 leading-normal">
             Experience These Delights in Person
           </h3>
@@ -158,7 +159,7 @@ const Delights = () => {
               Call To Reserve
             </button>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

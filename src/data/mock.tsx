@@ -7,12 +7,14 @@ export const heroData = {
 };
 
 export const aboutData = {
-  title: "Our Sweet Story",
+  // title: "Our Sweet Story",
+  title: "Our Delicious Story",
   subtitle: "From Home Baking to Beloved Café Chain",
   description:
-    "Dolci, inspired by the lanes of Greece and a love for sweets, has grown from a humble home baking venture into a beloved café chain in Bengaluru. We offer a cozy haven for food and coffee lovers alike—serving rich brews, hearty bites, and an irresistible array of pastries, cakes, and other handcrafted treats.",
+    // "Dolci, inspired by the lanes of Greece and a love for sweets, has grown from a humble home baking venture into a beloved café chain in Bengaluru. We offer a cozy haven for food and coffee lovers alike—serving rich brews, hearty bites, and an irresistible array of pastries, cakes, and other handcrafted treats.",
+    "Step into the heart of Dolci — where every cup of coffee, every handcrafted dessert, and every little moment is filled with passion. From our journey to the stories behind the scenes, discover what makes us who we are",
   highlights: [
-    "Inspired by Greek café culture",
+    "Inspired by European café culture",
     "Handcrafted treats and pastries",
     "Rich coffee blends and specialty drinks",
     "Cozy ambiance perfect for any occasion",
