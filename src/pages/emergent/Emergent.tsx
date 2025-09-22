@@ -8,8 +8,6 @@ import Layout from "./layout/layout";
 // import Location from "./components/Location";
 // import Hero from "./components/Hero";
 
-
-
 // 🔹 Lazy imports
 const Hero = lazy(() => import("./components/Hero"));
 const About = lazy(() => import("./components/About"));

@@ -295,7 +295,7 @@ const Location = () => {
             {/* Call-to-Action */}
             <div className="bg-gradient-to-r from-dolci-blue to-dark-accent rounded-2xl p-6 lg:p-8 text-midnight-blue">
               <h4 className="font-playfair text-xl lg:text-2xl font-bold mb-4">
-                Ready for a Sweet Experience?
+                Ready for a Delicious Experience?
               </h4>
               <p className="font-montserrat mb-6 text-midnight-blue/80 text-base">
                 Visit our {selectedLocation.name} location today and discover

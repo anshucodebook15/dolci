@@ -7,8 +7,8 @@ export const heroData = {
 };
 
 export const aboutData = {
-  // title: "Our Sweet Story",
-  title: "Our Delicious Story",
+  title: "Our Sweet Story",
+  // title: "Our Delicious Story",
   subtitle: "From Home Baking to Beloved Café Chain",
   description:
     // "Dolci, inspired by the lanes of Greece and a love for sweets, has grown from a humble home baking venture into a beloved café chain in Bengaluru. We offer a cozy haven for food and coffee lovers alike—serving rich brews, hearty bites, and an irresistible array of pastries, cakes, and other handcrafted treats.",
@@ -181,7 +181,7 @@ export const locationData = {
     {
       id: 3,
       name: "Cunningham Road",
-      address: "67/3, Cunningham Road, Vasanth Nagar, Bengaluru - 560052",
+      address: "206/6, Main Road, Canara Bank Layout, Rajiv Gandhi Nagar, Kodigehalli, Bengaluru, Karnataka 560097",
       phone: "+91 80 2345 6789",
       email: "cunninghamroad@dolci.in",
       hours: {

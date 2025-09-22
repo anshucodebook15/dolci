@@ -43,7 +43,7 @@ const About = () => {
     {
       id: 2,
       title: "Handcrafted",
-      subtitle: "Treats and pastries",
+      subtitle: "Plates and pastries",
       image:
         "https://images.unsplash.com/photo-1641394535269-dbea1fa94ff1?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDF8MHwxfHNlYXJjaHwyfHxoYW5kY3JhZnRlZCUyMHBhc3RyaWVzfGVufDB8fHx8MTc1NTQ3MTgxNHww&ixlib=rb-4.1.0&q=85",
       gradient: "",
