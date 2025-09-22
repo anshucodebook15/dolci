@@ -2,6 +2,17 @@ import { useEffect, useState } from "react";
 // import { useAssets } from "../../../hooks/useAssets";
 import LayoutTwo from "../layout/layoutTwo";
 import { BadgeCheck, ChefHat, Salad, Sparkle } from "lucide-react";
+import { useLocation } from "react-router";
+
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+};
 
 const B2b = () => {
   // const { images } = useAssets();
@@ -15,6 +26,7 @@ const B2b = () => {
 
   return (
     <div>
+      <ScrollToTop />
       <LayoutTwo>
         <div className="px-4">
           <div className="py-20"></div>

@@ -69,7 +69,7 @@ const HeaderTwo = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex  gap-6">
+          {/* <nav className="hidden lg:flex  gap-6">
             {navigationItems.map((item) =>
               item.href.startsWith("/#") ? (
                 <button
@@ -78,8 +78,7 @@ const HeaderTwo = () => {
                   className={`cursor-pointer font-montserrat font-medium transition-colors duration-300 ${
                     isScrolled
                       ? "text-gray-700 hover:text-midnight-blue"
-                      : // : "text-white hover:text-dolci-blue"
-                        "text-gray-700 hover:text-midnight-blue"
+                      : "text-gray-700 hover:text-midnight-blue"
                   }`}
                 >
                   {item.name}
@@ -93,25 +92,35 @@ const HeaderTwo = () => {
                       ? "text-dolci-blue"
                       : isScrolled
                       ? "text-gray-700 hover:text-midnight-blue"
-                      : //   : "text-white hover:text-dolci-blue"
-                        "text-gray-700 hover:text-midnight-blue"
+                      : "text-gray-700 hover:text-midnight-blue"
                   }`}
                 >
                   {item.name}
                 </Link>
               )
             )}
+          </nav> */}
+
+          <nav className="hidden lg:flex  gap-6">
+            {navigationItems.map((item) => (
+              <Link
+                key={item.name}
+                to={item.href}
+                className={`font-montserrat font-medium transition-colors duration-300 ${
+                  isActiveLink(item.href)
+                    ? "text-dolci-blue"
+                    : isScrolled
+                    ? "text-gray-700 hover:text-midnight-blue"
+                    : "text-gray-700 hover:text-midnight-blue"
+                }`}
+              >
+                {item.name}
+              </Link>
+            ))}
           </nav>
 
           {/* CTA Buttons */}
           <div className="hidden lg:flex gap-1">
-            {/* <button className="border-1 border-dolci-blue text-dolci-blue px-4 rounded-full py-2 ">
-              Call
-            </button>
-            <button className=" border-1 border-dolci-blue bg-dolci-blue text-black px-4 rounded-full ">
-              Visit
-            </button> */}
-
             <button
               className="bg-dolci-blue font-montserrat font-medium text-lg px-6 py-1 rounded-full cursor-pointer"
               // onClick={() =>

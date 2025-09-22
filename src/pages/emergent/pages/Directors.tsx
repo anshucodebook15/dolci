@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useAssets } from "../../../hooks/useAssets";
 import LayoutTwo from "../layout/layoutTwo";
+import { ScrollToTop } from "../lib/ScrollToTop";
 
 const Directors = () => {
   const { images } = useAssets();
@@ -82,6 +83,7 @@ const Directors = () => {
 
   return (
     <div>
+      <ScrollToTop />
       <LayoutTwo>
         <div className="py-20"></div>
 
