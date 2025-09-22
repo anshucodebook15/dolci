@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import { Menu, Phone, Store, X } from "lucide-react";
 import { useAssets } from "../../../hooks/useAssets";
 
 const Header = () => {
@@ -16,9 +16,10 @@ const Header = () => {
     { name: "About", href: "/#about" },
     { name: "Menu", href: "/#menu" },
     { name: "Gallery", href: "/#gallery" },
-    { name: "Blog", href: "/blog" },
-    { name: "FAQ", href: "/#faq" },
+    { name: "B2B", href: "/b2b" },
+    // { name: "FAQ", href: "/#faq" },
     { name: "Location", href: "/#location" },
+    { name: "Directors", href: "/directors" },
   ];
 
   useEffect(() => {
@@ -74,8 +75,8 @@ const Header = () => {
                   key={item.name}
                   onClick={() => scrollToSection(item.href)}
                   className={`font-montserrat font-medium transition-colors duration-300 ${isScrolled
-                    ? "text-gray-700 hover:text-midnight-blue"
-                    : "text-white hover:text-dolci-blue"
+                      ? "text-gray-700 hover:text-midnight-blue"
+                      : "text-white hover:text-dolci-blue"
                     }`}
                 >
                   {item.name}
@@ -85,10 +86,10 @@ const Header = () => {
                   key={item.name}
                   to={item.href}
                   className={`font-montserrat font-medium transition-colors duration-300 ${isActiveLink(item.href)
-                    ? "text-dolci-blue"
-                    : isScrolled
-                      ? "text-gray-700 hover:text-midnight-blue"
-                      : "text-white hover:text-dolci-blue"
+                      ? "text-dolci-blue"
+                      : isScrolled
+                        ? "text-gray-700 hover:text-midnight-blue"
+                        : "text-white hover:text-dolci-blue"
                     }`}
                 >
                   {item.name}
@@ -114,6 +115,7 @@ const Header = () => {
             //     ?.scrollIntoView({ behavior: "smooth" })
             // }
             >
+              <Phone className="inline-block mr-2 h-4 w-4" />
               Call
             </button>
             <button
@@ -124,6 +126,7 @@ const Header = () => {
             //     ?.scrollIntoView({ behavior: "smooth" })
             // }
             >
+              <Store className="inline-block mr-2 h-4 w-4" />
               Visit
             </button>
           </div>
@@ -162,8 +165,8 @@ const Header = () => {
                   to={item.href}
                   onClick={() => setIsMobileMenuOpen(false)}
                   className={`block py-2 px-4 font-montserrat rounded transition-colors ${isActiveLink(item.href)
-                    ? "text-midnight-blue bg-dolci-blue"
-                    : "text-gray-700 hover:text-midnight-blue hover:bg-arctic-blue"
+                      ? "text-midnight-blue bg-dolci-blue"
+                      : "text-gray-700 hover:text-midnight-blue hover:bg-arctic-blue"
                     }`}
                 >
                   {item.name}

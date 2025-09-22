@@ -77,6 +77,13 @@ const Menu = () => {
           </div>
         </div>
 
+        {/* <Tabs
+                    value={selectedCategory}
+                    onValueChange={setSelectedCategory}
+                    className="w-full"
+                >
+
+                </Tabs> */}
         {/* Category Navigation */}
         <div className="mb-20 md:px-2 px-3">
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-8 gap-3 lg:gap-3 max-w-6xl mx-auto">
@@ -84,25 +91,22 @@ const Menu = () => {
               const IconComponent = getCategoryIcon(category.id);
               const isActive = selectedCategory === category.id;
               return (
-                <div
-                  key={category.id}
-                  className={`rounded-2xl overflow-hidden ${
-                    isActive
-                      ? "bg-dolci-blue text-midnight-blue shadow-xl scale-102"
-                      : "bg-arctic-blue hover:bg-dolci-blue/50 text-gray-700 hover:text-midnight-blue hover:shadow-lg"
-                  } ${
-                    isActive
-                      ? "border-dark-accent"
-                      : "border-transparent hover:border-dolci-blue/30"
-                  }`}
-                >
+                <div key={category.id} className="">
                   <button
                     onClick={() => setSelectedCategory(category.id)}
                     className={`
-                        group relative cursor-pointer overflow-hidden  md:p-5 p-6 lg:p-6 transition-all duration-300 transform hover:scale-102 hover:-translate-y-1
-                       
-                        flex flex-col items-center justify-start text-center md:min-h-[120px] w-full
-                        
+                        group relative cursor-pointer overflow-hidden rounded-2xl md:p-5 p-2 lg:p-6 transition-all duration-300 transform hover:scale-102 hover:-translate-y-1
+                        ${
+                          isActive
+                            ? "bg-dolci-blue text-midnight-blue shadow-xl scale-102"
+                            : "bg-arctic-blue hover:bg-dolci-blue/50 text-gray-700 hover:text-midnight-blue hover:shadow-lg"
+                        }
+                        flex flex-col items-center justify-center text-center min-h-[120px] w-full border-2 
+                        ${
+                          isActive
+                            ? "border-dark-accent"
+                            : "border-transparent hover:border-dolci-blue/30"
+                        }
                       `}
                   >
                     <IconComponent
@@ -115,10 +119,10 @@ const Menu = () => {
                     <span className="font-montserrat font-medium text-sm leading-tight">
                       {category.name}
                     </span>
+                    {isActive && (
+                      <div className="absolute bottom-0 left-0 right-0 h-1 bg-dark-accent rounded-full"></div>
+                    )}
                   </button>
-                  {isActive && (
-                    <div className="absolute bottom-0 left-0 right-0 h-1 bg-dark-accent rounded-full"></div>
-                  )}
                 </div>
               );
             })}
@@ -131,6 +135,15 @@ const Menu = () => {
 
           return (
             <div key={category.id} className="space-y-8">
+              {/* <div className="text-center mb-8">
+                <h3 className="font-playfair text-3xl font-bold text-midnight-blue mb-2">
+                  {category.name}
+                </h3>
+                <p className="font-montserrat text-gray-600 text-lg">
+                  {category.description}
+                </p>
+              </div> */}
+
               <div className="text-center mb-4">
                 <h3 className="font-playfair text-3xl font-bold text-midnight-blue mb-2 leading-normal">
                   {category.name}
@@ -282,44 +295,43 @@ const Menu = () => {
             </div>
           </div>
         </div>
-      </div>
 
-      {/* CTA Section */}
-      <div className="mt-24 text-center rounded-3xl p-10 lg:p-12 text-midnight-blue herobg">
-        <h3 className="font-playfair text-2xl lg:text-3xl font-bold mb-6">
-          Ready to Experience Dolci's Artisan Creations?
-        </h3>
-        <p className="font-montserrat text-midnight-blue/80 mb-10 max-w-3xl mx-auto text-base lg:text-lg">
-          Visit our café today and discover why we've been Bangalore's favorite
-          artisan destination since 2008. Every creation tells a story of
-          passion, tradition, and innovation.
-        </p>
+        {/* CTA Section */}
+        <div className="mt-24 text-center rounded-3xl p-10 lg:p-12 text-midnight-blue herobg">
+          <h3 className="font-playfair text-2xl lg:text-3xl font-bold mb-6">
+            Ready to Experience Dolci's Artisan Creations?
+          </h3>
+          <p className="font-montserrat text-midnight-blue/80 mb-10 max-w-3xl mx-auto text-base lg:text-lg">
+            Visit our café today and discover why we've been Bangalore's
+            favorite artisan destination since 2008. Every creation tells a
+            story of passion, tradition, and innovation.
+          </p>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <button
-            className="btn btn-primary text-lg px-8 py-4"
-            onClick={() =>
-              document
-                .getElementById("location")
-                ?.scrollIntoView({ behavior: "smooth" })
-            }
-          >
-            <Store strokeWidth={1.2} className="mr-2" /> Visit Our Café
-          </button>
-          <button
-            className="btn btn-primary text-lg px-8 py-4"
-            onClick={() =>
-              document
-                .getElementById("location")
-                ?.scrollIntoView({ behavior: "smooth" })
-            }
-          >
-            <SquareMenu strokeWidth={1.2} className="mr-2" />
-            Explore Menu
-          </button>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <button
+              className="btn btn-primary text-lg px-8 py-4"
+              onClick={() =>
+                document
+                  .getElementById("location")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
+            >
+              <Store strokeWidth={1.2} className="mr-2" /> Visit Our Café
+            </button>
+            <button
+              className="btn btn-primary text-lg px-8 py-4"
+              onClick={() =>
+                document
+                  .getElementById("location")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
+            >
+              <SquareMenu strokeWidth={1.2} className="mr-2" />
+              Explore Menu
+            </button>
+          </div>
         </div>
       </div>
-      
     </section>
   );
 };

@@ -5,33 +5,28 @@ import {
   Clock,
   Phone,
   Mail,
-  Facebook,
-  Instagram,
-  Linkedin,
+
 } from "lucide-react";
 import { locationData } from "../../../data/mock";
+import { useAssets } from "../../../hooks/useAssets";
 // import { locationData } from '../data/mock';
 
 const Location = () => {
+  const { images, icons } = useAssets();
   const [selectedLocation, setSelectedLocation] = useState(
     locationData.locations[2]
   ); // Default to Cunningham Road (main)
 
   const socialLinks = [
     {
-      icon: Facebook,
+      icon: "facebook",
       url: locationData.socialMedia.facebook,
       name: "Facebook",
     },
     {
-      icon: Instagram,
+      icon: "instapng",
       url: locationData.socialMedia.instagram,
       name: "Instagram",
-    },
-    {
-      icon: Linkedin,
-      url: locationData.socialMedia.linkedin,
-      name: "LinkedIn",
     },
   ];
 
@@ -121,12 +116,12 @@ const Location = () => {
                 <button
                   key={location.id}
                   onClick={() => setSelectedLocation(location)}
-                  className="btn btn-primary text-lg px-8 py-4"
+                  className="btn btn-primary text-lg px-8 py-4 min-w-70"
                 >
                   <MapPin className="mr-2 h-5 w-5 flex-shrink-0" />
                   {location.name}
                   {location.isMain && (
-                    <span className="ml-2 text-xs bg-dark-accent text-midnight-blue px-2 py-0.5 rounded-full">
+                    <span className="ml-2  text-xs bg-dark-accent text-midnight-blue px-2 py-0.5 rounded-full">
                       Main
                     </span>
                   )}
@@ -190,15 +185,16 @@ const Location = () => {
                   </p>
                   <div className="flex space-x-4">
                     {socialLinks.map((social, index) => {
-                      const IconComponent = social.icon;
+                      // const IconComponent = social.icon;
                       return (
                         <button
                           key={index}
-                          className="btn-secondary min-h-[48px] w-[48px] p-3 text-dolci-blue hover:bg-dolci-blue hover:text-midnight-blue"
+                          className="hover:bg-gray-50 w-12 p-1 text-dolci-blue cursor-pointer"
                           onClick={() => window.open(social.url, "_blank")}
                           title={social.name}
                         >
-                          <IconComponent className="h-5 w-5 flex-shrink-0" />
+                          {/* <IconComponent className="h-5 w-5 flex-shrink-0" /> */}
+                          <img src={icons[social.icon]} alt="" className="" />
                         </button>
                       );
                     })}
@@ -214,30 +210,32 @@ const Location = () => {
                     {/* Zomato */}
                     {selectedLocation.zomato && (
                       <button
-                        className="btn-secondary min-h-[48px] px-4 text-dolci-blue hover:bg-dolci-blue hover:text-midnight-blue flex items-center"
+                        className="px-4 bg-gray-50 flex items-center cursor-pointer"
                         onClick={() =>
                           window.open(selectedLocation.zomato, "_blank")
                         }
                         title="Order on Zomato"
                       >
-                        <span className="font-montserrat font-semibold text-sm">
+                        <img src={images.zomato} alt="" className="w-20" />
+                        {/* <span className="font-montserrat font-semibold text-sm">
                           Zomato
-                        </span>
+                        </span> */}
                       </button>
                     )}
 
                     {/* Swiggy */}
                     {selectedLocation.swiggy && (
                       <button
-                        className="btn-secondary min-h-[48px] px-4 text-dolci-blue hover:bg-dolci-blue hover:text-midnight-blue flex items-center"
+                        className="px-4 bg-gray-50 flex items-center cursor-pointer"
                         onClick={() =>
                           window.open(selectedLocation.swiggy, "_blank")
                         }
                         title="Order on Swiggy"
                       >
-                        <span className="font-montserrat font-semibold text-sm">
+                        {/* <span className="font-montserrat font-semibold text-sm">
                           Swiggy
-                        </span>
+                        </span> */}
+                        <img src={images.swiggy} alt="" className="w-20" />
                       </button>
                     )}
                   </div>

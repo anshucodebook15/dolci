@@ -16,9 +16,10 @@ const HeaderTwo = () => {
     { name: "About", href: "/#about" },
     { name: "Menu", href: "/#menu" },
     { name: "Gallery", href: "/#gallery" },
-    { name: "Blog", href: "/blog" },
-    { name: "FAQ", href: "/#faq" },
+    { name: "B2B", href: "/b2b" },
+    // { name: "FAQ", href: "/#faq" },
     { name: "Location", href: "/#location" },
+    { name: "Directors", href: "/directors" },
   ];
 
   useEffect(() => {
@@ -74,7 +75,7 @@ const HeaderTwo = () => {
                 <button
                   key={item.name}
                   onClick={() => scrollToSection(item.href)}
-                  className={`font-montserrat font-medium transition-colors duration-300 ${
+                  className={`cursor-pointer font-montserrat font-medium transition-colors duration-300 ${
                     isScrolled
                       ? "text-gray-700 hover:text-midnight-blue"
                       : // : "text-white hover:text-dolci-blue"
@@ -136,7 +137,7 @@ const HeaderTwo = () => {
           {/* Mobile Menu Button */}
           <button
             className={`lg:hidden p-2 ${
-              isScrolled ? "text-gray-700" : "text-white"
+              isScrolled ? "text-gray-700" : "text-gray-700"
             } `}
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >

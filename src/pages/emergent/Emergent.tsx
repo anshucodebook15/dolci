@@ -7,7 +7,6 @@ import Testimonials from "./components/Testimonials";
 import Location from "./components/Location";
 import Hero from "./components/Hero";
 
-
 // const Hero = () => {
 //   return (
 //     <section

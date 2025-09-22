@@ -5,8 +5,8 @@ import {
   Phone,
   Mail,
   Clock,
-  Facebook,
-  Instagram,
+  // Facebook,
+  // Instagram,
   Heart,
 } from "lucide-react";
 
@@ -20,18 +20,18 @@ const Footer: React.FC = () => {
     { name: "Contact", href: "/#location" },
   ];
 
-  const socialLinks = [
-    {
-      icon: Facebook,
-      url: "https://www.facebook.com/DolciDesserts",
-      name: "Facebook",
-    },
-    {
-      icon: Instagram,
-      url: "https://www.instagram.com/dolci_blr/",
-      name: "Instagram",
-    },
-  ];
+  // const socialLinks = [
+  //   {
+  //     icon: Facebook,
+  //     url: "https://www.facebook.com/DolciDesserts",
+  //     name: "Facebook",
+  //   },
+  //   {
+  //     icon: Instagram,
+  //     url: "https://www.instagram.com/dolci_blr/",
+  //     name: "Instagram",
+  //   },
+  // ];
 
   const scrollToSection = (href: string) => {
     if (href.startsWith("/#")) {
@@ -46,20 +46,20 @@ const Footer: React.FC = () => {
     <footer className="bg-midnight-blue text-white">
       <div className="py-16">
         <div className="contain px-4 md:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-6">
             {/* Brand Section */}
-            <div className="space-y-4">
+            <div className="space-y-4 mr-4">
               <h3 className="font-playfair text-3xl font-bold text-dolci-blue">
                 Dolci
               </h3>
 
-              <p className="font-montserrat text-lg text-gray-300  max-w-3xl mx-auto">
+              <p className="font-montserrat text-[16px] text-gray-300  max-w-3xl mx-auto leading-6">
                 Where flavor meets ambience. Experience the perfect blend of
                 Greek-inspired café culture and handcrafted treats in the heart
                 of Bangalore.
               </p>
               <div className="flex space-x-4">
-                {socialLinks.map((social, index) => {
+                {/* {socialLinks.map((social, index) => {
                   const IconComponent = social.icon;
                   return (
                     <button
@@ -71,7 +71,7 @@ const Footer: React.FC = () => {
                       <IconComponent className="h-4 w-4 flex-shrink-0" />
                     </button>
                   );
-                })}
+                })} */}
               </div>
             </div>
 
@@ -179,7 +179,8 @@ const Footer: React.FC = () => {
               <div className="flex items-center text-gray-400 text-sm">
                 <span className="font-montserrat">Made with</span>
                 <Heart className="h-4 w-4 mx-1 text-red-500 fill-current" />
-                <span className="font-montserrat">for coffee lovers</span>
+                {/* <span className="font-montserrat">for coffee lovers</span> */}
+                <span className="font-montserrat">by Asylum</span>
               </div>
             </div>
           </div>
