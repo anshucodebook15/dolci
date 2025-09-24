@@ -22,6 +22,11 @@ const Location = () => {
       url: locationData.socialMedia.instagram,
       name: "Instagram",
     },
+    {
+      icon: "linkedin",
+      url: locationData.socialMedia.linkedin,
+      name: "linkedin",
+    },
   ];
 
   const contactInfo = [

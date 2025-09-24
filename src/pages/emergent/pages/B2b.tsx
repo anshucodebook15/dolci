@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import LayoutTwo from "../layout/layoutTwo";
 import { BadgeCheck, ChefHat, Salad, Sparkle } from "lucide-react";
 import { useLocation } from "react-router";
+import { useAssets } from "../../../hooks/useAssets";
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -17,6 +18,8 @@ const ScrollToTop = () => {
 const B2b = () => {
   // const { images } = useAssets();
   const [showModal, setShowModal] = useState(false);
+
+  const { images } = useAssets();
 
   // Auto-open modal after 2s
   useEffect(() => {
@@ -39,7 +42,7 @@ const B2b = () => {
             </p>
             <div className="max-w-5xl mx-auto">
               <p className="font-montserrat text-[18px] text-gray-700 leading-relaxed mb-12">
-                At Dolci we power some of the biggest brands with our expertise
+                At Dolci, we power some of the biggest brands with our expertise
                 in baking and food innovation. As a trusted white label bakery
                 supplier and private label bakery manufacturer for B2B, we
                 create high-quality products that carry your brand name while
@@ -50,7 +53,7 @@ const B2b = () => {
             </div>
 
             <div className="contain max-w-6xl">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10 mb-12">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-10 mb-12">
                 <div className="bg-white rounded-xl p-6 flex flex-col items-center">
                   {/* <img
                   src={
@@ -63,7 +66,7 @@ const B2b = () => {
                   <div className="mb-3">
                     <BadgeCheck strokeWidth={1} size={60} />
                   </div>
-                  <h4 className="font-playfair-display text-xl font-bold mb-2 text-midnight-blue">
+                  <h4 className="font-playfair-display text-[18px] font-bold mb-2 text-midnight-blue">
                     Seasonal SKU development
                   </h4>
                 </div>
@@ -80,7 +83,7 @@ const B2b = () => {
                   <div className="mb-3">
                     <ChefHat strokeWidth={1} size={60} />
                   </div>
-                  <h4 className="font-playfair-display text-xl font-bold mb-2 text-midnight-blue">
+                  <h4 className="font-playfair-display text-[18px] font-bold mb-2 text-midnight-blue">
                     New recipe R&D
                   </h4>
                 </div>
@@ -96,7 +99,7 @@ const B2b = () => {
                   <div className="mb-3">
                     <Salad strokeWidth={1} size={60} />
                   </div>
-                  <h4 className="font-playfair-display text-xl font-bold mb-2 text-midnight-blue">
+                  <h4 className="font-playfair-display text-[18px] font-bold mb-2 text-midnight-blue">
                     Vegetarian, Eggless, Vegan options
                   </h4>
                 </div>
@@ -126,8 +129,8 @@ const B2b = () => {
 
             <div className="max-w-5xl mx-auto">
               <p className="font-montserrat text-[18px] text-gray-700 leading-relaxed mb-12">
-                We specialize in white label baked goods manufacturing. From
-                breads, cakes, cookies, and pastries to savory items, every
+                We specialise in white label baked goods manufacturing. From
+                breads, cakes, cookies, and pastries to savoury items, every
                 product can be exclusively branded under your label, with our
                 team ensuring taste, quality, and freshness.
               </p>
@@ -147,11 +150,11 @@ const B2b = () => {
             <div className="max-w-5xl mx-auto">
               <p className="font-montserrat text-[18px] text-gray-700 leading-relaxed mb-12">
                 Looking for innovation? Our custom bakery solutions in India are
-                designed for brands that want unique recipes, specialized
+                designed for brands that want unique recipes, specialised
                 product lines, or dietary-specific ranges like gluten-free and
                 vegan bakery items. We handle everything from concept to
-                scalable production while maintaining your brand&rsquo;s
-                signature quality.
+                scalable production while maintaining your brand’s signature
+                quality.
               </p>
             </div>
           </section>
@@ -267,10 +270,10 @@ const B2b = () => {
             </h2>
             <div className="max-w-5xl mx-auto">
               <p className="font-montserrat text-[18px] text-gray-700 leading-relaxed mb-12">
-                With three high-capacity production units, with over 7000 sq.ft
-                state of the art commissary Dolci is uniquely positioned to
-                offer a full spectrum of B2B food solutions. Beyond white
-                labeling, here’s what else we can do -
+                With three high-capacity production units, with{" "}
+                <b> over 7000 sq.ft state of the art commissary </b> Dolci is
+                uniquely positioned to offer a full spectrum of B2B food
+                solutions. Beyond white labeling, here’s what else we can do -
               </p>
             </div>
 
@@ -369,15 +372,15 @@ const B2b = () => {
               </p>
               <form className="space-y-4">
                 <input
+                  type="text"
+                  placeholder="Name"
+                  className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-midnight-blue focus:outline-none"
+                />
+                <input
                   type="tel"
                   placeholder="Phone Number"
                   className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-midnight-blue focus:outline-none"
                 />
-                {/* <input
-                  type="text"
-                  placeholder="Name"
-                  className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-midnight-blue focus:outline-none"
-                /> */}
                 <input
                   type="email"
                   placeholder="Email Address"
@@ -402,11 +405,13 @@ const B2b = () => {
           <div className="bg-white rounded-2xl shadow-xl max-w-md w-full relative overflow-hidden">
             {/* 🔹 Banner */}
             <div className="relative">
-              <img
-                src="https://img.freepik.com/free-vector/bakery-facebook-template_23-2149397709.jpg?semt=ais_incoming&w=740&q=80" // <-- replace with your bakery banner image
-                alt="Bakery Banner"
-                className="w-full h-20 object-cover"
-              />
+              <div className="w-full flex justify-center bg-dolci-blue py-1">
+                <img
+                  src={images.dolcilogo} // <-- replace with your bakery banner image
+                  alt="Bakery Banner"
+                  className="w-20 h-20 object-cover"
+                />
+              </div>
               {/* 🔹 Close button over banner */}
               <button
                 onClick={() => setShowModal(false)}
@@ -422,7 +427,8 @@ const B2b = () => {
                 Have a question?
               </h3>
               <p className="text-gray-600 text-sm mb-6 text-center">
-                Fill up the below credentials and we will get in touch with you ASAP!
+                Fill up the below credentials and we will get in touch with you
+                ASAP!
               </p>
               <form className="space-y-4">
                 <input

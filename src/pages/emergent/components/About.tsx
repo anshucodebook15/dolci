@@ -9,7 +9,7 @@ const About = () => {
       icon: <Heart strokeWidth={1} className="w-10 h-10" />,
       title: "Made with Love",
       description:
-        "Every treat is handcrafted with passion and premium ingredients",
+        "Every dishes is handcrafted with passion and premium ingredients",
     },
     {
       icon: <Coffee strokeWidth={1} className="w-10 h-10" />,

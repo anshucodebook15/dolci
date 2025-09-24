@@ -113,6 +113,10 @@ body {
       /* @apply bg-[url('../../../assets/backgrounds/herobg.svg')] bg-no-repeat bg-cover bg-center; */
       @apply bg-[url('../../assets/backgrounds/herobg.svg')] bg-no-repeat bg-cover bg-center;
     }
+    .dbg {
+      /* @apply bg-[url('../../../assets/backgrounds/herobg.svg')] bg-no-repeat bg-cover bg-center; */
+      @apply bg-[url('../../assets/backgrounds/dbg.svg')] bg-no-repeat bg-cover bg-center;
+    }
   }
 }
 

@@ -55,7 +55,7 @@ const Footer: React.FC = () => {
 
               <p className="font-montserrat text-[16px] text-gray-300  max-w-3xl mx-auto leading-6">
                 Where flavor meets ambience. Experience the perfect blend of
-                European-inspired café culture and handcrafted treats in the
+                European-inspired café culture and handcrafted dishes in the
                 heart of Bangalore.
               </p>
               <div className="flex space-x-4">
@@ -147,10 +147,10 @@ const Footer: React.FC = () => {
                   <Clock className="h-5 w-5 text-dolci-blue flex-shrink-0" />
                   <div>
                     <p className="font-montserrat text-gray-300 text-sm">
-                      Weekdays
+                      weekdays (Mon-Fri)
                     </p>
                     <p className="font-montserrat text-white font-medium text-[16px]">
-                      8:00 AM - 10:00 PM
+                      weekend (Sat-Sun)
                     </p>
                   </div>
                 </div>

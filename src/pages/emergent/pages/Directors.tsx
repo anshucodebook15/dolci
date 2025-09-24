@@ -85,11 +85,11 @@ const Directors = () => {
     <div>
       <ScrollToTop />
       <LayoutTwo>
-        <div className="py-20"></div>
+        <div className="mb-30"></div>
 
-        <section className="contain mb-20 relative herobg">
+        <section className="contain mb-20 relative dbg py-10">
           {/* 🔹 Light overlay */}
-          <div className="absolute inset-0 bg-white/60 pointer-events-none"></div>
+          <div className="absolute inset-0 bg-white/95 pointer-events-none"></div>
 
           {/* 🔹 Content on top of overlay */}
           <div className="relative z-10 text-center">

@@ -67,7 +67,7 @@ const Delights = () => {
               // variant={
               //     selectedCategory === category.id ? 'default' : 'secondary'
               // }
-              className={`cursor-pointer px-6 py-2 text-sm font-montserrat font-medium transition-all duration-300 ${
+              className={`cursor-pointer px-6 py-2 text-sm font-montserrat font-medium transition-all duration-300 rounded-[10px] ${
                 selectedCategory === category.id
                   ? "bg-dolci-blue text-midnight-blue hover:bg-dark-accent"
                   : "bg-gray-200 text-gray-700 hover:bg-arctic-blue hover:text-midnight-blue"
@@ -82,7 +82,7 @@ const Delights = () => {
         {/* Gallery Grid */}
         <div className="grid-safe grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {filteredImages.map((image, _) => (
-            <div key={image.id}>
+            <div key={image.id} className="overflow-hidden rounded-xl">
               <div className="safe-spacing">
                 <div className="cursor-pointer overflow-hidden border-0 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 hover:scale-102 h-full">
                   <div className="relative overflow-hidden w-full h-60">
@@ -95,8 +95,8 @@ const Delights = () => {
                     <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-all duration-300 flex items-center justify-center">
                       <ZoomIn className="h-8 w-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex-shrink-0" />
                     </div>
-                    <div className="absolute top-4 left-4">
-                      <div className="bg-white/90 text-midnight-blue font-montserrat font-medium capitalize">
+                    <div className="absolute top-4 left-4 ">
+                      <div className="bg-white/90 text-midnight-blue font-montserrat font-medium capitalize rounded-[5px] px-2">
                         {image.category}
                       </div>
                     </div>
