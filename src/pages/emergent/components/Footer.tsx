@@ -147,10 +147,10 @@ const Footer: React.FC = () => {
                   <Clock className="h-5 w-5 text-dolci-blue flex-shrink-0" />
                   <div>
                     <p className="font-montserrat text-gray-300 text-sm">
-                      weekdays (Mon-Fri)
+                      Weekdays ( Mon-Fri )
                     </p>
                     <p className="font-montserrat text-white font-medium text-[16px]">
-                      weekend (Sat-Sun)
+                      8:00 AM - 10:00 PM
                     </p>
                   </div>
                 </div>
@@ -158,7 +158,7 @@ const Footer: React.FC = () => {
                   <Clock className="h-5 w-5 text-dolci-blue flex-shrink-0" />
                   <div>
                     <p className="font-montserrat text-gray-300 text-sm">
-                      Weekends
+                      Weekend ( Sat-Sun )
                     </p>
                     <p className="font-montserrat text-white font-medium text-[16px]">
                       8:00 AM - 11:00 PM

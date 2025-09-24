@@ -331,13 +331,13 @@ const B2b = () => {
 
           <div className="contain border-[1px] border-gray-200 mb-16"></div>
 
-          <section className="text-center bg-white">
-            <h3 className="font-playfair-display text-3xl md:text-3xl font-bold text-midnight-blue mb-6">
+          <section className=" bg-white">
+            <h3 className="font-playfair-display text-3xl md:text-3xl font-bold text-midnight-blue mb-8 text-center">
               Why Partner With Dolci?
             </h3>
 
-            <div className="max-w-5xl mx-auto">
-              <ul className="font-montserrat text-[18px] text-gray-700 leading-relaxed mb-12 ">
+            <div className="md:max-w-3xl mx-auto px-4">
+              <ul className="font-montserrat text-[18px] text-gray-700 leading-relaxed mb-12 list-disc ml-14">
                 <li>
                   Expertise in <strong>white label bakery partnerships</strong>{" "}
                   in India
