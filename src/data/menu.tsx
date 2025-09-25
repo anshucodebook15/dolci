@@ -90,7 +90,7 @@ export const completeMenuData = {
           description:
             "Coffee-soaked sponge layered with mascarpone cream - irresistibly Italian",
           price: "₹220",
-          category: "veg",
+          category: "egg",
           image:
             "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764524/Dolci_Square_Web-Images_0017_Dolci_s-Signature-Tiramisu-Square_1_ryxknl.webp",
         },
@@ -100,7 +100,7 @@ export const completeMenuData = {
           description:
             "Delicate sponge layered with earthy matcha and creamy mascarpone",
           price: "₹349",
-          category: "veg",
+          category: "egg",
           image:
             "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764524/Dolci_Square_Web-Images_0016_Matcha-Mascarpone-Cake-Square_hbqc5n.webp",
         },

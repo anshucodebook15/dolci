@@ -160,7 +160,7 @@ const Menu = () => {
                         />
 
                         <div className="absolute top-4 right-4">
-                          <div className="bg-dolci-blue text-midnight-blue font-bold text-lg px-3 py-1 rounded-[5px]">
+                          <div className="bg-dolci-blue text-midnight-blue font-semibold text-[16px] px-3 py-1 rounded-[5px]">
                             {item.price}
                           </div>
                         </div>
