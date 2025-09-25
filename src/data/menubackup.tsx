@@ -1,5 +1,3 @@
-// Complete Dolci Menu from Google Doc
-
 export const completeMenuData = {
   categories: [
     {
@@ -11,41 +9,41 @@ export const completeMenuData = {
           id: 1,
           name: "French Classic Croissant",
           description:
-            "Plain butter croissant is a timeless choice, perfect for savouring the pure unadulterated taste of the airy, flaky pastry - a taste of Parisan morning right here",
+            "Plain butter croissant - a taste of Parisian morning right here",
           price: "₹225",
           category: "veg",
           image:
-            "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764550/Dolci_Square_Web-Images_0024_Peach-_-Berry-Pocket-Square-_wo-fork_mnddvc.webp",
+            "https://images.unsplash.com/photo-1741092965095-1f342f32d50d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2Mzl8MHwxfHNlYXJjaHwzfHxhcnRpc2FuJTIwcGFzdHJpZXN8ZW58MHx8fHwxNzU1MzE1NDQzfDA&ixlib=rb-4.1.0&q=85",
         },
         {
           id: 2,
           name: "Tiramisu Croissant",
           description:
-            "The classic croissant takes on a dessert twist with velvety tiramisu filling and a dusting of cocoa ",
+            "Classic croissant with velvety tiramisu filling and cocoa dusting",
           price: "₹235",
           category: "veg",
           image:
-            "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764551/Dolci_Square_Web-Images_0025_Peach-_-Berry-Pocket-Square-_wo-fork_y9nvpt.webp",
+            "https://images.unsplash.com/photo-1622941367239-8acd68fa946d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2Mzl8MHwxfHNlYXJjaHwxfHxhcnRpc2FuJTIwcGFzdHJpZXN8ZW58MHx8fHwxNzU1MzE1NDQzfDA&ixlib=rb-4.1.0&q=85",
         },
         {
           id: 3,
           name: "Peach & Berry Pocket",
           description:
-            "A golden delight cradling a luscious filling that marries the sweetness of ripe peaches with the tartness of mixed berries, slow baked and dusted generously with snow sugar",
+            "Golden pastry with ripe peaches and mixed berries, dusted with snow sugar",
           price: "₹229",
           category: "veg",
           image:
-            "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764548/Dolci_Square_Web-Images_0022_Peach-_-Berry-Pocket-Square-_wo-fork_zidwgh.webp",
+            "https://images.unsplash.com/photo-1736520537688-1f1f06b71605?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2Mzl8MHwxfHNlYXJjaHwyfHxhcnRpc2FuJTIwcGFzdHJpZXN8ZW58MHx8fHwxNzU1MzE1NDQzfDA&ixlib=rb-4.1.0&q=85",
         },
         {
           id: 4,
           name: "Pain Au Chocolat",
           description:
-            "A quintessential French delight that beckons with its golden hue and flaky layers; bite into the pastry to reveal a rich, velvety center of premium dark chocolate",
+            "Quintessential French pastry with rich, velvety premium dark chocolate center",
           price: "₹239",
           category: "veg",
           image:
-            "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764548/Dolci_Square_Web-Images_0021_Pain-Au-Chocolat-Square_kbairc.webp",
+            "https://images.pexels.com/photos/33456157/pexels-photo-33456157.jpeg",
         },
         {
           id: 5,
@@ -55,7 +53,7 @@ export const completeMenuData = {
           price: "₹215",
           category: "veg",
           image:
-            "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764547/Dolci_Square_Web-Images_0020_Raspberry-Cruffin-Square_wdwg2o.webp",
+            "https://images.unsplash.com/photo-1622941367239-8acd68fa946d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2Mzl8MHwxfHNlYXJjaHwxfHxhcnRpc2FuJTIwcGFzdHJpZXN8ZW58MHx8fHwxNzU1MzE1NDQzfDA&ixlib=rb-4.1.0&q=85",
         },
       ],
     },
@@ -72,7 +70,7 @@ export const completeMenuData = {
           price: "₹235",
           category: "veg",
           image:
-            "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764524/Dolci_Square_Web-Images_0019_Sticky-Walnut-Cake-Square_eyrj7b.webp",
+            "https://images.unsplash.com/photo-1736520537688-1f1f06b71605?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2Mzl8MHwxfHNlYXJjaHwyfHxhcnRpc2FuJTIwcGFzdHJpZXN8ZW58MHx8fHwxNzU1MzE1NDQzfDA&ixlib=rb-4.1.0&q=85",
         },
         {
           id: 7,
@@ -82,27 +80,27 @@ export const completeMenuData = {
           price: "₹220",
           category: "veg",
           image:
-            "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764524/Dolci_Square_Web-Images_0018_Triple-Chocolate-Cake-Square_bt4lbv.webp",
+            "https://images.unsplash.com/photo-1622941367239-8acd68fa946d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2Mzl8MHwxfHNlYXJjaHwxfHxhcnRpc2FuJTIwcGFzdHJpZXN8ZW58MHx8fHwxNzU1MzE1NDQzfDA&ixlib=rb-4.1.0&q=85",
         },
         {
           id: 8,
           name: "Dolci's Signature Tiramisu",
           description:
             "Coffee-soaked sponge layered with mascarpone cream - irresistibly Italian",
-          price: "₹220",
+          price: "₹285",
           category: "veg",
           image:
-            "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764524/Dolci_Square_Web-Images_0017_Dolci_s-Signature-Tiramisu-Square_1_ryxknl.webp",
+            "https://images.unsplash.com/photo-1622941367239-8acd68fa946d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2Mzl8MHwxfHNlYXJjaHwxfHxhcnRpc2FuJTIwcGFzdHJpZXN8ZW58MHx8fHwxNzU1MzE1NDQzfDA&ixlib=rb-4.1.0&q=85",
         },
         {
           id: 9,
           name: "Matcha Mascarpone Cake",
           description:
             "Delicate sponge layered with earthy matcha and creamy mascarpone",
-          price: "₹349",
+          price: "₹245",
           category: "veg",
           image:
-            "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764524/Dolci_Square_Web-Images_0016_Matcha-Mascarpone-Cake-Square_hbqc5n.webp",
+            "https://images.unsplash.com/photo-1736520537688-1f1f06b71605?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2Mzl8MHwxfHNlYXJjaHwyfHxhcnRpc2FuJTIwcGFzdHJpZXN8ZW58MHx8fHwxNzU1MzE1NDQzfDA&ixlib=rb-4.1.0&q=85",
         },
       ],
     },
@@ -116,10 +114,10 @@ export const completeMenuData = {
           name: "Fresh Cream Truffles",
           description:
             "Luxurious truffles with silky fresh cream, coated in rich chocolate",
-          price: "₹65",
+          price: "₹55",
           category: "veg",
           image:
-            "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764546/Dolci_Square_Web-Images_0014_2_Fresh-Cream-Truffles-Square_iihq0j.webp",
+            "https://images.pexels.com/photos/33456157/pexels-photo-33456157.jpeg",
         },
         {
           id: 11,
@@ -129,27 +127,27 @@ export const completeMenuData = {
           price: "₹329",
           category: "egg",
           image:
-            "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764545/Dolci_Square_Web-Images_0013_Tres-Leches-Coconut-Square_wndrox.webp",
+            "https://images.unsplash.com/photo-1622941367239-8acd68fa946d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2Mzl8MHwxfHNlYXJjaHwxfHxhcnRpc2FuJTIwcGFzdHJpZXN8ZW58MHx8fHwxNzU1MzE1NDQzfDA&ixlib=rb-4.1.0&q=85",
         },
         {
           id: 12,
           name: "Mango Pavlova",
           description:
             "Crisp meringue shell with clouds of cream and golden mango",
-          price: "₹220",
+          price: "₹255",
           category: "egg",
           image:
-            "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764544/Dolci_Square_Web-Images_0011_Mango-Pavlova-Square_qfh621.webp",
+            "https://images.unsplash.com/photo-1741092965095-1f342f32d50d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2Mzl8MHwxfHNlYXJjaHwzfHxhcnRpc2FuJTIwcGFzdHJpZXN8ZW58MHx8fHwxNzU1MzE1NDQzfDA&ixlib=rb-4.1.0&q=85",
         },
         {
           id: 13,
           name: "Fresh Mango Tart",
           description:
             "Juicy mango slices on golden tart crust with smooth cream",
-          price: "₹250",
+          price: "₹225",
           category: "veg",
           image:
-            "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764543/Dolci_Square_Web-Images_0010_Fresh-Mango-Tart-Square_xsgmyn.webp",
+            "https://images.unsplash.com/photo-1736520537688-1f1f06b71605?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2Mzl8MHwxfHNlYXJjaHwyfHxhcnRpc2FuJTIwcGFzdHJpZXN8ZW58MHx8fHwxNzU1MzE1NDQzfDA&ixlib=rb-4.1.0&q=85",
         },
       ],
     },
@@ -163,30 +161,30 @@ export const completeMenuData = {
           name: "Basque Cheese Cake",
           description:
             "Burnt Basque cheesecake with natural caramel bitterness and fruit compote",
-          price: "₹250",
+          price: "₹289",
           category: "egg",
           image:
-            "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764524/Dolci_Square_Web-Images_0009_Basque-Cheese-Cake-Square_e62vtw.webp",
+            "https://images.unsplash.com/photo-1622941367239-8acd68fa946d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2Mzl8MHwxfHNlYXJjaHwxfHxhcnRpc2FuJTIwcGFzdHJpZXN8ZW58MHx8fHwxNzU1MzE1NDQzfDA&ixlib=rb-4.1.0&q=85",
         },
         {
           id: 15,
           name: "Oreo Cheese Cake",
           description:
             "Creamy cheesecake with crushed Oreo cookies on buttery Oreo crust",
-          price: "₹210",
+          price: "₹209",
           category: "veg",
           image:
-            "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764524/Dolci_Square_Web-Images_0008_Oreo-Cheese-Cake-Square_waqshz.webp",
+            "https://images.unsplash.com/photo-1736520537688-1f1f06b71605?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2Mzl8MHwxfHNlYXJjaHwyfHxhcnRpc2FuJTIwcGFzdHJpZXN8ZW58MHx8fHwxNzU1MzE1NDQzfDA&ixlib=rb-4.1.0&q=85",
         },
         {
           id: 16,
           name: "Biscoff Cheese Cake",
           description:
             "Luscious cheesecake with warm Biscoff flavors and Biscoff spread drizzle",
-          price: "₹225",
+          price: "₹229",
           category: "veg",
           image:
-            "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764524/Dolci_Square_Web-Images_0007_Biscoff-Cheese-Cake-Square_kzeisu.webp",
+            "https://images.pexels.com/photos/33456157/pexels-photo-33456157.jpeg",
         },
       ],
     },
@@ -200,39 +198,40 @@ export const completeMenuData = {
           name: "Cappuccino",
           description:
             "Traditional Italian masterpiece of smooth espresso, steamed milk and foam",
-          price: "₹220",
+          price: "₹185",
           category: "drink",
           image:
-            "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764536/Dolci_Square_Web-Images_0002_Cappuccino-Square_fgr6qb.webp",
+            "https://images.unsplash.com/photo-1509042239860-f550ce710b93?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDN8MHwxfHNlYXJjaHw0fHxjb2ZmZWV8ZW58MHx8fHwxNzU1MzE1NDQ4fDA&ixlib=rb-4.1.0&q=85",
         },
         {
           id: 18,
           name: "Caffe Latte",
           description:
             "Comforting drink with silky layer of foam as the real highlight",
-          price: "₹235",
+          price: "₹195",
           category: "drink",
           image:
-            "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764535/Dolci_Square_Web-Images_0001_Caffe-Latte-square_rpomhy.webp",
+            "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDN8MHwxfHNlYXJjaHwzfHxjb2ZmZWV8ZW58MHx8fHwxNzU1MzE1NDQ4fDA&ixlib=rb-4.1.0&q=85",
         },
         {
           id: 19,
-          name: "Hot Chocolate",
-          description: "A warm indulgent sip of rich, velvety chocolate bliss",
-          price: "₹275",
+          name: "Popcorn Latte",
+          description:
+            "Playful twist on classic latte with buttery popcorn flavor",
+          price: "₹225",
           category: "drink",
           image:
-            "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764537/Hot_Chocolate_Square_alv4zz.webp",
+            "https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg",
         },
         {
           id: 20,
           name: "Caffe Mocha",
           description:
             "Invigorating blend of coffee and chocolate topped with chocolate sauce",
-          price: "₹250",
+          price: "₹215",
           category: "drink",
           image:
-            "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764535/Dolci_Square_Web-Images_0000_Cafe-Mocha-Square_vbqpfu.webp",
+            "https://images.unsplash.com/photo-1506619216599-9d16d0903dfd?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDN8MHwxfHNlYXJjaHwyfHxjb2ZmZWV8ZW58MHx8fHwxNzU1MzE1NDQ4fDA&ixlib=rb-4.1.0&q=85",
         },
       ],
     },
@@ -245,48 +244,29 @@ export const completeMenuData = {
           id: 21,
           name: "Classic Cold Brew",
           description: "Bold and smooth brew with refreshingly crisp coffee",
-          price: "₹240",
+          price: "₹165",
           category: "drink",
           image:
-            "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764537/Classic_Cold_Brew_Square_qqrzwv.webp",
+            "https://images.unsplash.com/photo-1506619216599-9d16d0903dfd?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDN8MHwxfHNlYXJjaHwyfHxjb2ZmZWV8ZW58MHx8fHwxNzU1MzE1NDQ4fDA&ixlib=rb-4.1.0&q=85",
         },
         {
           id: 22,
           name: "Iced Americano",
           description: "Refreshing classic with rich espresso over ice",
-          price: "₹210",
+          price: "₹155",
           category: "drink",
           image:
-            "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764538/Iced_Americano_Square_rzhld2.webp",
+            "https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg",
         },
         {
           id: 23,
           name: "Vietnamese Cold Coffee",
           description:
             "Rich iced coffee with velvety condensed milk - authentic Vietnamese style",
-          price: "₹290",
+          price: "₹195",
           category: "drink",
           image:
-            "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764540/Vietnamese_Cold_Coffee_Sqauare_fkboyz.webp",
-        },
-        {
-          id: 24,
-          name: "Orange Cold Brew",
-          description: "Cold brewed coffee with a zesty hint of orange ",
-          price: "275",
-          category: "drink",
-          image:
-            "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764539/Orange_Cold_Brew_Square_degucl.webp",
-        },
-        {
-          id: 26,
-          name: "Popcorn Latte",
-          description:
-            "A playful twist on the classic latte, combining buttery popcorn flavor with coffee ",
-          price: "275",
-          category: "drink",
-          image:
-            "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764538/Dolci_Square_Web-Images_0002_Popcorn_Latte-Square_cyky7f.webp",
+            "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDN8MHwxfHNlYXJjaHwzfHxjb2ZmZWV8ZW58MHx8fHwxNzU1MzE1NDQ4fDA&ixlib=rb-4.1.0&q=85",
         },
       ],
     },
@@ -295,16 +275,16 @@ export const completeMenuData = {
       name: "Gourmet Sandwiches",
       description: "Artisan sandwiches on premium breads",
       items: [
-        // {
-        //   id: 24,
-        //   name: "Mediterranean Grilled Veg Sandwich",
-        //   description:
-        //     "Char-grilled veggies, basil pesto, cheddar cheese, mustard cress and lettuce",
-        //   price: "₹309",
-        //   category: "veg",
-        //   image:
-        //     "https://images.unsplash.com/photo-1741092965095-1f342f32d50d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2Mzl8MHwxfHNlYXJjaHwzfHxhcnRpc2FuJTIwcGFzdHJpZXN8ZW58MHx8fHwxNzU1MzE1NDQzfDA&ixlib=rb-4.1.0&q=85",
-        // },
+        {
+          id: 24,
+          name: "Mediterranean Grilled Veg Sandwich",
+          description:
+            "Char-grilled veggies, basil pesto, cheddar cheese, mustard cress and lettuce",
+          price: "₹309",
+          category: "veg",
+          image:
+            "https://images.unsplash.com/photo-1741092965095-1f342f32d50d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2Mzl8MHwxfHNlYXJjaHwzfHxhcnRpc2FuJTIwcGFzdHJpZXN8ZW58MHx8fHwxNzU1MzE1NDQzfDA&ixlib=rb-4.1.0&q=85",
+        },
         {
           id: 25,
           name: "Dolci Club Egg Sandwich",
@@ -313,27 +293,17 @@ export const completeMenuData = {
           price: "₹399",
           category: "egg",
           image:
-            "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764534/Dolci_Square_Web-Images_0005_Protein-Power-House-Burger-Square_ioqh9o.webp",
+            "https://images.unsplash.com/photo-1622941367239-8acd68fa946d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2Mzl8MHwxfHNlYXJjaHwxfHxhcnRpc2FuJTIwcGFzdHJpZXN8ZW58MHx8fHwxNzU1MzE1NDQzfDA&ixlib=rb-4.1.0&q=85",
         },
         {
           id: 26,
           name: "Cheesy Corn, Spinach & Jalapeno",
           description:
             "Slow cooked spinach with golden corn, cheese cream sauce and jalapenos",
-          price: "₹275",
+          price: "₹239",
           category: "veg",
           image:
-            "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764534/Dolci_Square_Web-Images_0004_Protein-Power-House-Burger-Square_hkldkj.webp",
-        },
-        {
-          id: 27,
-          name: "Protein Power House Burger ",
-          description:
-            "The perfect protein burger with a layer of creamy hummus topped with chunky falafel and creamy avocado",
-          price: "419",
-          category: "veg",
-          image:
-            "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764533/Dolci_Square_Web-Images_0003_Protein-Power-House-Burger-Squaren_t69a72.webp",
+            "https://images.unsplash.com/photo-1736520537688-1f1f06b71605?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2Mzl8MHwxfHNlYXJjaHwyfHxhcnRpc2FuJTIwcGFzdHJpZXN8ZW58MHx8fHwxNzU1MzE1NDQzfDA&ixlib=rb-4.1.0&q=85",
         },
       ],
     },
@@ -347,39 +317,29 @@ export const completeMenuData = {
           name: "Pesto Penne Alla Genovese",
           description:
             "Pasta tossed in vibrant basil pesto with garlic, pine nuts, and Parmigiano",
-          price: "₹360",
+          price: "₹375",
           category: "veg",
           image:
-            "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764543/Pesto_Pasta_Square_fgm66b.webp",
+            "https://images.unsplash.com/photo-1741092965095-1f342f32d50d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2Mzl8MHwxfHNlYXJjaHwzfHxhcnRpc2FuJTIwcGFzdHJpZXN8ZW58MHx8fHwxNzU1MzE1NDQzfDA&ixlib=rb-4.1.0&q=85",
         },
         {
           id: 28,
           name: "Arrabbiata",
           description:
             "Al dente pasta in slow-cooked spicy arrabbiata sauce with fresh basil",
-          price: "₹360",
+          price: "₹375",
           category: "veg",
           image:
-            "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764541/Arrabiatta_Square_brheu0.webp",
+            "https://images.unsplash.com/photo-1622941367239-8acd68fa946d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2Mzl8MHwxfHNlYXJjaHwxfHxhcnRpc2FuJTIwcGFzdHJpZXN8ZW58MHx8fHwxNzU1MzE1NDQzfDA&ixlib=rb-4.1.0&q=85",
         },
         {
           id: 29,
           name: "Creamy Alfredo",
           description: "Creamy white sauce pasta with Parmesan and garlic",
-          price: "₹360",
+          price: "₹375",
           category: "veg",
           image:
-            "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764541/Creamy_Alfredo_Square_smlfnu.webp",
-        },
-        {
-          id: 30,
-          name: "Aglio e olio",
-          description:
-            "Al dente spaghetti tossed in golden garlic oil and chili flakes -simple, bold, and timeless ",
-          price: "₹340",
-          category: "veg",
-          image:
-            "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764540/Aglio_e_olio_Pasta_Square_nvst9l.webp",
+            "https://images.unsplash.com/photo-1736520537688-1f1f06b71605?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2Mzl8MHwxfHNlYXJjaHwyfHxhcnRpc2FuJTIwcGFzdHJpZXN8ZW58MHx8fHwxNzU1MzE1NDQzfDA&ixlib=rb-4.1.0&q=85",
         },
       ],
     },

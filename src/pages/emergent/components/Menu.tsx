@@ -28,6 +28,10 @@ import { completeMenuData } from "../../../data/menu";
 //   }[];
 // };
 
+// const DriveImgView = (path = "v1758733182/download_zjsopj.webp") => {
+//   return `https://res.cloudinary.com/dq7bzydqz/image/upload/${path}`;
+// };
+
 const Menu = () => {
   const [selectedCategory, setSelectedCategory] = useState("viennoiserie");
 
@@ -154,6 +158,7 @@ const Menu = () => {
                           alt={item.name}
                           className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
                         />
+
                         <div className="absolute top-4 right-4">
                           <div className="bg-dolci-blue text-midnight-blue font-bold text-lg px-3 py-1 rounded-[5px]">
                             {item.price}
@@ -169,8 +174,7 @@ const Menu = () => {
                               <Leaf className="h-3 w-3 mr-1" />
                             )}
                             <span className="font-bold text-[10px]">
-
-                            {item.category.toUpperCase()}
+                              {item.category.toUpperCase()}
                             </span>
                           </div>
                         </div>
@@ -224,7 +228,7 @@ const Menu = () => {
                 <div className="relative overflow-hidden rounded-3xl aspect-square shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 hover:scale-102 p-2">
                   <div className="relative overflow-hidden rounded-2xl w-full h-full">
                     <img
-                      src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwxfHx0aXJhbWlzdXxlbnwwfHx8fDE3NTU0NzI1OTJ8MA&ixlib=rb-4.1.0&q=85"
+                      src="https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764524/Dolci_Square_Web-Images_0017_Dolci_s-Signature-Tiramisu-Square_1_ryxknl.webp"
                       alt="Dolci's Signature Tiramisu"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                       loading="lazy"
@@ -246,7 +250,7 @@ const Menu = () => {
                 <div className="relative overflow-hidden rounded-3xl aspect-square shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 hover:scale-102 p-2">
                   <div className="relative overflow-hidden rounded-2xl w-full h-full">
                     <img
-                      src="https://images.unsplash.com/photo-1691480162735-9b91238080f6?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzl8MHwxfHNlYXJjaHwxfHxjcm9pc3NhbnR8ZW58MHx8fHwxNzU1NDcyNTk3fDA&ixlib=rb-4.1.0&q=85"
+                      src="https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764550/Dolci_Square_Web-Images_0024_Peach-_-Berry-Pocket-Square-_wo-fork_mnddvc.webp"
                       alt="French Classic Croissant"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                       loading="lazy"
@@ -269,7 +273,7 @@ const Menu = () => {
                 <div className="relative overflow-hidden rounded-3xl aspect-square shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 hover:scale-102 p-2">
                   <div className="relative overflow-hidden rounded-2xl w-full h-full">
                     <img
-                      src="https://images.unsplash.com/photo-1673974798330-23e8f4c9ae05?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHwxfHx0cmVzJTIwbGVjaGVzfGVufDB8fHx8MTc1NTQ3MjYwMnww&ixlib=rb-4.1.0&q=85"
+                      src="https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764544/Dolci_Square_Web-Images_0012_2_Tres-Leches-Coconut-Square_dciurr.webp"
                       alt="Tres Leches Coconut Cake"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                       loading="lazy"
@@ -325,6 +329,11 @@ const Menu = () => {
           </button>
         </div>
       </div>
+
+      {/* <div className="div">
+        test
+        <img src="https://drive.google.com/uc?export=view&id=105aHoA5-XUs5eSxsSNpjvWaCaY-o5fJO" alt="" />
+      </div> */}
     </section>
   );
 };

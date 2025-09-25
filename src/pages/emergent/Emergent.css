@@ -117,6 +117,40 @@ body {
       /* @apply bg-[url('../../../assets/backgrounds/herobg.svg')] bg-no-repeat bg-cover bg-center; */
       @apply bg-[url('../../assets/backgrounds/dbg.svg')] bg-no-repeat bg-cover bg-center;
     }
+
+    /* .b2blist {
+      list-style-image: url("../../assets/icons/badge-check.svg");
+     
+    }
+
+    li::marker {
+    
+      text-align: middle !important;
+    } */
+
+    /* test */
+
+    .b2blist {
+      list-style: none; /* remove default bullet */
+      padding: 0;
+      margin: 0;
+    }
+
+    .b2blist li {
+      position: relative;
+      padding-left: 28px; /* space for icon */
+    }
+
+    .b2blist li::before {
+      content: url("../../assets/icons/badge-check.svg"); /* your custom bullet */
+      position: absolute;
+      left: 0;
+      top: 0.25em; /* adjust vertical alignment */
+      width: 18px; /* set icon size */
+      height: 18px;
+    }
+
+    /* /**end test / */
   }
 }
 

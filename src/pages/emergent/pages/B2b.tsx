@@ -206,7 +206,7 @@ const B2b = () => {
             <div className="contain max-w-6xl">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10 mb-12 justify-baseline item-start">
                 <div className="bg-white rounded-xl p-6 flex flex-col  items-center">
-                  <div className="mb-3 w-20 h-25 overflow-hidden">
+                  <div className="mb-1 w-18 h-25 overflow-hidden">
                     <img
                       src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/ITC_Limited_Logo.svg/1152px-ITC_Limited_Logo.svg.png"
                       alt=""
@@ -222,12 +222,8 @@ const B2b = () => {
                   </p>
                 </div>
                 <div className="bg-white rounded-xl p-6 flex flex-col items-center">
-                  <div className="mb-3 w-20 h-25 overflow-hidden">
-                    <img
-                      src="https://images.squarespace-cdn.com/content/v1/5a74702ce45a7cd601df944b/1660739795878-VG4Y90Q0C2KGN928E729/Chai+Point+Emblem+Logo-01.jpg?format=1000w"
-                      alt=""
-                      className="w-full"
-                    />
+                  <div className="mb-1 w-40 h-25 overflow-hidden">
+                    <img src={images.chai} />
                   </div>
                   <h4 className="font-playfair-display text-xl font-bold mb-2 text-midnight-blue">
                     Chai Point
@@ -238,7 +234,7 @@ const B2b = () => {
                   </p>
                 </div>
                 <div className="bg-white rounded-xl p-6 flex flex-col items-center">
-                  <div className="mb-3 w-20 h-25 overflow-hidden">
+                  <div className="mb-1 w-18 h-25 overflow-hidden">
                     <img
                       src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9z6mfk23rEhOHuEO2xTExlTNxuYInBVoS5A&s"
                       alt=""
@@ -336,25 +332,63 @@ const B2b = () => {
               Why Partner With Dolci?
             </h3>
 
-            <div className="md:max-w-3xl mx-auto px-4">
-              <ul className="font-montserrat text-[18px] text-gray-700 leading-relaxed mb-12 list-disc ml-14">
+            <div className="md:max-w-4xl mx-auto px-4">
+              <ul className="font-montserrat text-[18px] text-gray-700 b2blist leading-relaxed mb-12 ml-14">
                 <li>
+                  <span>
+                    {/* <BadgeCheck
+                      strokeWidth={1.2}
+                      size={18}
+                      className="inline-block mr-2.5"
+                    /> */}
+                  </span>
                   Expertise in <strong>white label bakery partnerships</strong>{" "}
                   in India
                 </li>
                 <li>
+                  <span>
+                    {/* <BadgeCheck
+                      strokeWidth={1.2}
+                      size={18}
+                      className="inline-block mr-2.5"
+                    /> */}
+                  </span>
                   Proven track record with leading caf&eacute;s, restaurants,
                   and FMCG brands
                 </li>
                 <li>
+                  <span>
+                    {/* <BadgeCheck
+                      strokeWidth={1.2}
+                      size={18}
+                      className="inline-block mr-2.5"
+                    /> */}
+                  </span>
                   Ability to scale from boutique batches to{" "}
                   <strong>large-scale bakery supply</strong>
                 </li>
                 <li>
+                  <span>
+                    {/* <BadgeCheck
+                      strokeWidth={1.2}
+                      size={18}
+                      className="inline-block mr-2.5"
+                    /> */}
+                  </span>
                   Wide product portfolio: bread, cookies, cakes, biscuits, puff
                   pastries, fresh sandwiches and many more
                 </li>
-                <li>Commitment to quality, innovation, and consistency</li>
+                <li>
+                  {" "}
+                  <span>
+                    {/* <BadgeCheck
+                      strokeWidth={1.2}
+                      size={18}
+                      className="inline-block mr-2"
+                    /> */}
+                  </span>
+                  Commitment to quality, innovation, and consistency
+                </li>
               </ul>
             </div>
           </section>
