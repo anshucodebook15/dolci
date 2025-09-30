@@ -153,9 +153,9 @@ export const locationData = {
     {
       id: 1,
       name: "New Bel Road",
-      address: "23/1, New Bel Road, RMV 2nd Stage, Bengaluru - 560094",
-      phone: "+91 80 4567 8901",
-      email: "newbelroad@dolci.in",
+      address: "No 108 , AGS Layout, New BEL Rd, Chikkamaranahalli, Bengaluru, Karnataka 560094",
+      phone: "+91 9108518520",
+      email: "+91 9740563404",
       hours: {
         weekdays: "8:00 AM - 10:00 PM",
         weekends: "8:00 AM - 11:00 PM",
@@ -167,9 +167,9 @@ export const locationData = {
     {
       id: 2,
       name: "Lavelle Road",
-      address: "45/2, Lavelle Road, Ashok Nagar, Bengaluru - 560001",
-      phone: "+91 80 3456 7890",
-      email: "lavelleroad@dolci.in",
+      address: "55/2-1, Lavelle Road, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001",
+      phone: "+91 9108518523",
+      email: "+91 9740563404",
       hours: {
         weekdays: "8:00 AM - 10:00 PM",
         weekends: "8:00 AM - 11:00 PM",
@@ -181,9 +181,9 @@ export const locationData = {
     {
       id: 3,
       name: "Cunningham Road",
-      address: "206/6, Main Road, Canara Bank Layout, Rajiv Gandhi Nagar, Kodigehalli, Bengaluru, Karnataka 560097",
-      phone: "+91 80 2345 6789",
-      email: "cunninghamroad@dolci.in",
+      address: "18/3, Ali Askar Road, Near Honda Showroom Cunningham Road, Ali Asker Rd, Vasanth Nagar, Bengaluru, Karnataka 560052",
+      phone: "+91 9108518522",
+      email: "+91 9740563404",
       hours: {
         weekdays: "8:00 AM - 10:00 PM",
         weekends: "8:00 AM - 11:00 PM",
@@ -216,7 +216,7 @@ export const testimonialsData = [
     id: 1,
     name: "Priya Sharma",
     rating: 5,
-    text: "The perfect place for dessert lovers! Their tiramisu is absolutely divine, and the café ambiance is so cozy and welcoming.",
+    text: "The perfect place for dessert lovers! Their tiramisu is absolutely divine, and the café ambience is so cozy and welcoming.",
     location: "Bangalore",
   },
   {
@@ -230,7 +230,7 @@ export const testimonialsData = [
     id: 3,
     name: "Ananya Reddy",
     rating: 5,
-    text: "Dolci has become my go-to place for meetings and catching up with friends. Great food, amazing ambiance, and excellent service.",
+    text: "Dolci has become my go-to place for meetings and catching up with friends. Great food, amazing ambience, and excellent service.",
     location: "Bangalore",
   },
 ];

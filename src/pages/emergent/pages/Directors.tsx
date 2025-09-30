@@ -40,7 +40,7 @@ const Directors = () => {
       role: "Director",
       image: "randel",
       description:
-        "Mr. Randal Colaco, Director of Dolci, brings fresh vision and creative direction to the family’s hospitality ventures. With a passion for premium experiences, Mr. Randal plays a key role in shaping Dolci’s identity and growth. His approach blends design sensibility, operational excellence, and customer-first thinking. Randal represents the new wave of leadership with a strong focus on innovation and lifestyle-driven brands.",
+        "Mr. Randal Colaco, Director of Dolci, represents the new wave and brings fresh vision with creative direction to the family’s hospitality ventures. With a passion for premium experiences, Mr. Randal plays a key role in shaping Dolci’s identity and growth. His approach blends design sensibility, operational excellence, and customer-first thinking. Randal represents the new wave of leadership with a strong focus on innovation and lifestyle-driven brands.",
     },
     {
       name: "Mr. M Balaji",

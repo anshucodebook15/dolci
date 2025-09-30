@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router";
 import { Menu, Phone, Store, X } from "lucide-react";
 import { useAssets } from "../../../hooks/useAssets";
 
@@ -110,28 +110,32 @@ const Header = () => {
               Visit
             </button> */}
 
-            <button
-              className="bg-dolci-blue font-montserrat font-medium text-lg px-6 py-1 rounded-full cursor-pointer"
-              // onClick={() =>
-              //   document
-              //     .getElementById("location")
-              //     ?.scrollIntoView({ behavior: "smooth" })
-              // }
-            >
-              <Phone className="inline-block mr-2 h-4 w-4" />
-              Call
-            </button>
-            <button
-              className="border-1 font-montserrat font-medium text-lg px-6 py-1 rounded-full cursor-pointer text-gray-800 bg-white border-gray-300 hover:bg-white hover:text-midnight-blue"
-              // onClick={() =>
-              //   document
-              //     .getElementById("menu")
-              //     ?.scrollIntoView({ behavior: "smooth" })
-              // }
-            >
-              <Store className="inline-block mr-2 h-4 w-4" />
-              Visit
-            </button>
+            <a href="tel:+918023456789" className="">
+              <button
+                className="bg-dolci-blue font-montserrat font-medium text-lg px-6 py-1 rounded-full cursor-pointer"
+                // onClick={() =>
+                //   document
+                //     .getElementById("location")
+                //     ?.scrollIntoView({ behavior: "smooth" })
+                // }
+              >
+                <Phone className="inline-block mr-2 h-4 w-4" />
+                Call
+              </button>
+            </a>
+            <Link to={"/#location"}>
+              <button
+                className="border-1 font-montserrat font-medium text-lg px-6 py-1 rounded-full cursor-pointer text-gray-800 bg-white border-gray-300 hover:bg-white hover:text-midnight-blue"
+                // onClick={() =>
+                //   document
+                //     .getElementById("menu")
+                //     ?.scrollIntoView({ behavior: "smooth" })
+                // }
+              >
+                <Store className="inline-block mr-2 h-4 w-4" />
+                Visit
+              </button>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -178,9 +182,18 @@ const Header = () => {
                 </Link>
               )
             )}
-            <div className="flex space-x-4 px-4 pt-4">
+            {/* <div className="flex space-x-4 px-4 pt-4">
               <button className="btn btn-secondary flex-1">Call</button>
               <button className="btn btn-primary flex-1">Visit</button>
+            </div> */}
+
+            <div className="flex space-x-4 px-4 pt-4">
+              <a href="tel:+918023456789" className="">
+                <button className="btn btn-secondary flex-1">Call</button>
+              </a>
+              <Link to={"/#location"}>
+                <button className="btn btn-primary flex-1">Visit</button>
+              </Link>
             </div>
           </nav>
         </div>

@@ -37,31 +37,32 @@ const About = () => {
       title: "Inspired by",
       subtitle: "European café culture",
       image:
-        "https://images.unsplash.com/photo-1718143801531-b6f3a2d958a9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njd8MHwxfHNlYXJjaHwxfHxncmVlayUyMGNhZmV8ZW58MHx8fHwxNzU1NDcxODA5fDA&ixlib=rb-4.1.0&q=85",
+        "https://res.cloudinary.com/dq7bzydqz/image/upload/v1759062395/DSC06580_1_plbdql.webp",
       gradient: "",
     },
     {
       id: 2,
       title: "Handcrafted",
-      subtitle: "Plates and pastries",
+      subtitle: "Dishes and pastries",
       image:
-        "https://images.unsplash.com/photo-1641394535269-dbea1fa94ff1?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDF8MHwxfHNlYXJjaHwyfHxoYW5kY3JhZnRlZCUyMHBhc3RyaWVzfGVufDB8fHx8MTc1NTQ3MTgxNHww&ixlib=rb-4.1.0&q=85",
+        "https://res.cloudinary.com/dq7bzydqz/image/upload/v1759062694/DSC06519_1_vofrqk.webp",
       gradient: "",
     },
     {
       id: 3,
       title: "Rich Coffee",
-      subtitle: "Blends and specialty drinks",
+      // subtitle: "Blends and specialty drinks",
+      subtitle: "Blends and drinks",
       image:
-        "https://images.unsplash.com/photo-1735132619395-a8f675a2dc66?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njd8MHwxfHNlYXJjaHwxfHxjb2ZmZWUlMjBzcGVjaWFsdHl8ZW58MHx8fHwxNzU1NDcxODE4fDA&ixlib=rb-4.1.0&q=85",
+        "https://res.cloudinary.com/dq7bzydqz/image/upload/v1759062395/DSC05866_1_oemunz.webp",
       gradient: "",
     },
     {
       id: 4,
-      title: "Cozy Ambiance",
+      title: "Cozy Ambience",
       subtitle: "Perfect for any occasion",
       image:
-        "https://images.unsplash.com/photo-1573822028151-731623cb0722?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHwzfHxjb3p5JTIwY2FmZXxlbnwwfHx8fDE3NTU0NzE4MjN8MA&ixlib=rb-4.1.0&q=85",
+        "https://res.cloudinary.com/dq7bzydqz/image/upload/v1759062394/DSC06492_1_up59l0.webp",
       gradient: "",
     },
   ];

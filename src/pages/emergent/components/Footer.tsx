@@ -112,8 +112,8 @@ const Footer: React.FC = () => {
                 <div className="flex items-start space-x-3">
                   <MapPin className="h-5 w-5 text-dolci-blue flex-shrink-0 mt-0.5" />
                   <p className="font-montserrat text-gray-300 text-sm leading-relaxed">
-                    206/6, Main Road, Canara Bank Layout, Rajiv Gandhi Nagar,
-                    Kodigehalli, Bengaluru, Karnataka 560097
+                    Siam House, 1/21, Sri Ramana Maharshi Rd, Raj Mahal Vilas,
+                    Sadashiva Nagar, Extn, Bengaluru, Karnataka 560080
                   </p>
                 </div>
                 <div className="flex items-center space-x-3">
@@ -122,16 +122,16 @@ const Footer: React.FC = () => {
                     href="tel:+918023456789"
                     className="font-montserrat text-gray-300 hover:text-dolci-blue transition-colors"
                   >
-                    +91 80 2345 6789
+                    +91 7411379540
                   </a>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Mail className="h-5 w-5 text-dolci-blue flex-shrink-0" />
                   <a
-                    href="mailto:cunninghamroad@dolci.in"
+                    href="mailto:info@dolci.in"
                     className="font-montserrat text-gray-300 hover:text-dolci-blue transition-colors"
                   >
-                    cunninghamroad@dolci.in
+                    info@dolci.in
                   </a>
                 </div>
               </div>

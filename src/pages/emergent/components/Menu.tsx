@@ -68,7 +68,7 @@ const Menu = () => {
               {/* <div className="absolute bottom-0 left-0 w-0 h-1 bg-gradient-to-r from-dolci-blue to-dark-accent group-hover:w-full transition-all duration-500 rounded-full"></div> */}
             </h2>
             <p className="font-great-vibes text-2xl text-dark-accent mb-2">
-              Brewing comfort in every cup
+              Brewing Comfort In Every Cup
             </p>
           </div>
 

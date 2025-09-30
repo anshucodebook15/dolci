@@ -50,7 +50,7 @@ const Location = () => {
     },
     {
       icon: Mail,
-      title: "Email",
+      title: "For Complaints Or Queries",
       content: selectedLocation.email,
       action: () => window.open(`mailto:${selectedLocation.email}`),
     },
@@ -77,12 +77,12 @@ const Location = () => {
         </div> */}
 
         <div className="text-center mb-16">
-          <p className="font-great-vibes text-2xl text-dark-accent font-medium mb-2">
-            your cafe destination
-          </p>
           <h2 className="font-playfair text-4xl md:text-5xl font-bold text-midnight-blue mb-4">
-            Visit Dolci Today
+            Visit Us Today
           </h2>
+          <p className="font-great-vibes text-2xl text-dark-accent font-medium mb-2">
+            Your Cafe Destination
+          </p>
           <p className="font-montserrat text-lg text-gray-600 max-w-3xl mx-auto">
             Experience the finest coffee and desserts at any of our three
             Bangalore locations, each offering the same exceptional quality in a
