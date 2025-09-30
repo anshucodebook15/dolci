@@ -38,7 +38,7 @@ const About = () => {
       subtitle: "European café culture",
       image:
         "https://res.cloudinary.com/dq7bzydqz/image/upload/v1759062395/DSC06580_1_plbdql.webp",
-      gradient: "",
+      gradient: "bg-gradient-to-t from-black/80 via-transparent to-transparent",
     },
     {
       id: 2,
@@ -46,7 +46,7 @@ const About = () => {
       subtitle: "Dishes and pastries",
       image:
         "https://res.cloudinary.com/dq7bzydqz/image/upload/v1759062694/DSC06519_1_vofrqk.webp",
-      gradient: "",
+      gradient: "bg-gradient-to-t from-black/80 via-transparent to-transparent",
     },
     {
       id: 3,
@@ -54,8 +54,8 @@ const About = () => {
       // subtitle: "Blends and specialty drinks",
       subtitle: "Blends and drinks",
       image:
-        "https://res.cloudinary.com/dq7bzydqz/image/upload/v1759062395/DSC05866_1_oemunz.webp",
-      gradient: "",
+        "https://res.cloudinary.com/dq7bzydqz/image/upload/v1759192838/DSC070741_ou2qg4.webp",
+      gradient: "bg-gradient-to-t from-black/80 via-transparent to-transparent",
     },
     {
       id: 4,
@@ -63,7 +63,7 @@ const About = () => {
       subtitle: "Perfect for any occasion",
       image:
         "https://res.cloudinary.com/dq7bzydqz/image/upload/v1759062394/DSC06492_1_up59l0.webp",
-      gradient: "",
+      gradient: "bg-gradient-to-t from-black/80 via-transparent to-transparent",
     },
   ];
 
