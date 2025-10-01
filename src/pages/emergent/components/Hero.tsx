@@ -29,7 +29,7 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-20 text-center text-white px-4 pt-20">
+      <div className="relative z-20 text-center text-white px-4 pt-20 lg:mt-[-100px]">
         <h1 className="font-playfair text-5xl md:text-7xl font-bold mb-6 leading-tight">
           Since 2008,
           <br />

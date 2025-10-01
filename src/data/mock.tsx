@@ -105,45 +105,220 @@ export const menuData = {
   ],
 };
 
+// export const galleryData = {
+//   title: "Aesthetic Delights at Dolci",
+//   subtitle: "A Gallery of Culinary Artistry",
+//   images: [
+//     {
+//       id: 1,
+//       url: "https://images.unsplash.com/photo-1737700088028-fae0666feb83?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzR8MHwxfHNlYXJjaHwxfHxhcnRpc2FuJTIwZGVzc2VydHN8ZW58MHx8fHwxNzU1NDM4NjI5fDA&ixlib=rb-4.1.0&q=85",
+//       alt: "Elegant chocolate cake with nuts - professional presentation",
+//       category: "desserts",
+//     },
+//     {
+//       id: 2,
+//       url: "https://images.unsplash.com/photo-1740596261026-83a5f4ab68c8?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzR8MHwxfHNlYXJjaHwzfHxhcnRpc2FuJTIwZGVzc2VydHN8ZW58MHx8fHwxNzU1NDM4NjI5fDA&ixlib=rb-4.1.0&q=85",
+//       alt: "Rose-shaped gelato cone - artistic and Instagram-worthy",
+//       category: "desserts",
+//     },
+//     {
+//       id: 3,
+//       url: "https://images.unsplash.com/photo-1745817505645-02d3083b5fcf?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzR8MHwxfHNlYXJjaHw0fHxhcnRpc2FuJTIwZGVzc2VydHN8ZW58MHx8fHwxNzU1NDM4NjI5fDA&ixlib=rb-4.1.0&q=85",
+//       alt: "Honey toast with ice cream and strawberries - colorful café dessert",
+//       category: "desserts",
+//     },
+//     {
+//       id: 4,
+//       url: "https://images.pexels.com/photos/5855877/pexels-photo-5855877.jpeg",
+//       alt: "Bakery display case with multiple artisan desserts",
+//       category: "display",
+//     },
+//     {
+//       id: 5,
+//       url: "https://images.unsplash.com/photo-1729364983489-d4d569978fd7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwzfHxjYWYlQzMlQTklMjBjb2ZmZWV8ZW58MHx8fHwxNzU1NDM4NjM0fDA&ixlib=rb-4.1.0&q=85",
+//       alt: "Latte with latte art on wooden table - professional coffee presentation",
+//       category: "coffee",
+//     },
+//     {
+//       id: 6,
+//       url: "https://images.unsplash.com/photo-1703663695321-17df8ee7d37f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHw0fHxjYWYlQzMlQTklMjBjb2ZmZWV8ZW58MHx8fHwxNzU1NDM4NjM0fDA&ixlib=rb-4.1.0&q=85",
+//       alt: "Cappuccino on saucer - classic coffee presentation",
+//       category: "coffee",
+//     },
+//   ],
+// };
+
 export const galleryData = {
   title: "Aesthetic Delights at Dolci",
   subtitle: "A Gallery of Culinary Artistry",
   images: [
     {
-      id: 1,
-      url: "https://images.unsplash.com/photo-1737700088028-fae0666feb83?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzR8MHwxfHNlYXJjaHwxfHxhcnRpc2FuJTIwZGVzc2VydHN8ZW58MHx8fHwxNzU1NDM4NjI5fDA&ixlib=rb-4.1.0&q=85",
-      alt: "Elegant chocolate cake with nuts - professional presentation",
-      category: "desserts",
+      id: "1",
+      url: "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764551/Dolci_Square_Web-Images_0025_Peach-_-Berry-Pocket-Square-_wo-fork_y9nvpt.webp",
+      alt: "Tiramisu Croissant",
+      category: "viennoiserie",
     },
     {
-      id: 2,
-      url: "https://images.unsplash.com/photo-1740596261026-83a5f4ab68c8?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzR8MHwxfHNlYXJjaHwzfHxhcnRpc2FuJTIwZGVzc2VydHN8ZW58MHx8fHwxNzU1NDM4NjI5fDA&ixlib=rb-4.1.0&q=85",
-      alt: "Rose-shaped gelato cone - artistic and Instagram-worthy",
-      category: "desserts",
+      id: "2",
+      url: "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764550/Dolci_Square_Web-Images_0024_Peach-_-Berry-Pocket-Square-_wo-fork_mnddvc.webp",
+      alt: "French Classic Croissant",
+      category: "viennoiserie",
     },
     {
-      id: 3,
-      url: "https://images.unsplash.com/photo-1745817505645-02d3083b5fcf?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzR8MHwxfHNlYXJjaHw0fHxhcnRpc2FuJTIwZGVzc2VydHN8ZW58MHx8fHwxNzU1NDM4NjI5fDA&ixlib=rb-4.1.0&q=85",
-      alt: "Honey toast with ice cream and strawberries - colorful café dessert",
-      category: "desserts",
+      id: "3",
+      url: "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764549/Dolci_Square_Web-Images_0023_Peach-_-Berry-Pocket-Square-_wo-fork_xbakyu.webp",
+      alt: "Peach & Berry Pocket",
+      category: "viennoiserie",
     },
     {
-      id: 4,
-      url: "https://images.pexels.com/photos/5855877/pexels-photo-5855877.jpeg",
-      alt: "Bakery display case with multiple artisan desserts",
-      category: "display",
+      id: "4",
+      url: "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764548/Dolci_Square_Web-Images_0021_Pain-Au-Chocolat-Square_kbairc.webp",
+      alt: "Pain Au Chocolat",
+      category: "viennoiserie",
     },
     {
-      id: 5,
-      url: "https://images.unsplash.com/photo-1729364983489-d4d569978fd7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwzfHxjYWYlQzMlQTklMjBjb2ZmZWV8ZW58MHx8fHwxNzU1NDM4NjM0fDA&ixlib=rb-4.1.0&q=85",
-      alt: "Latte with latte art on wooden table - professional coffee presentation",
-      category: "coffee",
+      id: "5",
+      url: "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764547/Dolci_Square_Web-Images_0020_Raspberry-Cruffin-Square_wdwg2o.webp",
+      alt: "Raspberry Cruffin",
+      category: "viennoiserie",
     },
     {
-      id: 6,
-      url: "https://images.unsplash.com/photo-1703663695321-17df8ee7d37f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHw0fHxjYWYlQzMlQTklMjBjb2ZmZWV8ZW58MHx8fHwxNzU1NDM4NjM0fDA&ixlib=rb-4.1.0&q=85",
-      alt: "Cappuccino on saucer - classic coffee presentation",
-      category: "coffee",
+      id: "6",
+      url: "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764524/Dolci_Square_Web-Images_0019_Sticky-Walnut-Cake-Square_eyrj7b.webp",
+      alt: "Sticky Walnut Cake",
+      category: "pastries",
+    },
+    {
+      id: "7",
+      url: "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764524/Dolci_Square_Web-Images_0018_Triple-Chocolate-Cake-Square_bt4lbv.webp",
+      alt: "Triple Chocolate Cake",
+      category: "pastries",
+    },
+    {
+      id: "8",
+      url: "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764524/Dolci_Square_Web-Images_0017_Dolci_s-Signature-Tiramisu-Square_1_ryxknl.webp",
+      alt: "Dolci's Signature Tiramisu",
+      category: "pastries",
+    },
+    {
+      id: "9",
+      url: "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764524/Dolci_Square_Web-Images_0016_Matcha-Mascarpone-Cake-Square_hbqc5n.webp",
+      alt: "Matcha Mascarpone Cake",
+      category: "pastries",
+    },
+    {
+      id: "10",
+      url: "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764524/Dolci_Square_Web-Images_0009_Basque-Cheese-Cake-Square_e62vtw.webp",
+      alt: "Basque Cheese Cake",
+      category: "pastries",
+    },
+    {
+      id: "11",
+      url: "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764524/Dolci_Square_Web-Images_0008_Oreo-Cheese-Cake-Square_waqshz.webp",
+      alt: "Oreo Cheese Cake",
+      category: "pastries",
+    },
+    {
+      id: "12",
+      url: "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764524/Dolci_Square_Web-Images_0007_Biscoff-Cheese-Cake-Square_kzeisu.webp",
+      alt: "Biscoff Cheese Cake",
+      category: "pastries",
+    },
+    {
+      id: "13",
+      url: "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764536/Dolci_Square_Web-Images_0002_Cappuccino-Square_fgr6qb.webp",
+      alt: "Cappuccino",
+      category: "beverages",
+    },
+    {
+      id: "14",
+      url: "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764535/Dolci_Square_Web-Images_0001_Caffe-Latte-square_rpomhy.webp",
+      alt: "Caffe Latte",
+      category: "beverages",
+    },
+    {
+      id: "15",
+      url: "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764537/Hot_Chocolate_Square_alv4zz.webp",
+      alt: "Hot Chocolate",
+      category: "beverages",
+    },
+    {
+      id: "16",
+      url: "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764535/Dolci_Square_Web-Images_0000_Cafe-Mocha-Square_vbqpfu.webp",
+      alt: "Caffe Mocha",
+      category: "beverages",
+    },
+    {
+      id: "17",
+      url: "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764537/Classic_Cold_Brew_Square_qqrzwv.webp",
+      alt: "Classic Cold Brew",
+      category: "beverages",
+    },
+    {
+      id: "18",
+      url: "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764538/Iced_Americano_Square_rzhld2.webp",
+      alt: "Iced Americano",
+      category: "beverages",
+    },
+    {
+      id: "19",
+      url: "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764540/Vietnamese_Cold_Coffee_Sqauare_fkboyz.webp",
+      alt: "Vietnamese Cold Coffee",
+      category: "beverages",
+    },
+    {
+      id: "20",
+      url: "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764539/Orange_Cold_Brew_Square_degucl.webp",
+      alt: "Orange Cold Brew",
+      category: "beverages",
+    },
+    {
+      id: "21",
+      url: "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764538/Dolci_Square_Web-Images_0002_Popcorn_Latte-Square_cyky7f.webp",
+      alt: "Popcorn Latte",
+      category: "beverages",
+    },
+    {
+      id: "22",
+      url: "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764534/Dolci_Square_Web-Images_0005_Protein-Power-House-Burger-Square_ioqh9o.webp",
+      alt: "Dolci Club Egg Sandwich",
+      category: "food",
+    },
+    {
+      id: "23",
+      url: "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764534/Dolci_Square_Web-Images_0004_Protein-Power-House-Burger-Square_hkldkj.webp",
+      alt: "Cheesy Corn, Spinach & Jalapeno Sandwich",
+      category: "food",
+    },
+    {
+      id: "24",
+      url: "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764533/Dolci_Square_Web-Images_0003_Protein-Power-House-Burger-Squaren_t69a72.webp",
+      alt: "Protein Power House burger",
+      category: "food",
+    },
+    {
+      id: "25",
+      url: "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764543/Pesto_Pasta_Square_fgm66b.webp",
+      alt: "Pesto Penne Alla Genovese",
+      category: "food",
+    },
+    {
+      id: "26",
+      url: "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764541/Arrabiatta_Square_brheu0.webp",
+      alt: "Arrabiatta",
+      category: "food",
+    },
+    {
+      id: "27",
+      url: "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764541/Creamy_Alfredo_Square_smlfnu.webp",
+      alt: "Creamy Alfredo",
+      category: "food",
+    },
+    {
+      id: "28",
+      url: "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764540/Aglio_e_olio_Pasta_Square_nvst9l.webp",
+      alt: "Aglio e olio",
+      category: "food",
     },
   ],
 };
@@ -153,7 +328,8 @@ export const locationData = {
     {
       id: 1,
       name: "New Bel Road",
-      address: "No 108 , AGS Layout, New BEL Rd, Chikkamaranahalli, Bengaluru, Karnataka 560094",
+      address:
+        "No 108 , AGS Layout, New BEL Rd, Chikkamaranahalli, Bengaluru, Karnataka 560094",
       phone: "+91 9108518520",
       email: "+91 9740563404",
       hours: {
@@ -167,7 +343,8 @@ export const locationData = {
     {
       id: 2,
       name: "Lavelle Road",
-      address: "55/2-1, Lavelle Road, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001",
+      address:
+        "55/2-1, Lavelle Road, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001",
       phone: "+91 9108518523",
       email: "+91 9740563404",
       hours: {
@@ -181,7 +358,8 @@ export const locationData = {
     {
       id: 3,
       name: "Cunningham Road",
-      address: "18/3, Ali Askar Road, Near Honda Showroom Cunningham Road, Ali Asker Rd, Vasanth Nagar, Bengaluru, Karnataka 560052",
+      address:
+        "18/3, Ali Askar Road, Near Honda Showroom Cunningham Road, Ali Asker Rd, Vasanth Nagar, Bengaluru, Karnataka 560052",
       phone: "+91 9108518522",
       email: "+91 9740563404",
       hours: {

@@ -17,7 +17,7 @@ const images = import.meta.glob(
   }
 );
 
-const icons = import.meta.glob("../assets/icons/*.{svg,png}", {
+const icons = import.meta.glob("../assets/icons/*.{svg,png,gif}", {
   eager: true,
   import: "default",
 });

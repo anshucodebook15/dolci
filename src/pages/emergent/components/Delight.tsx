@@ -7,35 +7,52 @@ import { ZoomIn } from "lucide-react";
 // import { galleryData } from '../data/mock';
 
 const Delights = () => {
-  const [selectedCategory, setSelectedCategory] = useState("all");
+  const [selectedCategory, setSelectedCategory] = useState("viennoiserie");
   // const [selectedImage, setSelectedImage] = useState(null);
 
   const categories = [
-    { id: "all", name: "All", count: galleryData.images.length },
+    // { id: "all", name: "All", count: galleryData.images.length },
     {
-      id: "desserts",
-      name: "Desserts",
-      count: galleryData.images.filter((img) => img.category === "desserts")
+      id: "viennoiserie",
+      name: "Viennoiserie",
+      count: galleryData.images.filter((img) => img.category === "viennoiserie")
         .length,
     },
     {
-      id: "coffee",
-      name: "Coffee",
-      count: galleryData.images.filter((img) => img.category === "coffee")
+      id: "beverages",
+      name: "Beverages",
+      count: galleryData.images.filter((img) => img.category === "beverages")
         .length,
     },
+    {
+      id: "food",
+      name: "Food",
+      count: galleryData.images.filter((img) => img.category === "food").length,
+    },
+    // {
+    //   id: "desserts",
+    //   name: "Desserts",
+    //   count: galleryData.images.filter((img) => img.category === "desserts")
+    //     .length,
+    // },
+    // {
+    //   id: "coffee",
+    //   name: "Coffee",
+    //   count: galleryData.images.filter((img) => img.category === "coffee")
+    //     .length,
+    // },
     {
       id: "pastries",
       name: "Pastries",
       count: galleryData.images.filter((img) => img.category === "pastries")
         .length,
     },
-    {
-      id: "display",
-      name: "Display",
-      count: galleryData.images.filter((img) => img.category === "display")
-        .length,
-    },
+    // {
+    //   id: "display",
+    //   name: "Display",
+    //   count: galleryData.images.filter((img) => img.category === "display")
+    //     .length,
+    // },
   ];
 
   const filteredImages =

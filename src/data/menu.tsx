@@ -176,7 +176,7 @@ export const completeMenuData = {
           price: "₹210",
           category: "veg",
           image:
-            "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764524/Dolci_Square_Web-Images_0008_Oreo-Cheese-Cake-Square_waqshz.webp",
+            "https://res.cloudinary.com/dq7bzydqz/image/upload/v1759342676/Oreo_Cheese_Cake_Square_2_oxodrv.webp",
         },
         {
           id: 16,
@@ -186,7 +186,7 @@ export const completeMenuData = {
           price: "₹225",
           category: "veg",
           image:
-            "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764524/Dolci_Square_Web-Images_0007_Biscoff-Cheese-Cake-Square_kzeisu.webp",
+            "https://res.cloudinary.com/dq7bzydqz/image/upload/v1759342676/Biscoff_Cheese_Cake_Square_2_vvbql7.webp",
         },
       ],
     },

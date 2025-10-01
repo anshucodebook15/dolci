@@ -1,8 +1,10 @@
 import { Heart, Coffee, Cake, Users } from "lucide-react";
 import { aboutData } from "../../../data/mock";
+// import { useAssets } from "../../../hooks/useAssets";
 
 const About = () => {
   const { title, subtitle, description } = aboutData;
+  // const { icons } = useAssets();
 
   const features = [
     {
@@ -30,6 +32,33 @@ const About = () => {
         "A warm, welcoming space perfect for any occasion or gathering",
     },
   ];
+
+  // const Giffeatures = [
+  //   {
+  //     icon: <Heart strokeWidth={1} className="w-10 h-10" />,
+  //     title: "Made with Love",
+  //     description:
+  //       "Every dishes is handcrafted with passion and premium ingredients",
+  //   },
+  //   {
+  //     icon: <Coffee strokeWidth={1} className="w-10 h-10" />,
+  //     title: "Perfect Brews",
+  //     description:
+  //       "Rich coffee blends and specialty drinks crafted by expert baristas",
+  //   },
+  //   {
+  //     icon: <Cake strokeWidth={1} className="w-10 h-10" />,
+  //     title: "Artisan Desserts",
+  //     description:
+  //       "European-inspired pastries and cakes that tell a story of tradition",
+  //   },
+  //   {
+  //     icon: <Users strokeWidth={1} className="w-10 h-10" />,
+  //     title: "Cozy Haven",
+  //     description:
+  //       "A warm, welcoming space perfect for any occasion or gathering",
+  //   },
+  // ];
 
   const storyData = [
     {

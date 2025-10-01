@@ -206,7 +206,7 @@ const B2b = () => {
             <div className="contain max-w-6xl">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10 mb-12 justify-baseline item-start">
                 <div className="bg-white rounded-xl p-6 flex flex-col  items-center">
-                  <div className="mb-1 w-18 h-25 overflow-hidden">
+                  <div className="mb-4 w-18 h-20 overflow-hidden  flex justify-center">
                     <img
                       src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/ITC_Limited_Logo.svg/1152px-ITC_Limited_Logo.svg.png"
                       alt=""
@@ -222,11 +222,14 @@ const B2b = () => {
                   </p>
                 </div>
                 <div className="bg-white rounded-xl p-6 flex flex-col items-center">
-                  <div className="mb-1 w-40 h-25 overflow-hidden">
-                    <img src={images.chai} />
+                  <div className="mb-4 w-40 h-20 overflow-hidden flex justify-center">
+                    {/* <div className="w-20 h-20 bg-gray-300 flex justify-center items-center">
+                      <h2>Pan-India</h2>
+                    </div> */}
+                    <img src={'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbbNlhg2_DAonvktaY8wmxRAc1OQ6idWJVAw&s'} className="w-20" />
                   </div>
                   <h4 className="font-playfair-display text-xl font-bold mb-2 text-midnight-blue">
-                    Chai Point
+                    Pan-India
                   </h4>
                   <p>
                     Producing fresh sandwiches, puffs and savoury delights
@@ -234,7 +237,7 @@ const B2b = () => {
                   </p>
                 </div>
                 <div className="bg-white rounded-xl p-6 flex flex-col items-center">
-                  <div className="mb-1 w-18 h-25 overflow-hidden">
+                  <div className="mb-4 w-18 h-20 overflow-hidden  flex justify-center">
                     <img
                       src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9z6mfk23rEhOHuEO2xTExlTNxuYInBVoS5A&s"
                       alt=""
