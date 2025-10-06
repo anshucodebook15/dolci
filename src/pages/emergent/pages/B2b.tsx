@@ -35,7 +35,7 @@ const B2b = () => {
           <div className="py-20"></div>
           <section className="text-center mb-16 ">
             <h1 className="font-playfair-display text-4xl md:text-5xl font-bold text-midnight-blue mb-6 leading-12">
-              Dolci White Label Bakery Partnerships in India
+              Dolci White Label Partnerships in India
             </h1>
             <p className="font-great-vibes text-2xl text-dark-accent mb-10">
               From Home Baking to Beloved Café Chain
