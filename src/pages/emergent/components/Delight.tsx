@@ -4,7 +4,6 @@ import { useState } from "react";
 // import { Dialog, DialogContent, DialogTrigger } from './ui/dialog';
 import { galleryData } from "../../../data/mock";
 import { ZoomIn } from "lucide-react";
-// import { galleryData } from '../data/mock';
 
 const Delights = () => {
   const [selectedCategory, setSelectedCategory] = useState("viennoiserie");
@@ -114,7 +113,8 @@ const Delights = () => {
                     </div>
                     <div className="absolute top-4 left-4 ">
                       <div className="bg-white/90 text-midnight-blue font-montserrat font-medium capitalize rounded-[5px] px-2">
-                        {image.category}
+                        {/* {image.category} */}
+                        {image.alt}
                       </div>
                     </div>
                   </div>

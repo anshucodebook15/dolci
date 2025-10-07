@@ -214,13 +214,13 @@ export const galleryData = {
     },
     {
       id: "11",
-      url: "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764524/Dolci_Square_Web-Images_0008_Oreo-Cheese-Cake-Square_waqshz.webp",
+      url: "https://res.cloudinary.com/dq7bzydqz/image/upload/v1759342676/Oreo_Cheese_Cake_Square_2_oxodrv.webp",
       alt: "Oreo Cheese Cake",
       category: "pastries",
     },
     {
       id: "12",
-      url: "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764524/Dolci_Square_Web-Images_0007_Biscoff-Cheese-Cake-Square_kzeisu.webp",
+      url: "https://res.cloudinary.com/dq7bzydqz/image/upload/v1759342676/Biscoff_Cheese_Cake_Square_2_vvbql7.webp",
       alt: "Biscoff Cheese Cake",
       category: "pastries",
     },
