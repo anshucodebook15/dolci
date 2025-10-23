@@ -69,7 +69,7 @@ const Header = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex  gap-6">
+          <nav className="hidden lg:flex  gap-6 lg:mr-[-150px]">
             {navigationItems.map((item) =>
               item.href.startsWith("/#") ? (
                 <button

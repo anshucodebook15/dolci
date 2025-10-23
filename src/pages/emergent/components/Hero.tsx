@@ -22,12 +22,12 @@ const Hero = () => {
       </div>
 
       {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-10 z-10">
+      {/* <div className="absolute inset-0 opacity-10 z-10">
         <div className="absolute top-10 left-10 w-20 h-20 rounded-full bg-white animate-pulse"></div>
         <div className="absolute top-32 right-20 w-16 h-16 rounded-full bg-white animate-pulse animation-delay-200"></div>
         <div className="absolute bottom-20 left-20 w-12 h-12 rounded-full bg-white animate-pulse animation-delay-400"></div>
         <div className="absolute bottom-40 right-10 w-24 h-24 rounded-full bg-white animate-pulse animation-delay-600"></div>
-      </div>
+      </div> */}
 
       {/* Content */}
       <div className="relative z-20 text-center text-white px-4 pt-20 lg:mt-[480px]">

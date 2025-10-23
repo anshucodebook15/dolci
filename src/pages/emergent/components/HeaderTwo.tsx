@@ -50,9 +50,8 @@ const HeaderTwo = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition duration-300 ${
-        isScrolled ? "bg-white shadow-lg" : "bg-transparent"
-      } `}
+      className={`fixed top-0 left-0 right-0 z-50 transition duration-300 ${isScrolled ? "bg-white shadow-lg" : "bg-transparent"
+        } `}
     >
       <div className="contain mx-auto">
         <div className="flex items-center justify-between ">
@@ -101,18 +100,17 @@ const HeaderTwo = () => {
             )}
           </nav> */}
 
-          <nav className="hidden lg:flex  gap-6">
+          <nav className="hidden lg:flex  gap-6 lg:mr-[-150px]">
             {navigationItems.map((item) => (
               <Link
                 key={item.name}
                 to={item.href}
-                className={`font-montserrat font-medium transition-colors duration-300 ${
-                  isActiveLink(item.href)
+                className={`font-montserrat font-medium transition-colors duration-300 ${isActiveLink(item.href)
                     ? "text-dolci-blue"
                     : isScrolled
-                    ? "text-gray-700 hover:text-midnight-blue"
-                    : "text-gray-700 hover:text-midnight-blue"
-                }`}
+                      ? "text-gray-700 hover:text-midnight-blue"
+                      : "text-gray-700 hover:text-midnight-blue"
+                  }`}
               >
                 {item.name}
               </Link>
@@ -137,9 +135,8 @@ const HeaderTwo = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className={`lg:hidden p-2 ${
-              isScrolled ? "text-gray-700" : "text-gray-700"
-            } `}
+            className={`lg:hidden p-2 ${isScrolled ? "text-gray-700" : "text-gray-700"
+              } `}
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? (
@@ -169,11 +166,10 @@ const HeaderTwo = () => {
                   key={item.name}
                   to={item.href}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className={`block py-2 px-4 font-montserrat rounded transition-colors ${
-                    isActiveLink(item.href)
+                  className={`block py-2 px-4 font-montserrat rounded transition-colors ${isActiveLink(item.href)
                       ? "text-midnight-blue bg-dolci-blue"
                       : "text-gray-700 hover:text-midnight-blue hover:bg-arctic-blue"
-                  }`}
+                    }`}
                 >
                   {item.name}
                 </Link>
