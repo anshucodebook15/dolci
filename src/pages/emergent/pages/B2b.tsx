@@ -38,7 +38,7 @@ const B2b = () => {
               Dolci White Label Partnerships in India
             </h1>
             <p className="font-great-vibes text-2xl text-dark-accent mb-10">
-              From Home Baking to Beloved Café Chain
+              Made with care by Dolci, retailed with care by you
             </p>
             <div className="max-w-5xl mx-auto">
               <p className="font-montserrat text-[18px] text-gray-700 leading-relaxed mb-12">
@@ -226,7 +226,12 @@ const B2b = () => {
                     {/* <div className="w-20 h-20 bg-gray-300 flex justify-center items-center">
                       <h2>Pan-India</h2>
                     </div> */}
-                    <img src={'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbbNlhg2_DAonvktaY8wmxRAc1OQ6idWJVAw&s'} className="w-20" />
+                    <img
+                      src={
+                        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbbNlhg2_DAonvktaY8wmxRAc1OQ6idWJVAw&s"
+                      }
+                      className="w-20"
+                    />
                   </div>
                   <h4 className="font-playfair-display text-xl font-bold mb-2 text-midnight-blue">
                     Pan-India
@@ -431,6 +436,22 @@ const B2b = () => {
                   I AM INTERESTED
                 </button>
               </form>
+            </div>
+          </section>
+
+          <section className=" w-[80%] mx-auto overflow-hidden rounded-2xl border-1 border-gray-200 mb-20">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.5009906078853!2d77.579714!3d13.067403999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae190038070535%3A0x5fcf8c6cd9f8e26e!2sDolci%20-%20Commissary%20%26%20Satellite%20Kitchen!5e0!3m2!1sen!2sin!4v1761546527359!5m2!1sen!2sin"
+              className="w-full h-80"
+              loading="lazy"
+            />
+
+            <div className="p-8">
+              <h2>
+                <b>Commissary address </b>- 206/6, Main Road, Canara Bank
+                Layout, Rajiv Gandhi Nagar, Kodigehalli, Bengaluru, Karnataka
+                560097
+              </h2>
             </div>
           </section>
         </div>
