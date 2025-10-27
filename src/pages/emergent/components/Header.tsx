@@ -69,20 +69,21 @@ const Header = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex  gap-6 lg:mr-[-150px]">
+          <nav className="hidden lg:flex  gap-6 lg:mr-[-100px]">
             {navigationItems.map((item) =>
               item.href.startsWith("/#") ? (
-                <button
+                <Link
+                  to={item.href}
                   key={item.name}
                   onClick={() => scrollToSection(item.href)}
-                  className={`font-montserrat font-medium transition-colors duration-300 ${
+                  className={`cursor-pointer font-montserrat font-medium transition-colors duration-300 ${
                     isScrolled
-                      ? "text-gray-700 hover:text-midnight-blue"
-                      : "text-white hover:text-dolci-blue"
+                      ? "text-[#0c5a7c] hover:text-midnight-blue"
+                      : "text-[#0c5a7c] hover:text-dolci-blue"
                   }`}
                 >
                   {item.name}
-                </button>
+                </Link>
               ) : (
                 <Link
                   key={item.name}
@@ -91,8 +92,8 @@ const Header = () => {
                     isActiveLink(item.href)
                       ? "text-dolci-blue"
                       : isScrolled
-                      ? "text-gray-700 hover:text-midnight-blue"
-                      : "text-white hover:text-dolci-blue"
+                      ? "text-[#0c5a7c] hover:text-midnight-blue"
+                      : "text-[#0c5a7c] hover:text-dolci-blue"
                   }`}
                 >
                   {item.name}
@@ -112,7 +113,7 @@ const Header = () => {
 
             <a href="tel:+918023456789" className="">
               <button
-                className="bg-dolci-blue font-montserrat font-medium text-lg px-6 py-1 rounded-full cursor-pointer"
+                className="bg-dolci-blue font-montserrat font-medium text-lg px-4 py-1 rounded-full cursor-pointer"
                 // onClick={() =>
                 //   document
                 //     .getElementById("location")
@@ -125,7 +126,7 @@ const Header = () => {
             </a>
             <Link to={"/#location"}>
               <button
-                className="border-1 font-montserrat font-medium text-lg px-6 py-1 rounded-full cursor-pointer text-gray-800 bg-white border-gray-300 hover:bg-white hover:text-midnight-blue"
+                className="border-1 font-montserrat font-medium text-lg px-4 py-1 rounded-full cursor-pointer text-gray-800 bg-white border-gray-300 hover:bg-white hover:text-midnight-blue"
                 // onClick={() =>
                 //   document
                 //     .getElementById("menu")

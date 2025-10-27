@@ -233,7 +233,8 @@ body {
 
 .btn-secondary {
   background-color: transparent;
-  color: var(--dolci-blue);
+  /* color: var(--dolci-blue); */
+  color: #1696ca;
   border: 2px solid var(--dolci-blue);
 }
 

@@ -90,15 +90,13 @@ const Menu = () => {
               return (
                 <div
                   key={category.id}
-                  className={`rounded-2xl overflow-hidden ${
-                    isActive
+                  className={`rounded-2xl overflow-hidden ${isActive
                       ? "bg-dolci-blue text-midnight-blue shadow-xl scale-102"
                       : "bg-arctic-blue hover:bg-dolci-blue/50 text-gray-700 hover:text-midnight-blue hover:shadow-lg"
-                  } ${
-                    isActive
+                    } ${isActive
                       ? "border-dark-accent"
                       : "border-transparent hover:border-dolci-blue/30"
-                  }`}
+                    }`}
                 >
                   <button
                     onClick={() => setSelectedCategory(category.id)}
@@ -110,11 +108,10 @@ const Menu = () => {
                       `}
                   >
                     <IconComponent
-                      className={`md:h-7 h-9 w-9 md:w-7 mb-3 transition-colors ${
-                        isActive
+                      className={`md:h-7 h-9 w-9 md:w-7 mb-3 transition-colors ${isActive
                           ? "text-midnight-blue"
                           : "text-gray-600 group-hover:text-midnight-blue"
-                      }`}
+                        }`}
                     />
                     <span className="font-montserrat font-medium text-sm leading-tight">
                       {category.name}
@@ -159,11 +156,11 @@ const Menu = () => {
                           className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
                         />
 
-                        <div className="absolute top-4 right-4">
+                        {/* <div className="absolute top-4 right-4">
                           <div className="bg-dolci-blue text-midnight-blue font-semibold text-[16px] px-3 py-1 rounded-[5px]">
                             {item.price}
                           </div>
-                        </div>
+                        </div> */}
                         <div className="absolute top-4 left-4">
                           <div
                             className={`flex items-center font-medium text-xs px-2 py-1  rounded-[5px] ${getCategoryBadgeColor(
