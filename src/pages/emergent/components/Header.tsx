@@ -20,6 +20,7 @@ const Header = () => {
     // { name: "FAQ", href: "/#faq" },
     { name: "Location", href: "/#location" },
     { name: "Directors", href: "/directors" },
+    { name: "Blogs", href: "/blogs" },
   ];
 
   useEffect(() => {
