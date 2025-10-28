@@ -38,7 +38,7 @@ const B2b = () => {
               Dolci White Label Partnerships in India
             </h1>
             <p className="font-great-vibes text-2xl text-dark-accent mb-10">
-              Made with care by Dolci, retailed with care by you
+              Made With Care By Dolci, Retailed With Care By You
             </p>
             <div className="max-w-5xl mx-auto">
               <p className="font-montserrat text-[18px] text-gray-700 leading-relaxed mb-12">

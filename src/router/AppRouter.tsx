@@ -11,6 +11,7 @@ import Emergent from "../pages/emergent/Emergent";
 import B2b from "../pages/emergent/pages/B2b";
 import Directors from "../pages/emergent/pages/Directors";
 import ScrollToHash from "../pages/emergent/lib/ScrollToHash";
+import Blog from "../pages/emergent/pages/blog";
 
 // const TestRouter = () => {
 //   return (
@@ -32,6 +33,9 @@ const MainRouter = () => {
       <ScrollToHash />
       <Routes>
         <Route path="/" element={<Emergent />} />
+
+        <Route path=":id" element={<Blog />} />
+
         <Route path="/b2b" element={<B2b />} />
         <Route path="/directors" element={<Directors />} />
         {/* <Route path="/emergent" element={<Emergent />} /> */}

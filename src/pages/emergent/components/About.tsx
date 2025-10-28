@@ -1,5 +1,6 @@
 import { Heart, Coffee, Cake, Users } from "lucide-react";
 import { aboutData } from "../../../data/mock";
+import { Link } from "react-router";
 // import { useAssets } from "../../../hooks/useAssets";
 
 const About = () => {
@@ -65,6 +66,7 @@ const About = () => {
       id: 1,
       title: "Inspired by",
       subtitle: "European café culture",
+      link: "/dacadc",
       image:
         "https://res.cloudinary.com/dq7bzydqz/image/upload/v1759062395/DSC06580_1_plbdql.webp",
       gradient: "bg-gradient-to-t from-black/80 via-transparent to-transparent",
@@ -73,6 +75,7 @@ const About = () => {
       id: 2,
       title: "Handcrafted",
       subtitle: "Dishes and pastries",
+      link: "/dacadc",
       image:
         "https://res.cloudinary.com/dq7bzydqz/image/upload/v1759062694/DSC06519_1_vofrqk.webp",
       gradient: "bg-gradient-to-t from-black/80 via-transparent to-transparent",
@@ -80,6 +83,7 @@ const About = () => {
     {
       id: 3,
       title: "Rich Coffee",
+      link: "/dacadc",
       // subtitle: "Blends and specialty drinks",
       subtitle: "Blends and drinks",
       image:
@@ -89,6 +93,7 @@ const About = () => {
     {
       id: 4,
       title: "Cozy Ambience",
+      link: "/dacadc",
       subtitle: "Perfect for any occasion",
       image:
         "https://res.cloudinary.com/dq7bzydqz/image/upload/v1759062394/DSC06492_1_up59l0.webp",
@@ -115,29 +120,34 @@ const About = () => {
               {/* Image Highlights */}
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-2 justify-center mb-20">
                 {storyData.map((item) => (
-                  <div key={item.id} className="group cursor-pointer py-2 px-1">
-                    <div className="relative overflow-hidden rounded-3xl aspect-square shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 hover:scale-102 p-2">
-                      <div className="relative overflow-hidden rounded-2xl w-full h-full">
-                        <img
-                          src={item.image}
-                          alt={item.subtitle}
-                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                          loading="lazy"
-                        />
-                        <div
-                          className={`absolute inset-0 bg-gradient-to-t ${item.gradient} transition-all duration-300`}
-                        ></div>
-                        <div className="absolute bottom-6 left-6 right-6 text-white">
-                          <h4 className="font-playfair-display text-[22px] md:text-[18px] font-bold mb-2">
-                            {item.title}
-                          </h4>
-                          <p className="font-montserrat text-gray-100 md:text-sm text-[16px] opacity-90 leading-4">
-                            {item.subtitle}
-                          </p>
+                  <Link to={item.link}>
+                    <div
+                      key={item.id}
+                      className="group cursor-pointer py-2 px-1"
+                    >
+                      <div className="relative overflow-hidden rounded-3xl aspect-square shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 hover:scale-102 p-2">
+                        <div className="relative overflow-hidden rounded-2xl w-full h-full">
+                          <img
+                            src={item.image}
+                            alt={item.subtitle}
+                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                            loading="lazy"
+                          />
+                          <div
+                            className={`absolute inset-0 bg-gradient-to-t ${item.gradient} transition-all duration-300`}
+                          ></div>
+                          <div className="absolute bottom-6 left-6 right-6 text-white">
+                            <h4 className="font-playfair-display text-[22px] md:text-[18px] font-bold mb-2">
+                              {item.title}
+                            </h4>
+                            <p className="font-montserrat text-gray-100 md:text-sm text-[16px] opacity-90 leading-4">
+                              {item.subtitle}
+                            </p>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </Link>
                 ))}
               </div>
             </div>
