@@ -10,6 +10,12 @@ import {
   Sandwich,
   Store,
   SquareMenu,
+  Hamburger,
+  Egg,
+  Soup,
+  ChefHat,
+  Sparkles,
+  Dessert,
   //   LucideIcon,
 } from "lucide-react";
 import { completeMenuData } from "../../../data/menu";
@@ -39,12 +45,16 @@ const Menu = () => {
     const icons: Record<string, any> = {
       viennoiserie: Coffee,
       cakes: Cake,
-      "specialty-desserts": Star,
+      "specialty-desserts": Dessert,
       cheesecakes: Cake,
       "hot-beverages": Coffee,
       "iced-coffee": Coffee,
       sandwiches: Sandwich,
-      pasta: Sandwich,
+      pasta: ChefHat,
+      Burgers: Hamburger,
+      eggTheory: Egg,
+      "healthy-bowls": Soup,
+      parfait: Sparkles,
     };
     return icons[categoryId] || Star;
   };
