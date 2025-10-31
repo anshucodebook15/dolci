@@ -4,7 +4,7 @@ import {
   Star,
   Clock,
   //   MapPin,
-  Leaf,
+  // Leaf,
   Coffee,
   Cake,
   Sandwich,
@@ -59,14 +59,14 @@ const Menu = () => {
     return icons[categoryId] || Star;
   };
 
-  const getCategoryBadgeColor = (category: string): string => {
-    const colors: Record<string, string> = {
-      veg: "bg-green-100 text-green-800",
-      egg: "bg-yellow-100 text-yellow-800",
-      drink: "bg-blue-100 text-blue-800",
-    };
-    return colors[category] || "bg-gray-100 text-gray-800";
-  };
+  // const getCategoryBadgeColor = (category: string): string => {
+  //   const colors: Record<string, string> = {
+  //     veg: "bg-green-100 text-green-800",
+  //     egg: "bg-yellow-100 text-yellow-800",
+  //     drink: "bg-blue-100 text-blue-800",
+  //   };
+  //   return colors[category] || "bg-gray-100 text-gray-800";
+  // };
 
   return (
     <section id="menu" className="py-20 md:px-4 px-4 bg-white">
@@ -175,7 +175,7 @@ const Menu = () => {
                           </div>
                         </div> */}
 
-                        {item.category === "drink" ? (
+                        {/* {item.category === "drink" ? (
                           ""
                         ) : (
                           <div className="absolute top-4 left-4">
@@ -192,7 +192,7 @@ const Menu = () => {
                               </span>
                             </div>
                           </div>
-                        )}
+                        )} */}
                       </div>
                       <div className="p-6">
                         <h4 className="font-playfair text-xl font-bold text-midnight-blue mb-3 group-hover:text-dark-accent transition-colors line-clamp-1">

@@ -46,6 +46,12 @@ const Delights = () => {
       count: galleryData.images.filter((img) => img.category === "pastries")
         .length,
     },
+    {
+      id: "ambience",
+      name: "Ambience",
+      count: galleryData.images.filter((img) => img.category === "pastries")
+        .length,
+    },
     // {
     //   id: "display",
     //   name: "Display",
@@ -100,7 +106,7 @@ const Delights = () => {
           {filteredImages.map((image, _) => (
             <div key={image.id} className="overflow-hidden rounded-xl">
               <div className="safe-spacing">
-                <div className="cursor-pointer overflow-hidden border-0 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 hover:scale-102 h-full">
+                <div className="cursor-pointer overflow-hidden border-0 shadow-lg transition-all duration-300 transform hover:-translate-y-1 hover:scale-102 h-full">
                   <div className="relative overflow-hidden w-full h-60">
                     <img
                       src={image.url}
@@ -114,9 +120,14 @@ const Delights = () => {
                     <div className="absolute top-4 left-4 ">
                       <div className="bg-white/90 text-midnight-blue font-montserrat font-medium capitalize rounded-[5px] px-2">
                         {/* {image.category} */}
-                        {image.alt}
+                        {/* {image.alt} */}
                       </div>
                     </div>
+                  </div>
+                  <div className="p-1">
+                    <p className="text-gray-500 font-medium text-sm italic ">
+                      <i>{image.alt}</i>
+                    </p>
                   </div>
                 </div>
               </div>

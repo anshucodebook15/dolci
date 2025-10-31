@@ -8,11 +8,12 @@ import {
 // import App from "../App";
 // import Dolci from "../pages/dolci/dolci";
 import Emergent from "../pages/emergent/Emergent";
-import B2b from "../pages/emergent/pages/B2b";
+// import B2b from "../pages/emergent/pages/B2b";
 import Directors from "../pages/emergent/pages/Directors";
 import ScrollToHash from "../pages/emergent/lib/ScrollToHash";
 import Blog from "../pages/emergent/pages/blog";
 import Blogs from "../pages/emergent/pages/blogs";
+import B2b2 from "../pages/emergent/pages/B2b2";
 
 // const TestRouter = () => {
 //   return (
@@ -38,7 +39,7 @@ const MainRouter = () => {
         <Route path=":id" element={<Blog />} />
         <Route path="/blogs" element={<Blogs />} />
 
-        <Route path="/b2b" element={<B2b />} />
+        <Route path="/b2b" element={<B2b2 />} />
         <Route path="/directors" element={<Directors />} />
         {/* <Route path="/emergent" element={<Emergent />} /> */}
         {/* <Route path="/dolci" element={<Dolci />} /> */}

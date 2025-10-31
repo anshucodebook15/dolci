@@ -330,6 +330,8 @@ export const locationData = {
       name: "New Bel Road",
       address:
         "No 108 , AGS Layout, New BEL Rd, Chikkamaranahalli, Bengaluru, Karnataka 560094",
+      location: "",
+      img: "https://res.cloudinary.com/dq7bzydqz/image/upload/v1761716210/New_BEL_Road_vpgtpv.webp",
       phone: "+91 9108518520",
       email: "+91 9740563404",
       hours: {
@@ -345,6 +347,8 @@ export const locationData = {
       name: "Lavelle Road",
       address:
         "55/2-1, Lavelle Road, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001",
+      location: "",
+      img: "https://res.cloudinary.com/dq7bzydqz/image/upload/v1761716397/Lavelle_Road_rtkrht.webp",
       phone: "+91 9108518523",
       email: "+91 9740563404",
       hours: {
@@ -360,6 +364,8 @@ export const locationData = {
       name: "Cunningham Road",
       address:
         "18/3, Ali Askar Road, Near Honda Showroom Cunningham Road, Ali Asker Rd, Vasanth Nagar, Bengaluru, Karnataka 560052",
+      location: "",
+      img: "https://res.cloudinary.com/dq7bzydqz/image/upload/v1761716398/Cunningham_Road_e10usv.webp",
       phone: "+91 9108518522",
       email: "+91 9740563404",
       hours: {

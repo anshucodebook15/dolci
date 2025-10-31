@@ -5,10 +5,10 @@ const Hero = () => {
     <section
       id="home"
       // className="relative min-h-[100vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-midnight-blue via-dark-accent to-dolci-blue pb-20"
-      className="relative min-h-[100vh] flex items-center justify-center overflow-hidden md:pb-30 pb-30 mb-20"
+      className="max-w-[1600px] mx-auto relative min-h-[100vh] flex items-center justify-center overflow-hidden md:pb-30 pb-30 mb-20"
     >
       {/* Background Video */}
-      <div className="absolute transform inset-0 w-full h-full overflow-hidden z-0 md:mt-[-120px] ">
+      <div className="absolute transform inset-0 w-full h-full overflow-hidden z-0 md:mt-[-100px] lg:mt-[-40px] xl:mt-[-120px]">
         <video
           className="w-full  md:h-auto md:mt-40 lg:mt-0 mt-[200px] md:object-cover object-center scale-[2] md:scale-[1.8] lg:scale-100"
           src={videos.dolcipeople} // replace with your video path
@@ -30,7 +30,7 @@ const Hero = () => {
       </div> */}
 
       {/* Content */}
-      <div className="relative z-20 text-center text-[#1498cf] px-4 pt-22 lg:mt-[490px] mt-[360px]">
+      <div className="relative z-20 text-center text-[#1498cf] px-4 pt-22 lg:mt-[440px] xl:mt-[490px] mt-[360px]">
         <h1 className="font-playfair text-4xl md:text-5xl font-bold mb-2 leading-tight">
           Since 2008, {/* <br /> */}
           Worth Discovering

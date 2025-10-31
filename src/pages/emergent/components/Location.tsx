@@ -8,7 +8,7 @@ import { useAssets } from "../../../hooks/useAssets";
 const Location = () => {
   const { images, icons } = useAssets();
   const [selectedLocation, setSelectedLocation] = useState(
-    locationData.locations[2]
+    locationData.locations[0]
   ); // Default to Cunningham Road (main)
 
   const socialLinks = [
@@ -127,6 +127,14 @@ const Location = () => {
                 </button>
               </>
             ))}
+          </div>
+
+          <div className="max-w-4xl mx-auto my-6 md:h-100 overflow-hidden rounded-2xl">
+            <img
+              src={selectedLocation.img}
+              alt=""
+              className="w-full object-contain"
+            />
           </div>
         </div>
 

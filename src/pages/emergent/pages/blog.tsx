@@ -31,7 +31,7 @@ const Blog = () => {
     <div>
       <ScrollToTop />
       <LayoutTwo>
-        <div className="px-4">
+        <div className="px-8 md:px-4">
           <div className="py-20"></div>
 
           <section className="text- mb-16 max-w-4xl mx-auto">
@@ -48,7 +48,7 @@ const Blog = () => {
               </p>
             </div> */}
 
-            <div className="w-full overflow-hidden h-100 mb-6">
+            <div className="w-full overflow-hidden md:h-100 mb-6">
               <img
                 src="https://t3.ftcdn.net/jpg/07/14/64/44/360_F_714644486_zpPsCXds1W8oaevXFG7SWoqKaopeazt9.jpg"
                 alt=""
