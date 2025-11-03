@@ -14,6 +14,7 @@ import ScrollToHash from "../pages/emergent/lib/ScrollToHash";
 import Blog from "../pages/emergent/pages/blog";
 import Blogs from "../pages/emergent/pages/blogs";
 import B2b2 from "../pages/emergent/pages/B2b2";
+// import B2b from "../pages/emergent/pages/B2b";
 
 // const TestRouter = () => {
 //   return (

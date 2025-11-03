@@ -1,6 +1,13 @@
 import { useState } from "react";
 
-import { MapPin, Clock, Phone, Mail } from "lucide-react";
+import {
+  MapPin,
+  Clock,
+  Phone,
+  Mail,
+  ChevronRight,
+  ChevronLeft,
+} from "lucide-react";
 import { locationData } from "../../../data/mock";
 import { useAssets } from "../../../hooks/useAssets";
 // import { locationData } from '../data/mock';
@@ -10,6 +17,21 @@ const Location = () => {
   const [selectedLocation, setSelectedLocation] = useState(
     locationData.locations[0]
   ); // Default to Cunningham Road (main)
+
+  // Slider state
+  const [slideIndex, setSlideIndex] = useState(0);
+
+  const nextSlide = () => {
+    setSlideIndex((prev) =>
+      prev === selectedLocation.img.length - 1 ? 0 : prev + 1
+    );
+  };
+
+  const prevSlide = () => {
+    setSlideIndex((prev) =>
+      prev === 0 ? selectedLocation.img.length - 1 : prev - 1
+    );
+  };
 
   const socialLinks = [
     {
@@ -129,13 +151,52 @@ const Location = () => {
             ))}
           </div>
 
-          <div className="max-w-4xl mx-auto my-6 md:h-100 overflow-hidden rounded-2xl">
+          {/* <section id="location-image" className="max-w-4xl mx-auto my-6 md:h-100 overflow-hidden rounded-2xl">
             <img
-              src={selectedLocation.img}
+              src={selectedLocation.img[0]}
               alt=""
               className="w-full object-contain"
             />
-          </div>
+          </section> */}
+
+          <section
+            id="location-image"
+            className="relative max-w-4xl mx-auto my-6 h-64 md:h-96 overflow-hidden rounded-2xl group"
+          >
+            <img
+              src={selectedLocation.img[slideIndex]}
+              alt={selectedLocation.name}
+              className="w-full h-full object-cover transition-all duration-500"
+            />
+
+            {/* Left Arrow */}
+            <button
+              onClick={prevSlide}
+              className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/70 backdrop-blur-sm p-2 rounded-full  md:flex hover:bg-white transition"
+            >
+              <ChevronLeft size={20} />
+            </button>
+
+            {/* Right Arrow */}
+            <button
+              onClick={nextSlide}
+              className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/70 backdrop-blur-sm p-2 rounded-full  md:flex hover:bg-white transition"
+            >
+              <ChevronRight size={20} />
+            </button>
+
+            {/* Mobile Swipe Hints dots */}
+            <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-2">
+              {selectedLocation.img.map((_, i) => (
+                <div
+                  key={i}
+                  className={`w-2 h-2 rounded-full transition ${
+                    slideIndex === i ? "bg-dark-accent" : "bg-gray-300"
+                  }`}
+                />
+              ))}
+            </div>
+          </section>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">

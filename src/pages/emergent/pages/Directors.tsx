@@ -19,7 +19,7 @@ const Directors = () => {
       role: "Founder & Director",
       image: "shipra",
       description:
-        "Ms. Shipra Kumar, a Le Cordon Bleu graduate, turned her passion into purpose when she founded Dolci in 2010. What started as a humble home baking venture has blossomed into a celebrated café brand, known across Bengaluru for its quality and unforgettable flavors. Driven by creativity, craftsmanship, and a love for bringing people together through food, Ms. Shipra has made Dolci a name that resonates with warmth, taste, and excellence.",
+        "Ms. Shipra Kumar, a Le Cordon Bleu graduate, turned her passion into purpose when she founded Dolci in 2008. What started as a humble home baking venture has blossomed into a celebrated café brand, known across Bengaluru for its quality and unforgettable flavors. Driven by creativity, craftsmanship, and a love for bringing people together through food, Ms. Shipra has made Dolci a name that resonates with warmth, taste, and excellence.",
     },
     {
       name: "Mr. Vivek Kumar",
@@ -40,14 +40,14 @@ const Directors = () => {
       role: "Director",
       image: "randel",
       description:
-        "Mr. Randal Colaco, Director of Dolci, represents the new wave and brings fresh vision with creative direction to the family’s hospitality ventures. With a passion for premium experiences, Mr. Randal plays a key role in shaping Dolci’s identity and growth. His approach blends design sensibility, operational excellence, and customer-first thinking. Randal represents the new wave of leadership with a strong focus on innovation and lifestyle-driven brands.",
+        "Mr. Randal Colaco, Director of Dolci, represents the new wave and brings fresh vision with creative direction to the family’s hospitality ventures. With a passion for premium experiences, Mr. Randal plays a key role in shaping Dolci’s identity and growth. His approach blends design sensibility, operational excellence, and customer-first thinking. Mr. Randal represents the new wave of leadership with a strong focus on innovation and lifestyle-driven brands.",
     },
     {
       name: "Mr. M Balaji",
       role: "Executive Director & CEO",
       image: "balaji",
       description:
-        "Mr. Balaji M, Executive Director and CEO of Dolci, brings over 25 years of cross-industry experience to the brand. He plays a pivotal role in Dolci’s strategic growth. As the driving force behind Dolci’s expansion, Mr. Balaji combines visionary leadership with deep operational insight. His people-centric approach and passion for excellence continue to shape the brand’s journey forward.",
+        "Mr. M Balaji , Executive Director and CEO of Dolci, brings over 25 years of cross-industry experience to the brand. He plays a pivotal role in Dolci’s strategic growth. As the driving force behind Dolci’s expansion, Mr. Balaji combines visionary leadership with deep operational insight. His people-centric approach and passion for excellence continue to shape the brand’s journey forward.",
     },
   ];
 

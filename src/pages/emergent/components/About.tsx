@@ -103,7 +103,7 @@ const About = () => {
 
   return (
     <>
-      <section id="about" className=" bg-white">
+      <section id="about" className=" bg-white mb-16 py-30">
         <div className="contain px-6">
           <div className="text-center mb-20">
             <h2 className="font-playfair-display text-4xl md:text-5xl font-bold text-midnight-blue mb-6">
@@ -112,6 +112,7 @@ const About = () => {
             <p className="font-great-vibes text-2xl text-dark-accent mb-10">
               {subtitle}
             </p>
+
             <div className="max-w-5xl mx-auto">
               <p className="font-montserrat text-lg text-gray-700 leading-relaxed mb-12">
                 {description}

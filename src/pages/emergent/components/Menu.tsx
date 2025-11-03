@@ -8,8 +8,8 @@ import {
   Coffee,
   Cake,
   Sandwich,
-  Store,
-  SquareMenu,
+  // Store,
+  // SquareMenu,
   Hamburger,
   Egg,
   Soup,
@@ -68,8 +68,62 @@ const Menu = () => {
   //   return colors[category] || "bg-gray-100 text-gray-800";
   // };
 
+  const chefchoice = [
+    {
+      id: 1,
+      title: "Dolci's Signature Tiramisu",
+      description: "Coffee-soaked perfection that started our legacy",
+      image:
+        "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764524/Dolci_Square_Web-Images_0017_Dolci_s-Signature-Tiramisu-Square_1_ryxknl.webp",
+    },
+    {
+      id: 2,
+      title: "French Classic Croissant",
+      description: "Authentic Parisian mornings in every flaky bite",
+      image:
+        "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764550/Dolci_Square_Web-Images_0024_Peach-_-Berry-Pocket-Square-_wo-fork_mnddvc.webp",
+    },
+    {
+      id: 3,
+      title: "Tres Leches Coconut",
+      description: "Our signature fusion of Latin American & tropical flavors",
+      image:
+        "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764544/Dolci_Square_Web-Images_0012_2_Tres-Leches-Coconut-Square_dciurr.webp",
+    },
+    {
+      id: 22,
+      title: "Apple Cinnamon Shibuya Toast",
+      category: "veg",
+      description:
+        "Fluffy Shibuya toast topped with warm apple slices, a sprinkle of cinnamon, and a hint of sweetness for a cozy dessert experience.",
+      price: "-",
+      image:
+        "https://res.cloudinary.com/dq7bzydqz/image/upload/v1761712793/Apple_Cinnamon_Toast_zkyuky.webp",
+    },
+    {
+      id: 21,
+      title: "Hazelnut Shibuya Toast",
+      category: "veg",
+      description:
+        "Pillowy Shibuya toast topped with creamy hazelnut spread, sliced nuts, and a touch of chocolate drizzle.​",
+      price: "-",
+      image:
+        "https://res.cloudinary.com/dq7bzydqz/image/upload/v1761712623/Hazelnut_Shibuya_q9jgg9.webp",
+    },
+    {
+      id: 30,
+      title: "Mango Shibuya",
+      category: "veg",
+      description:
+        "Signature fluffy Shibuya toast layered with juicy mango chunks and sweet syrup—a tropical dessert special.",
+      price: "-",
+      image:
+        "https://res.cloudinary.com/dq7bzydqz/image/upload/v1761714139/Mango_Shibuya_Toast_omc8xm.webp",
+    },
+  ];
+
   return (
-    <section id="menu" className="py-20 md:px-4 px-4 bg-white">
+    <section id="menu" className="py-8 md:px-4 px-4 bg-white">
       <div className="max-w-7xl mx-auto container-padding">
         <div className="text-center mb-20">
           <div className="group inline-block cursor-pointer mb-6">
@@ -93,22 +147,20 @@ const Menu = () => {
 
         {/* Category Navigation */}
         <div className="mb-20 md:px-2 px-3">
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-8 gap-3 lg:gap-3 max-w-6xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7 gap-3 lg:gap-3 max-w-6xl mx-auto">
             {completeMenuData.categories.map((category: any) => {
               const IconComponent = getCategoryIcon(category.id);
               const isActive = selectedCategory === category.id;
               return (
                 <div
                   key={category.id}
-                  className={`rounded-2xl overflow-hidden ${
-                    isActive
-                      ? "bg-dolci-blue text-midnight-blue shadow-xl scale-102"
-                      : "bg-arctic-blue hover:bg-dolci-blue/50 text-gray-700 hover:text-midnight-blue hover:shadow-lg"
-                  } ${
-                    isActive
+                  className={`rounded-2xl overflow-hidden ${isActive
+                    ? "bg-dolci-blue text-midnight-blue shadow-xl scale-102"
+                    : "bg-arctic-blue hover:bg-dolci-blue/50 text-gray-700 hover:text-midnight-blue hover:shadow-lg"
+                    } ${isActive
                       ? "border-dark-accent"
                       : "border-transparent hover:border-dolci-blue/30"
-                  }`}
+                    }`}
                 >
                   <button
                     onClick={() => setSelectedCategory(category.id)}
@@ -120,11 +172,10 @@ const Menu = () => {
                       `}
                   >
                     <IconComponent
-                      className={`md:h-7 h-9 w-9 md:w-7 mb-3 transition-colors ${
-                        isActive
-                          ? "text-midnight-blue"
-                          : "text-gray-600 group-hover:text-midnight-blue"
-                      }`}
+                      className={`md:h-7 h-9 w-9 md:w-7 mb-3 transition-colors ${isActive
+                        ? "text-midnight-blue"
+                        : "text-gray-600 group-hover:text-midnight-blue"
+                        }`}
                     />
                     <span className="font-montserrat font-medium text-sm leading-tight">
                       {category.name}
@@ -238,79 +289,38 @@ const Menu = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10">
-            <div className="group text-center cursor-pointer py-3 px-2">
-              <div className="mb-8">
-                <div className="relative overflow-hidden rounded-3xl aspect-square shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 hover:scale-102 p-2">
-                  <div className="relative overflow-hidden rounded-2xl w-full h-full">
-                    <img
-                      src="https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764524/Dolci_Square_Web-Images_0017_Dolci_s-Signature-Tiramisu-Square_1_ryxknl.webp"
-                      alt="Dolci's Signature Tiramisu"
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                      loading="lazy"
-                    />
-                    {/* <div className="absolute inset-0 bg-gradient-to-t from-midnight-blue/60 via-transparent to-transparent group-hover:from-midnight-blue/80 transition-all duration-300"></div> */}
+            {chefchoice.map((item) => (
+              <div
+                key={item.id}
+                className="group text-center cursor-pointer py-3 px-2"
+              >
+                <div className="mb-8">
+                  <div className="relative overflow-hidden rounded-3xl aspect-square shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 hover:scale-102 p-2">
+                    <div className="relative overflow-hidden rounded-2xl w-full h-full">
+                      <img
+                        src={item.image}
+                        alt={item.title}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        loading="lazy"
+                      />
+                    </div>
                   </div>
                 </div>
+
+                <h4 className="font-playfair text-[22px] font-bold text-midnight-blue mb-3 transition-colors duration-300 group-hover:text-dark-accent">
+                  {item.title}
+                </h4>
+                <p className="font-montserrat text-[18px] text-gray-600 transition-colors duration-300 group-hover:text-gray-700">
+                  {item.description}
+                </p>
               </div>
-              <h4 className="font-playfair text-[22px] font-bold text-midnight-blue mb-3 transition-colors duration-300 group-hover:text-dark-accent">
-                Dolci's Signature Tiramisu
-              </h4>
-              <p className="font-montserrat text-[18px] text-gray-600 transition-colors duration-300 group-hover:text-gray-700">
-                Coffee-soaked perfection that started our legacy
-              </p>
-            </div>
-
-            <div className="group text-center cursor-pointer py-3 px-2">
-              <div className="mb-8">
-                <div className="relative overflow-hidden rounded-3xl aspect-square shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 hover:scale-102 p-2">
-                  <div className="relative overflow-hidden rounded-2xl w-full h-full">
-                    <img
-                      src="https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764550/Dolci_Square_Web-Images_0024_Peach-_-Berry-Pocket-Square-_wo-fork_mnddvc.webp"
-                      alt="French Classic Croissant"
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                      loading="lazy"
-                    />
-                    {/* <div className="absolute inset-0 bg-gradient-to-t from-midnight-blue/60 via-transparent to-transparent group-hover:from-midnight-blue/80 transition-all duration-300"></div> */}
-                  </div>
-                </div>
-              </div>
-
-              <h4 className="font-playfair text-[22px] font-bold text-midnight-blue mb-3 transition-colors duration-300 group-hover:text-dark-accent">
-                French Classic Croissant
-              </h4>
-              <p className="font-montserrat text-[18px] text-gray-600 transition-colors duration-300 group-hover:text-gray-700">
-                Authentic Parisian mornings in every flaky bite
-              </p>
-            </div>
-
-            <div className="group text-center cursor-pointer py-3 px-2">
-              <div className="mb-8">
-                <div className="relative overflow-hidden rounded-3xl aspect-square shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 hover:scale-102 p-2">
-                  <div className="relative overflow-hidden rounded-2xl w-full h-full">
-                    <img
-                      src="https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764544/Dolci_Square_Web-Images_0012_2_Tres-Leches-Coconut-Square_dciurr.webp"
-                      alt="Tres Leches Coconut Cake"
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                      loading="lazy"
-                    />
-                    {/* <div className="absolute inset-0 bg-gradient-to-t from-midnight-blue/60 via-transparent to-transparent group-hover:from-midnight-blue/80 transition-all duration-300"></div> */}
-                  </div>
-                </div>
-              </div>
-
-              <h4 className="font-playfair text-[22px] font-bold text-midnight-blue mb-3 transition-colors duration-300 group-hover:text-dark-accent">
-                Tres Leches Coconut
-              </h4>
-              <p className="font-montserrat text-[18px] text-gray-600 transition-colors duration-300 group-hover:text-gray-700">
-                Our signature fusion of Latin American & tropical flavors
-              </p>
-            </div>
+            ))}
           </div>
         </div>
       </div>
 
       {/* CTA Section */}
-      <div className="mt-24 text-center rounded-3xl p-10 lg:p-12 text-midnight-blue herobg">
+      {/* <div className="mt-24 text-center rounded-3xl p-10 lg:p-12 text-midnight-blue herobg">
         <h3 className="font-playfair text-2xl lg:text-3xl font-bold mb-6">
           Ready to Experience Dolci's Artisan Creations?
         </h3>
@@ -343,7 +353,7 @@ const Menu = () => {
             Explore Menu
           </button>
         </div>
-      </div>
+      </div> */}
 
       {/* <div className="div">
         test

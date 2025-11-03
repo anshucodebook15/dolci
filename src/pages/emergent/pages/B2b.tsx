@@ -185,24 +185,6 @@ const B2b = () => {
             <h2 className="underline font-playfair-display text-3xl md:text-3xl font-bold text-midnight-blue mb-6">
               Our Partnerships
             </h2>
-
-            {/* <div className="max-w-5xl mx-auto">
-            <ol className="font-montserrat text-lg text-gray-700 leading-relaxed mb-12">
-              <li>
-                <strong>ITC:</strong> Supplying a wide range of breads, cakes,
-                cookies and other baked products.&nbsp;
-              </li>
-              <li>
-                <strong>Chai Point:</strong> Producing fresh sandwiches, puffs
-                and savoury delights across 39 outlets.
-              </li>
-              <li>
-                <strong>Fyole Caf&eacute; (Mall of Asia):</strong> Crafting
-                specialty baked goods to complement their caf&eacute; menu.
-              </li>
-            </ol>
-          </div> */}
-
             <div className="contain max-w-6xl">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10 mb-12 justify-baseline item-start">
                 <div className="bg-white rounded-xl p-6 flex flex-col  items-center">
@@ -223,9 +205,7 @@ const B2b = () => {
                 </div>
                 <div className="bg-white rounded-xl p-6 flex flex-col items-center">
                   <div className="mb-4 w-40 h-20 overflow-hidden flex justify-center">
-                    {/* <div className="w-20 h-20 bg-gray-300 flex justify-center items-center">
-                      <h2>Pan-India</h2>
-                    </div> */}
+
                     <img
                       src={
                         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbbNlhg2_DAonvktaY8wmxRAc1OQ6idWJVAw&s"
@@ -265,6 +245,8 @@ const B2b = () => {
               experience, as we deliver excellence behind the scenes
             </p>
           </section>
+
+
 
           <div className="contain border-[1px] border-gray-200 mb-16"></div>
 

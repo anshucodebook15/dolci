@@ -2,6 +2,52 @@
 
 export const completeMenuData = {
   categories: [
+     {
+      id: "hot-beverages",
+      name: "Hot Beverages",
+      description: "Premium coffee and hot drinks",
+      items: [
+        {
+          id: 17,
+          name: "Cappuccino",
+          description:
+            "Traditional Italian masterpiece of smooth espresso, steamed milk and foam",
+          price: "₹220",
+          category: "drink",
+          image:
+            "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764536/Dolci_Square_Web-Images_0002_Cappuccino-Square_fgr6qb.webp",
+        },
+        {
+          id: 18,
+          name: "Caffe Latte",
+          description:
+            "Comforting drink with silky layer of foam as the real highlight",
+          price: "₹235",
+          category: "drink",
+          image:
+            "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764535/Dolci_Square_Web-Images_0001_Caffe-Latte-square_rpomhy.webp",
+        },
+        {
+          id: 19,
+          name: "Hot Chocolate",
+          description: "A warm indulgent sip of rich, velvety chocolate bliss",
+          price: "₹275",
+          category: "drink",
+          image:
+            "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764537/Hot_Chocolate_Square_alv4zz.webp",
+        },
+        {
+          id: 20,
+          name: "Caffe Mocha",
+          description:
+            "Invigorating blend of coffee and chocolate topped with chocolate sauce",
+          price: "₹250",
+          category: "drink",
+          image:
+            "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764535/Dolci_Square_Web-Images_0000_Cafe-Mocha-Square_vbqpfu.webp",
+        },
+      ],
+    },
     {
       id: "viennoiserie",
       name: "Viennoiserie",
@@ -503,52 +549,7 @@ export const completeMenuData = {
         },
       ],
     },
-    {
-      id: "hot-beverages",
-      name: "Hot Beverages",
-      description: "Premium coffee and hot drinks",
-      items: [
-        {
-          id: 17,
-          name: "Cappuccino",
-          description:
-            "Traditional Italian masterpiece of smooth espresso, steamed milk and foam",
-          price: "₹220",
-          category: "drink",
-          image:
-            "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764536/Dolci_Square_Web-Images_0002_Cappuccino-Square_fgr6qb.webp",
-        },
-        {
-          id: 18,
-          name: "Caffe Latte",
-          description:
-            "Comforting drink with silky layer of foam as the real highlight",
-          price: "₹235",
-          category: "drink",
-          image:
-            "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764535/Dolci_Square_Web-Images_0001_Caffe-Latte-square_rpomhy.webp",
-        },
-        {
-          id: 19,
-          name: "Hot Chocolate",
-          description: "A warm indulgent sip of rich, velvety chocolate bliss",
-          price: "₹275",
-          category: "drink",
-          image:
-            "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764537/Hot_Chocolate_Square_alv4zz.webp",
-        },
-        {
-          id: 20,
-          name: "Caffe Mocha",
-          description:
-            "Invigorating blend of coffee and chocolate topped with chocolate sauce",
-          price: "₹250",
-          category: "drink",
-          image:
-            "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764535/Dolci_Square_Web-Images_0000_Cafe-Mocha-Square_vbqpfu.webp",
-        },
-      ],
-    },
+   
     {
       id: "iced-coffee",
       name: "Iced Coffee",

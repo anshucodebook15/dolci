@@ -49,7 +49,7 @@ const Delights = () => {
     {
       id: "ambience",
       name: "Ambience",
-      count: galleryData.images.filter((img) => img.category === "pastries")
+      count: galleryData.images.filter((img) => img.category === "ambience")
         .length,
     },
     // {
@@ -89,11 +89,10 @@ const Delights = () => {
               // variant={
               //     selectedCategory === category.id ? 'default' : 'secondary'
               // }
-              className={`cursor-pointer px-6 py-2 text-sm font-montserrat font-medium transition-all duration-300 rounded-[10px] ${
-                selectedCategory === category.id
+              className={`cursor-pointer px-6 py-2 text-sm font-montserrat font-medium transition-all duration-300 rounded-[10px] ${selectedCategory === category.id
                   ? "bg-dolci-blue text-midnight-blue hover:bg-dark-accent"
                   : "bg-gray-200 text-gray-700 hover:bg-arctic-blue hover:text-midnight-blue"
-              }`}
+                }`}
               onClick={() => setSelectedCategory(category.id)}
             >
               {category.name} ({category.count})

@@ -320,6 +320,42 @@ export const galleryData = {
       alt: "Aglio e olio",
       category: "food",
     },
+    {
+      id: "28",
+      url: "https://res.cloudinary.com/dq7bzydqz/image/upload/v1761885767/DSC05871_nviao4.webp",
+      alt: "",
+      category: "ambience",
+    },
+    {
+      id: "29",
+      url: "https://res.cloudinary.com/dq7bzydqz/image/upload/v1761885766/DSC05883_uah4qj.webp",
+      alt: "",
+      category: "ambience",
+    },
+    {
+      id: "30",
+      url: "https://res.cloudinary.com/dq7bzydqz/image/upload/v1761885766/DSC05859_fmlq1y.webp",
+      alt: "",
+      category: "ambience",
+    },
+    {
+      id: "31",
+      url: "https://res.cloudinary.com/dq7bzydqz/image/upload/v1761885221/xqzkh2kfp7v2xsxddhbs_pnjqaa.webp",
+      alt: "",
+      category: "ambience",
+    },
+    {
+      id: "32",
+      url: "https://res.cloudinary.com/dq7bzydqz/image/upload/v1761885220/frrzwbvgugjfijvpnaur_iz6itj.webp",
+      alt: "",
+      category: "ambience",
+    },
+    {
+      id: "33",
+      url: "https://res.cloudinary.com/dq7bzydqz/image/upload/v1761716397/Lavelle_Road_rtkrht.webp",
+      alt: "",
+      category: "ambience",
+    },
   ],
 };
 
@@ -331,7 +367,10 @@ export const locationData = {
       address:
         "No 108 , AGS Layout, New BEL Rd, Chikkamaranahalli, Bengaluru, Karnataka 560094",
       location: "",
-      img: "https://res.cloudinary.com/dq7bzydqz/image/upload/v1761716210/New_BEL_Road_vpgtpv.webp",
+      img: [
+        "https://res.cloudinary.com/dq7bzydqz/image/upload/v1761716210/New_BEL_Road_vpgtpv.webp",
+        "https://res.cloudinary.com/dq7bzydqz/image/upload/v1761716397/Lavelle_Road_rtkrht.webp",
+      ],
       phone: "+91 9108518520",
       email: "+91 9740563404",
       hours: {
@@ -348,7 +387,9 @@ export const locationData = {
       address:
         "55/2-1, Lavelle Road, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001",
       location: "",
-      img: "https://res.cloudinary.com/dq7bzydqz/image/upload/v1761716397/Lavelle_Road_rtkrht.webp",
+      img: [
+        "https://res.cloudinary.com/dq7bzydqz/image/upload/v1761716397/Lavelle_Road_rtkrht.webp",
+      ],
       phone: "+91 9108518523",
       email: "+91 9740563404",
       hours: {
@@ -365,7 +406,9 @@ export const locationData = {
       address:
         "18/3, Ali Askar Road, Near Honda Showroom Cunningham Road, Ali Asker Rd, Vasanth Nagar, Bengaluru, Karnataka 560052",
       location: "",
-      img: "https://res.cloudinary.com/dq7bzydqz/image/upload/v1761716398/Cunningham_Road_e10usv.webp",
+      img: [
+        "https://res.cloudinary.com/dq7bzydqz/image/upload/v1761716398/Cunningham_Road_e10usv.webp",
+      ],
       phone: "+91 9108518522",
       email: "+91 9740563404",
       hours: {

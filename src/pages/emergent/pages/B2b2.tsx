@@ -15,6 +15,25 @@ const ScrollToTop = () => {
   return null;
 };
 
+const b2bannerImage = [
+  {
+    title: "men making",
+    uri: "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762067719/qqhjiyu5miz86nh6mw6y_xun7e5.webp",
+  },
+  {
+    title: "gloves",
+    uri: "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762067717/dapidiu5wlaotyo5scse_sinajl.webp",
+  },
+  {
+    title: "biscutes",
+    uri: "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762067721/asns266wwhgsl7klnbfa_f2nj0t.webp",
+  },
+  {
+    title: "tray",
+    uri: "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762067718/fvirztlazxfw1jy58yt7_wqhji8.webp",
+  },
+];
+
 const B2b2 = () => {
   // const { images } = useAssets();
   const [showModal, setShowModal] = useState(false);
@@ -34,9 +53,9 @@ const B2b2 = () => {
         <div className="px-4">
           <div className="py-20"></div>
           <section className="text-center mb-16">
-            <div className="max-w-4xl mx-auto">
+            <div className="max-w-3xl mx-auto">
               <h1 className="font-playfair-display text-4xl md:text-4xl font-bold text-midnight-blue mb-6 leading-12">
-                India’s Trusted Partner for White Label Bakery Supplier and Food
+                India’s Trusted Partner for White Label Supplier and Food
                 Manufacturing
               </h1>
             </div>
@@ -119,7 +138,16 @@ const B2b2 = () => {
             </div>
           </section>
 
-          <div className="contain border-[1px] border-gray-200 mb-16"></div>
+          <section className="max-w-6xl mx-auto overflow-hidden rounded-2xl border-1 p-4 border-dolci-blue mb-16">
+            <iframe
+              className="w-full h-80 md:h-150"
+              src="https://www.youtube.com/embed/-J3VfhFJZpY"
+              title="Dolci Commissary"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            />
+          </section>
+
+          {/* <div className="contain border-[1px] border-gray-200 mb-16"></div> */}
 
           <section className=" mb-20 bg-white">
             <div className="md:max-w-4xl mx-auto px-4">
@@ -148,6 +176,70 @@ const B2b2 = () => {
                 <li>Institutions, Schools & Caterers</li>
               </ul>
             </div>
+
+            <section className="text-center mb-20 bg-white">
+              {/* <h2 className="underline font-playfair-display text-3xl md:text-3xl font-bold text-midnight-blue mb-6">
+                Our Partnerships
+              </h2> */}
+              <div className="contain max-w-6xl">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10 mb-12 justify-baseline item-start">
+                  <div className="bg-white rounded-xl p-6 flex flex-col  items-center">
+                    <div className="mb-4 w-18 h-20 overflow-hidden  flex justify-center">
+                      <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/ITC_Limited_Logo.svg/1152px-ITC_Limited_Logo.svg.png"
+                        alt=""
+                        className="w-full"
+                      />
+                    </div>
+                    <h4 className="font-playfair-display text-xl font-bold mb-2 text-midnight-blue">
+                      ITC
+                    </h4>
+                    <p>
+                      Supplying a wide range of breads, cakes, cookies and other
+                      baked products.&nbsp;
+                    </p>
+                  </div>
+                  <div className="bg-white rounded-xl p-6 flex flex-col items-center">
+                    <div className="mb-4 w-40 h-20 overflow-hidden flex justify-center">
+                      <img
+                        src={
+                          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbbNlhg2_DAonvktaY8wmxRAc1OQ6idWJVAw&s"
+                        }
+                        className="w-20"
+                      />
+                    </div>
+                    <h4 className="font-playfair-display text-xl font-bold mb-2 text-midnight-blue">
+                      Pan-India
+                    </h4>
+                    <p>
+                      Producing fresh sandwiches, puffs and savoury delights
+                      across 39 outlets.
+                    </p>
+                  </div>
+                  <div className="bg-white rounded-xl p-6 flex flex-col items-center">
+                    <div className="mb-4 w-18 h-20 overflow-hidden  flex justify-center">
+                      <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9z6mfk23rEhOHuEO2xTExlTNxuYInBVoS5A&s"
+                        alt=""
+                        className="w-full"
+                      />
+                    </div>
+                    <h4 className="font-playfair-display text-xl font-bold mb-2 text-midnight-blue">
+                      Fyole Caf&eacute; (Mall of Asia)
+                    </h4>
+                    <p>
+                      Crafting specialty baked goods to complement their
+                      caf&eacute; menu.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <p>
+                With every new partnership, we enable brands to focus on their
+                experience, as we deliver excellence behind the scenes
+              </p>
+            </section>
           </section>
 
           <div className="contain border-[1px] border-gray-200 mb-16"></div>
@@ -156,13 +248,23 @@ const B2b2 = () => {
             <section className=" mb-20 bg-white">
               <div className="md:max-w-4xl mx-auto px-4">
                 <div className="">
-                  <div className="text-center">
-                    <h2 className=" underline font-playfair-display text-4xl md:text-4xl font-bold text-midnight-blue mb-8">
+                  <div className="text-center ">
+                    <h2 className=" underline font-playfair-display text-4xl md:text-4xl font-bold text-midnight-blue mb-12">
                       Our Capabilities & Infrastructure
                     </h2>
                   </div>
 
-                  <div className="max-w-5xl mx-auto">
+                  <div className="p-2 border-1 border-dolci-blue rounded-xl mb-6">
+                    <div className="overflow-hidden w-full md:h-90 rounded-xl  ">
+                      <img
+                        src={b2bannerImage[0].uri}
+                        alt=""
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  </div>
+
+                  <div className="max-w-5xl mx-auto text-center">
                     <p className="font-montserrat text-[18px] text-gray-700 leading-relaxed mb-4">
                       As a leading white label baked goods manufacturer, we
                       utilize a modern, high-capacity facility specifically
@@ -182,7 +284,7 @@ const B2b2 = () => {
                 </h3>
               </div>
               <div className="max-w-4xl mx-auto">
-                <p className="font-montserrat text-[18px] text-gray-700 leading-relaxed mb-12">
+                <p className="font-montserrat text-[16px] text-gray-700 leading-relaxed mb-12">
                   Looking for innovation? Our custom bakery solutions in India
                   are designed for brands that want unique recipes, specialised
                   product lines, or dietary-specific ranges like gluten-free and
@@ -244,10 +346,20 @@ const B2b2 = () => {
             <section className=" mb-20 bg-white">
               <div className="md:max-w-4xl mx-auto px-4">
                 <div className="">
-                  <div className="text-center">
+                  <div className="text-center mb-8">
                     <h2 className=" underline font-playfair-display text-4xl md:text-4xl font-bold text-midnight-blue mb-6">
                       What We Offer
                     </h2>
+                  </div>
+
+                  <div className="p-2 border-1 border-dolci-blue rounded-xl mb-6">
+                    <div className="overflow-hidden w-full md:h-90 rounded-xl  ">
+                      <img
+                        src={b2bannerImage[2].uri}
+                        alt=""
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
                   </div>
 
                   <div className="max-w-5xl mx-auto">
@@ -338,10 +450,20 @@ const B2b2 = () => {
             <section className=" mb-20 bg-white">
               <div className="md:max-w-4xl mx-auto px-4">
                 <div className="">
-                  <div className="text-center">
+                  <div className="text-center mb-8">
                     <h2 className=" underline font-playfair-display text-4xl md:text-4xl font-bold text-midnight-blue mb-6">
                       Our Process Is Simple, Transparent & Efficient
                     </h2>
+                  </div>
+
+                  <div className="p-2 border-1 border-dolci-blue rounded-xl mb-6">
+                    <div className="overflow-hidden w-full md:h-90 rounded-xl  ">
+                      <img
+                        src={b2bannerImage[1].uri}
+                        alt=""
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
                   </div>
 
                   <div className="max-w-5xl mx-auto">
@@ -370,13 +492,23 @@ const B2b2 = () => {
           <div className="contain border-[1px] border-gray-200 mb-16"></div>
 
           <section>
-            <section className=" mb-20 bg-white">
+            <div className=" mb-20 bg-white">
               <div className="md:max-w-4xl mx-auto px-4">
                 <div className="">
-                  <div className="text-center">
+                  <div className="text-center mb-6">
                     <h2 className=" underline font-playfair-display text-4xl md:text-4xl font-bold text-midnight-blue mb-6">
                       Why Choose Dolci?
                     </h2>
+                  </div>
+
+                  <div className="p-2 border-1 border-dolci-blue rounded-xl mb-6">
+                    <div className="overflow-hidden w-full md:h-90 rounded-xl  ">
+                      <img
+                        src={b2bannerImage[3].uri}
+                        alt=""
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
                   </div>
 
                   <div className="max-w-5xl mx-auto">
@@ -412,42 +544,38 @@ const B2b2 = () => {
                   </div>
                 </div>
               </div>
-            </section>
+            </div>
           </section>
 
-
-
           <section>
-            <section className=" mb-20 bg-white">
+            <div className=" mb-20 bg-white">
               <div className="md:max-w-4xl mx-auto px-4">
                 <div className="">
                   <div className="">
                     <h2 className=" underline font-playfair-display text-2xl md:text-2xl font-bold text-midnight-blue mb-6">
                       Let’s Build Together
-
                     </h2>
-
-
                   </div>
 
                   <div className="max-w-5xl mx-auto">
-
-
-                    <p className="mb-2">Whether you're launching a new product line, planning festive gifting, or need a dependable white label bakery partner for expansion, we’re ready to collaborate.
+                    <p className="mb-2">
+                      Whether you're launching a new product line, planning
+                      festive gifting, or need a dependable white label bakery
+                      partner for expansion, we’re ready to collaborate.
                     </p>
 
-                    <h3 className="mb-2"> <b>Call Us: </b>9606729491 | <b>Email : </b> business@dolci.in
+                    <h3 className="mb-2">
+                      {" "}
+                      <b>Call Us: </b>9606729491 | <b>Email : </b>{" "}
+                      business@dolci.in
                     </h3>
 
                     {/* <button className="btn bg-gray-100 mr-2">Request a Proposal</button>
                     <button className="btn bg-gray-100">Schedule a Consultation</button> */}
-
-
-
                   </div>
                 </div>
               </div>
-            </section>
+            </div>
           </section>
 
           <section className="mb-20">
@@ -487,10 +615,6 @@ const B2b2 = () => {
               </form>
             </div>
           </section>
-
-
-
-
 
           <section className=" w-[80%] mx-auto overflow-hidden rounded-2xl border-1 border-gray-200 mb-20">
             <iframe

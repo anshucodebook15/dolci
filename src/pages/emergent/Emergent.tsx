@@ -1,6 +1,7 @@
 import "./Emergent.css";
 import { lazy, Suspense } from "react";
 import Layout from "./layout/layout";
+import Bevrages from "./components/bevrages";
 // import About from "./components/About";
 // import Menu from "./components/Menu";
 // import Delights from "./components/Delight";
@@ -24,6 +25,7 @@ const Emergent = () => {
           fallback={<div className="text-center py-10">Loading...</div>}
         ></Suspense>
         <Hero />
+        <Bevrages />
         <About />
         <Menu />
         <Delights />

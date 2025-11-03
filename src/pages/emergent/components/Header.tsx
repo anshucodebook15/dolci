@@ -64,7 +64,7 @@ const Header = () => {
               className="text-2xl lg:text-3xl font-playfair font-bold transition-colors duration-300 text-midnight-blue"
             >
               <div className="text-shadow-initial">
-                <img src={images.dolcilogo} alt="" className="w-16 md:w-18" />
+                <img src={images.dolcilogo} alt="" className="w-16 md:w-22" />
               </div>
             </Link>
           </div>
