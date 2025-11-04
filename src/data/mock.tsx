@@ -320,9 +320,16 @@ export const galleryData = {
       alt: "Aglio e olio",
       category: "food",
     },
+
     {
       id: "28",
       url: "https://res.cloudinary.com/dq7bzydqz/image/upload/v1761885767/DSC05871_nviao4.webp",
+      alt: "",
+      category: "ambience",
+    },
+    {
+      id: "31",
+      url: "https://res.cloudinary.com/dq7bzydqz/image/upload/v1761885221/xqzkh2kfp7v2xsxddhbs_pnjqaa.webp",
       alt: "",
       category: "ambience",
     },
@@ -339,11 +346,12 @@ export const galleryData = {
       category: "ambience",
     },
     {
-      id: "31",
-      url: "https://res.cloudinary.com/dq7bzydqz/image/upload/v1761885221/xqzkh2kfp7v2xsxddhbs_pnjqaa.webp",
+      id: "33",
+      url: "https://res.cloudinary.com/dq7bzydqz/image/upload/v1761716397/Lavelle_Road_rtkrht.webp",
       alt: "",
       category: "ambience",
     },
+
     {
       id: "32",
       url: "https://res.cloudinary.com/dq7bzydqz/image/upload/v1761885220/dtr0k3x7enij4vdv6p9q_vjzzez.webp",
@@ -351,8 +359,22 @@ export const galleryData = {
       category: "ambience",
     },
     {
-      id: "33",
-      url: "https://res.cloudinary.com/dq7bzydqz/image/upload/v1761716397/Lavelle_Road_rtkrht.webp",
+      id: "35",
+      url: "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762239921/DSC06492_1_ilg29g.webp",
+      alt: "",
+      category: "ambience",
+    },
+
+    {
+      id: "34",
+      url: "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762239920/DSC06561_1_xvki4r.webp",
+      alt: "",
+      category: "ambience",
+    },
+
+    {
+      id: "35",
+      url: "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762239921/DSC06583_cnwm5r.webp",
       alt: "",
       category: "ambience",
     },

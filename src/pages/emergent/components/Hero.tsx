@@ -22,8 +22,8 @@ const Hero = () => {
 
         <div className="transform inset-0 mx-auto w-full h-full overflow-hidden z-0 mt-[-40px] sm:mt-[-20px]  md:mt-[20px] lg:mt-[-60px] xl:mt-[-120px]">
           <video
-            className="w-full  md:h-auto md:mt-40 lg:mt-0 mt-[200px] md:object-cover object-center scale-[2] sm:scale-[1.4] md:scale-[1.6] lg:scale-[1] xl:scale-[1]"
-            src={videos.batista} // replace with your video path
+            className="w-full md:h-auto md:mt-40 lg:mt-0 mt-[200px] md:object-cover object-center scale-[2] sm:scale-[1.4] md:scale-[1.6] lg:scale-[1] xl:scale-[1.02]"
+            src={videos.batista2} // replace with your video path
             autoPlay
             loop
             muted
