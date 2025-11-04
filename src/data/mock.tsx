@@ -346,7 +346,7 @@ export const galleryData = {
     },
     {
       id: "32",
-      url: "https://res.cloudinary.com/dq7bzydqz/image/upload/v1761885220/frrzwbvgugjfijvpnaur_iz6itj.webp",
+      url: "https://res.cloudinary.com/dq7bzydqz/image/upload/v1761885220/dtr0k3x7enij4vdv6p9q_vjzzez.webp",
       alt: "",
       category: "ambience",
     },

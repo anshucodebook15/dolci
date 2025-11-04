@@ -56,13 +56,13 @@ const Bevrages = () => {
       link: "/dacadc",
       subtitle: "Perfect for any occasion",
       image:
-        "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764539/Orange_Cold_Brew_Square_degucl.webp",
+        "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764538/Iced_Americano_Square_rzhld2.webp",
       gradient: "bg-gradient-to-t from-black/80 via-transparent to-transparent",
     },
   ];
 
   return (
-    <section id="gallery" className="relative dbg py-20">
+    <section className="relative dbg py-20">
       {/* 🔹 Light overlay */}
       <div className="absolute inset-0 bg-white/80 pointer-events-none"></div>
       <div className=" relative max-w-full mx-auto  px-4 md:px-0">
@@ -77,7 +77,7 @@ const Bevrages = () => {
         {/* Image Highlights */}
         <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-6 gap-1 lg:gap-1 justify-center">
           {storyData.map((item) => (
-            <Link to={item.link}>
+            <Link to={"#"}>
               <div key={item.id} className="group cursor-pointer md:py-2 ">
                 <div className="overflow-hidden rounded-[5px] md:h-90 h-40">
                   <div className="overflow-hidden rounded-[5px] w-full h-full">

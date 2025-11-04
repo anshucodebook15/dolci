@@ -190,9 +190,8 @@ const Location = () => {
               {selectedLocation.img.map((_, i) => (
                 <div
                   key={i}
-                  className={`w-2 h-2 rounded-full transition ${
-                    slideIndex === i ? "bg-dark-accent" : "bg-gray-300"
-                  }`}
+                  className={`w-2 h-2 rounded-full transition ${slideIndex === i ? "bg-dark-accent" : "bg-gray-300"
+                    }`}
                 />
               ))}
             </div>
@@ -211,9 +210,8 @@ const Location = () => {
               return (
                 <div
                   key={index}
-                  className={`group transition-all duration-300 hover:shadow-lg border-l-2 border-l-dolci-blue ${
-                    item.action ? "cursor-pointer hover:-translate-y-1" : ""
-                  }`}
+                  className={`group transition-all duration-300 hover:shadow-lg border-l-2 border-l-dolci-blue ${item.action ? "cursor-pointer hover:-translate-y-1" : ""
+                    }`}
                   onClick={() => item.action}
                 >
                   <div className="p-4">

@@ -1,7 +1,7 @@
 import "./Emergent.css";
 import { lazy, Suspense } from "react";
 import Layout from "./layout/layout";
-import Bevrages from "./components/bevrages";
+// import Bevrages from "./components/bevrages";
 // import About from "./components/About";
 // import Menu from "./components/Menu";
 // import Delights from "./components/Delight";
@@ -12,6 +12,7 @@ import Bevrages from "./components/bevrages";
 // 🔹 Lazy imports
 const Hero = lazy(() => import("./components/Hero"));
 const About = lazy(() => import("./components/About"));
+const Bevrages = lazy(() => import("./components/bevrages"));
 const Menu = lazy(() => import("./components/Menu"));
 const Delights = lazy(() => import("./components/Delight"));
 const Testimonials = lazy(() => import("./components/Testimonials"));

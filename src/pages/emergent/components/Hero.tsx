@@ -22,7 +22,7 @@ const Hero = () => {
       <div className="absolute transform inset-0 w-full h-full overflow-hidden z-0 mt-[-40px] sm:mt-[-20px]  md:mt-[20px] lg:mt-[-60px] xl:mt-[-100px]">
         <video
           className="w-full  md:h-auto md:mt-40 lg:mt-0 mt-[200px] md:object-cover object-center scale-[2] sm:scale-[1.4] md:scale-[1.6] lg:scale-[1] xl:scale-[1]"
-          src={videos.dolcipeople} // replace with your video path
+          src={videos.batista} // replace with your video path
           autoPlay
           loop
           muted

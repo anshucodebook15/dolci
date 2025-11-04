@@ -126,7 +126,7 @@ export const completeMenuData = {
         },
         {
           id: 32109,
-          name: "Cheesy egg Pepper Croissant",
+          name: "Cheesy Egg Pepper Croissant",
           category: "egg",
           description:
             "Flaky croissant filled with scrambled eggs, melty cheese, and black pepper—a savory breakfast delight.",

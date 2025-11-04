@@ -310,10 +310,6 @@ const B2b2 = () => {
                     Flexibility: Capability for small batches, pilot runs, and
                     rapid scaling up to full production.
                   </li>
-                  <li>
-                    Flexibility: Capability for small batches, pilot runs, and
-                    rapid scaling up to full production.
-                  </li>
                 </ul>
               </div>
             </section>

@@ -102,7 +102,7 @@ const Menu = () => {
     },
     {
       id: 21,
-      title: "Hazelnut Shibuya Toast",
+      title: "Nutella Shibuya Toast",
       category: "veg",
       description:
         "Pillowy Shibuya toast topped with creamy hazelnut spread, sliced nuts, and a touch of chocolate drizzle.​",
@@ -112,7 +112,7 @@ const Menu = () => {
     },
     {
       id: 30,
-      title: "Mango Shibuya",
+      title: "Toast Mango Shibuya",
       category: "veg",
       description:
         "Signature fluffy Shibuya toast layered with juicy mango chunks and sweet syrup—a tropical dessert special.",
