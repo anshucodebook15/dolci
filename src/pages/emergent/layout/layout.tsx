@@ -3,7 +3,7 @@ import Header from "../components/Header";
 
 const Layout = ({ children }: any) => {
   return (
-    <div className="w-full overflow-hidden dolci_system_design bg-white">
+    <div className="w-full overflow-hidden dolci_system_design ">
       <Header />
       <main className="">{children}</main>
       <Footer />

@@ -112,7 +112,7 @@ const Menu = () => {
     },
     {
       id: 30,
-      title: "Toast Mango Shibuya",
+      title: "Mango Shibuya Toast",
       category: "veg",
       description:
         "Signature fluffy Shibuya toast layered with juicy mango chunks and sweet syrup—a tropical dessert special.",
