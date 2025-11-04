@@ -68,7 +68,7 @@ const Bevrages = () => {
       <div className=" relative max-w-full mx-auto  px-4 md:px-0">
         <div className="text-center mb-10">
           <h2 className="font-playfair-display text-4xl md:text-5xl font-bold text-midnight-blue mb-6">
-            Star Beverages of Docli
+            Star Beverages of Dolci
           </h2>
           <p className="font-great-vibes text-2xl text-dark-accent">
             Beverages & More
