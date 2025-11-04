@@ -12,7 +12,7 @@ const Header = () => {
   console.log("location", location);
 
   const navigationItems = [
-    { name: "Home", href: "/" },
+    { name: "Home", href: "/#home" },
     { name: "About", href: "/#about" },
     { name: "Menu", href: "/#menu" },
     { name: "Gallery", href: "/#gallery" },
@@ -60,7 +60,7 @@ const Header = () => {
           {/* Logo */}
           <div className="py-2">
             <Link
-              to="/"
+              to="#home"
               className="text-2xl lg:text-3xl font-playfair font-bold transition-colors duration-300 text-midnight-blue"
             >
               <div className="text-shadow-initial">
