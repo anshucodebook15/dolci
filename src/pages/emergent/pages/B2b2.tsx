@@ -21,6 +21,16 @@ const b2bannerImage = [
     uri: "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762067719/qqhjiyu5miz86nh6mw6y_xun7e5.webp",
   },
   {
+    title: "machine making",
+    category: "our capabilites",
+    uri: "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762244451/APN_0047-_1_px4o0d.webp",
+  },
+  {
+    title: "machine2 making",
+    category: "our capabilites",
+    uri: "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762244451/APN_0084_1_oqbpaj.webp",
+  },
+  {
     title: "gloves",
     uri: "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762067717/dapidiu5wlaotyo5scse_sinajl.webp",
   },
@@ -32,6 +42,15 @@ const b2bannerImage = [
     title: "tray",
     uri: "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762067718/fvirztlazxfw1jy58yt7_wqhji8.webp",
   },
+];
+
+const whatweoffer = [
+  "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762244813/APN_0174_1_esv38g.webp",
+  "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762244750/APN_0043_1_tjdz99.webp",
+  "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762244752/IMG_9326_1_x4sms0.webp",
+  "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762244755/IMG_9362_1_yluvne.webp",
+  "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762244750/APN_0025_1_vukq8m.webp",
+  "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762245033/APN_0012_1_rgxyg8.webp",
 ];
 
 const B2b2 = () => {
@@ -254,10 +273,17 @@ const B2b2 = () => {
                     </h2>
                   </div>
 
-                  <div className="p-2 border-1 border-dolci-blue rounded-xl mb-6">
-                    <div className="overflow-hidden w-full md:h-90 rounded-xl  ">
+                  <div className="p-2 border-1 border-dolci-blue rounded-xl mb-6 grid lg:grid-cols-2 grid-cols-1  gap-2">
+                    <div className="overflow-hidden w-full md:h-90  ">
                       <img
-                        src={b2bannerImage[0].uri}
+                        src={b2bannerImage[1].uri}
+                        alt=""
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <div className="overflow-hidden w-full md:h-90">
+                      <img
+                        src={b2bannerImage[2].uri}
                         alt=""
                         className="w-full h-full object-cover"
                       />
@@ -348,7 +374,8 @@ const B2b2 = () => {
                     </h2>
                   </div>
 
-                  <div className="p-2 border-1 border-dolci-blue rounded-xl mb-6">
+                  {/* <div className="p-2 border-1 border-dolci-blue rounded-xl mb-6">
+
                     <div className="overflow-hidden w-full md:h-90 rounded-xl  ">
                       <img
                         src={b2bannerImage[2].uri}
@@ -356,6 +383,18 @@ const B2b2 = () => {
                         className="w-full h-full object-cover"
                       />
                     </div>
+                  </div> */}
+
+                  <div className="p-2 border-1 border-dolci-blue rounded-xl mb-6 grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-3  gap-2">
+                    {whatweoffer.map((item) => (
+                      <div className="overflow-hidden w-full md:h-50">
+                        <img
+                          src={item}
+                          alt=""
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                    ))}
                   </div>
 
                   <div className="max-w-5xl mx-auto">

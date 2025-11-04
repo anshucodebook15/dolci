@@ -1,8 +1,11 @@
 import { useEffect, useState } from "react";
+import "../style/blogContent.css";
 // import { useAssets } from "../../../hooks/useAssets";
 import LayoutTwo from "../layout/layoutTwo";
 // import { BadgeCheck, ChefHat, Salad, Sparkle } from "lucide-react";
-import { useLocation } from "react-router";
+import { useLocation, useNavigate, useParams } from "react-router";
+import useAPI from "../../../api/api";
+import axios from "axios";
 // import { useAssets } from "../../../hooks/useAssets";
 
 const ScrollToTop = () => {
@@ -17,15 +20,62 @@ const ScrollToTop = () => {
 
 const Blog = () => {
   // const { images } = useAssets();
+  const { id } = useParams();
   const [_showModal, setShowModal] = useState(false);
+  const navigate = useNavigate();
 
-  // const { _images } = useAssets();
+  const { fetchPostSlug } = useAPI();
+  const [post, setPost] = useState({
+    title: "",
+    content: "",
+    featuredImage: "",
+    slug: "",
+  });
+  const [error, setError] = useState("");
+
+  const fetchPostBySlug = async (
+    slug = "step-by-step-guide-to-the-perfect-classic-french-croissant"
+  ) => {
+    try {
+      // const response = await axios.get('https://dolci.theasylum.in/wp-json/wp/v2/posts?slug=step-by-step-guide-to-the-perfect-classic-french-croissant&_embed=1')
+      const response = await axios.get(fetchPostSlug(slug));
+
+      if (!response.data || response.data.length === 0) {
+        setError("No post found");
+        navigate("/404");
+        throw new Error("Post not found");
+      }
+
+      const creactPost = {
+        title: response.data[0].title.rendered,
+        content: response.data[0].content.rendered,
+        featuredImage: response.data[0]._embedded["wp:featuredmedia"]
+          ? response.data[0]._embedded["wp:featuredmedia"][0].source_url
+          : null,
+        slug: response.data[0].slug,
+      };
+      setPost(creactPost);
+      return { data: creactPost };
+    } catch (error) {
+      console.error("Error fetching data:", error);
+      return { message: "something went wrong" };
+    }
+  };
+
+  useEffect(() => {
+    fetchPostBySlug(id);
+  }, []);
 
   // Auto-open modal after 2s
   useEffect(() => {
     const timer = setTimeout(() => setShowModal(true), 2000);
     return () => clearTimeout(timer);
   }, []);
+
+  console.log("post---", post);
+  console.log("error-----", error);
+
+  console.log("id", id);
 
   return (
     <div>
@@ -38,34 +88,24 @@ const Blog = () => {
             <p className="font-great-vibes text-2xl text-dark-accent mb-2">
               Cakes
             </p>
-            <h1 className="font-playfair-display text-4xl md:text-5xl font-bold text-midnight-blue mb-8 leading-12">
-              How cakes are made at dolci?
+            <h1 className="font-playfair-display text-4xl md:text-5xl font-semibold text-midnight-blue mb-8 leading-16">
+              {post?.title}
             </h1>
 
-            {/* <div className="text-[14px] pb-8">
-              <p>
-                <i>By Dolci </i>{" "}
-              </p>
-            </div> */}
-
-            <div className="w-full overflow-hidden md:h-100 mb-6">
+            <div className="w-full overflow-hidden md:h-100">
               <img
-                src="https://t3.ftcdn.net/jpg/07/14/64/44/360_F_714644486_zpPsCXds1W8oaevXFG7SWoqKaopeazt9.jpg"
+                // src="https://t3.ftcdn.net/jpg/07/14/64/44/360_F_714644486_zpPsCXds1W8oaevXFG7SWoqKaopeazt9.jpg"
+                src={post?.featuredImage}
                 alt=""
-                className="w-full object-contain"
+                className="w-full object-center"
               />
             </div>
 
             <div className="max-w-5xl mx-auto">
-              <p className="font-montserrat text-[18px] text-gray-700 leading-relaxed mb-8">
-                At Dolci, we power some of the biggest brands with our expertise
-                in baking and food innovation. As a trusted white label bakery
-                supplier and private label bakery manufacturer for B2B, we
-                create high-quality products that carry your brand name while
-                delivering our top-notch craftsmanship and consistency.
-              </p>
-
-              {/* <p>Our batch production for scaling includes: </p> */}
+              <div
+                dangerouslySetInnerHTML={{ __html: post?.content }}
+                className="blog-content"
+              />
             </div>
           </section>
 

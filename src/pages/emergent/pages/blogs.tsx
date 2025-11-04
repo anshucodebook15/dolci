@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 import LayoutTwo from "../layout/layoutTwo";
 // import { BadgeCheck, ChefHat, Salad, Sparkle } from "lucide-react";
 import { Link, useLocation } from "react-router";
+import useAPI from "../../../api/api";
+import axios from "axios";
 // import { useAssets } from "../../../hooks/useAssets";
 
 const ScrollToTop = () => {
@@ -19,7 +21,61 @@ const Blogs = () => {
   // const { images } = useAssets();
   const [_showModal, setShowModal] = useState(false);
 
-  // const { _images } = useAssets();
+  const { fetchAllPosts } = useAPI();
+  const [posts, setPosts] = useState([
+    {
+      title: "",
+      description: "",
+      thumbnail: "",
+      slug: "",
+    },
+  ]);
+  const [_error, setError] = useState("");
+
+  const fetchPostBySlug = async () => {
+    try {
+      // const response = await axios.get('https://dolci.theasylum.in/wp-json/wp/v2/posts?slug=step-by-step-guide-to-the-perfect-classic-french-croissant&_embed=1')
+      const response = await axios.get(fetchAllPosts());
+
+      if (!response.data || response.data.length === 0) {
+        setError("No post found");
+        throw new Error("Post not found");
+      }
+
+      const allPosts = response.data.map((_: any, i: any) => {
+        return {
+          title: response.data[i].title.rendered,
+          description: response.data[i].excerpt.rendered,
+          thumbnail: response.data[i]._embedded["wp:featuredmedia"]
+            ? response.data[i]._embedded["wp:featuredmedia"][0].media_details
+                .sizes.thumbnail.source_url
+            : null,
+          slug: response.data[i].slug,
+        };
+      });
+
+      // const creactPost = {
+      //   title: response.data[0].title.rendered,
+      //   description: response.data[0].content.rendered,
+      //   thumbnail: response.data[0]._embedded["wp:featuredmedia"]
+      //     ? response.data[0]._embedded["wp:featuredmedia"][0].media_details.sizes.thumbnail.source_url
+      //     : null,
+      //   slug: response.data[0].slug,
+      // };
+
+      // console.log("response", allPosts);
+
+      setPosts(allPosts);
+      return { data: allPosts };
+    } catch (error) {
+      console.error("Error fetching data:", error);
+      return { message: "something went wrong" };
+    }
+  };
+
+  useEffect(() => {
+    fetchPostBySlug();
+  }, []);
 
   // Auto-open modal after 2s
   useEffect(() => {
@@ -34,36 +90,6 @@ const Blogs = () => {
         <div className="px-4">
           <div className="py-20"></div>
 
-          {/* <section className="text-center mb-16 max-w-4xl mx-auto">
-                        <p className="font-great-vibes text-2xl text-dark-accent mb-2">
-                            Blogs
-                        </p>
-                        <h1 className="font-playfair-display text-4xl md:text-5xl font-bold text-midnight-blue mb-8 leading-12">
-                            Dolci Blogs
-                        </h1>
-
-
-                        <div className="w-full overflow-hidden h-100 mb-6">
-                            <img
-                                src="https://t3.ftcdn.net/jpg/07/14/64/44/360_F_714644486_zpPsCXds1W8oaevXFG7SWoqKaopeazt9.jpg"
-                                alt=""
-                                className="w-full object-contain"
-                            />
-                        </div>
-
-                        <div className="max-w-5xl mx-auto">
-                            <p className="font-montserrat text-[18px] text-gray-700 leading-relaxed mb-8">
-                                At Dolci, we power some of the biggest brands with our expertise
-                                in baking and food innovation. As a trusted white label bakery
-                                supplier and private label bakery manufacturer for B2B, we
-                                create high-quality products that carry your brand name while
-                                delivering our top-notch craftsmanship and consistency.
-                            </p>
-
-                          
-                        </div>
-                    </section> */}
-
           <section className="mb-20">
             <div className="max-w-6xl mx-auto px-4">
               <p className="font-great-vibes text-2xl text-dark-accent mb-2">
@@ -73,7 +99,7 @@ const Blogs = () => {
                 Latest Posts
               </h2>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {[
                   {
                     title: "The Art of Perfect Baking",
@@ -119,6 +145,44 @@ const Blogs = () => {
 
                       <div className="mt-4">
                         <Link to={post.link}>
+                          <button
+                            type="button"
+                            className="text-sm text-midnight-blue font-semibold hover:underline"
+                          >
+                            Read more →
+                          </button>
+                        </Link>
+                      </div>
+                    </div>
+                  </article>
+                ))}
+              </div> */}
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                {posts.map((post, idx) => (
+                  <article
+                    key={idx}
+                    className="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm flex flex-col"
+                  >
+                    <div className="h-40 w-full overflow-hidden bg-gray-50">
+                      <img
+                        src={post.thumbnail}
+                        alt={post.title}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+
+                    <div className="p-5 flex-1 flex flex-col">
+                      <h3 className="font-playfair text-lg font-bold text-midnight-blue mb-2">
+                        {post.title}
+                      </h3>
+                      <div
+                        dangerouslySetInnerHTML={{ __html: post.description }}
+                        className="font-montserrat text-sm text-gray-600 leading-relaxed flex-1"
+                      ></div>
+
+                      <div className="mt-4">
+                        <Link to={`/${post.slug}`}>
                           <button
                             type="button"
                             className="text-sm text-midnight-blue font-semibold hover:underline"

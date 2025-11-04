@@ -60,7 +60,7 @@ const Header = () => {
           {/* Logo */}
           <div className="py-2">
             <Link
-              to="#home"
+              to="/#home"
               className="text-2xl lg:text-3xl font-playfair font-bold transition-colors duration-300 text-midnight-blue"
             >
               <div className="text-shadow-initial">
