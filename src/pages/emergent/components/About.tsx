@@ -66,7 +66,7 @@ const About = () => {
       id: 1,
       title: "Inspired by",
       subtitle: "European café culture",
-      link: "/dacadc",
+      link: "/step-by-step-guide-to-the-perfect-classic-french-croissant",
       image:
         "https://res.cloudinary.com/dq7bzydqz/image/upload/v1759062395/DSC06580_1_plbdql.webp",
       gradient: "bg-gradient-to-t from-black/80 via-transparent to-transparent",
@@ -75,7 +75,7 @@ const About = () => {
       id: 2,
       title: "Handcrafted",
       subtitle: "Dishes and pastries",
-      link: "/dacadc",
+      link: "/#",
       image:
         "https://res.cloudinary.com/dq7bzydqz/image/upload/v1759062694/DSC06519_1_vofrqk.webp",
       gradient: "bg-gradient-to-t from-black/80 via-transparent to-transparent",
@@ -83,7 +83,7 @@ const About = () => {
     {
       id: 3,
       title: "Rich Coffee",
-      link: "/dacadc",
+      link: "/#",
       // subtitle: "Blends and specialty drinks",
       subtitle: "Blends and drinks",
       image:
@@ -93,7 +93,7 @@ const About = () => {
     {
       id: 4,
       title: "Cozy Ambience",
-      link: "/dacadc",
+      link: "/#",
       subtitle: "Perfect for any occasion",
       image:
         "https://res.cloudinary.com/dq7bzydqz/image/upload/v1759062394/DSC06492_1_up59l0.webp",

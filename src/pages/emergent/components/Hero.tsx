@@ -20,10 +20,21 @@ const Hero = () => {
         />
       </div> */}
 
-        <div className="transform inset-0 mx-auto w-full h-full overflow-hidden z-0 mt-[-40px] sm:mt-[-20px]  md:mt-[20px] lg:mt-[-60px] xl:mt-[-120px]">
+        <div className="transform inset-0 mx-auto w-full h-full overflow-hidden z-0 md:block hidden mt-[-40px] sm:mt-[-20px] md:mt-[20px] lg:mt-[-20px] xl:mt-[-120px]">
           <video
             className="w-full md:h-auto md:mt-40 lg:mt-0 mt-[200px] md:object-cover object-center scale-[2] sm:scale-[1.4] md:scale-[1.6] lg:scale-[1] xl:scale-[1.02]"
             src={videos.batista2} // replace with your video path
+            autoPlay
+            loop
+            muted
+            playsInline
+          />
+        </div>
+
+        <div className="transform inset-0 mx-auto w-full h-full overflow-hidden z-0 lg:hidden xl:hidden md:hidden  mt-[-18rem] sm:mt-[-20px]  md:mt-[20px] lg:mt-[-60px] xl:mt-[-120px]">
+          <video
+            className="w-full md:h-auto md:mt-40 lg:mt-0 mt-[200px] md:object-cover object-center scale-[0.95] sm:scale-[1] md:scale-[1.6] lg:scale-[1] xl:scale-[1.02]"
+            src={videos.batista_mobile} // replace with your video path
             autoPlay
             loop
             muted
@@ -67,7 +78,7 @@ const Hero = () => {
         </div>
       </div> */}
       </section>
-      <div className="relative z-20 text-center text-[#1498cf] px-4 py-30 xl:mt-[-27rem] lg:mt-[-22rem] md:mt-[-15rem] mt-[-10rem]">
+      <div className="relative z-20 text-center text-[#1498cf] px-4 py-30 xl:mt-[-24rem] lg:mt-[-22rem] md:mt-[-15rem] mt-[-22rem]">
         <h1 className="font-playfair text-3xl sm:text-3xl md:text-4xl lg:text-[40px] xl:text-[42px] font-bold mb-2 leading-tight">
           Since 2008, Worth Discovering
         </h1>
