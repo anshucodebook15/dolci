@@ -62,7 +62,7 @@ const Bevrages = () => {
   ];
 
   return (
-    <section className="relative dbg py-20">
+    <section className=" max-w-[1600px] mx-auto relative dbg py-20">
       {/* 🔹 Light overlay */}
       <div className="absolute inset-0 bg-white/80 pointer-events-none"></div>
       <div className=" relative max-w-full mx-auto  px-4 md:px-0">

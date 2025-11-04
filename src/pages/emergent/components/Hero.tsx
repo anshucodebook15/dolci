@@ -2,10 +2,12 @@ import { useAssets } from "../../../hooks/useAssets";
 const Hero = () => {
   const { videos } = useAssets();
   return (
+
+    
     <section
       id="home"
       // className="relative min-h-[100vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-midnight-blue via-dark-accent to-dolci-blue pb-20"
-      className="max-w-[1600px] mx-auto relative min-h-[90vh] sm:min-h-[85vh] md:min-h-[85vh] lg:min-h-[100vh] xl:min-h-[115vh] flex items-end justify-center overflow-hidden md:pb-30 pb-20"
+      className="max-w-[1600px] mx-auto relative min-h-[50rem] sm:min-h-[50rem] md:min-h-[50rem] lg:min-h-[50rem] xl:min-h-[55rem] flex items-end justify-center overflow-hidden md:pb-30 pb-20"
     >
       {/* Background Video */}
       {/* <div className="absolute transform inset-0 w-full h-full overflow-hidden z-0 sm:mt-[-90px] md:mt-[-50px] lg:mt-[40px] xl:mt-[-100px]" >
@@ -19,6 +21,8 @@ const Hero = () => {
         />
       </div> */}
 
+
+
       <div className="absolute transform inset-0 w-full h-full overflow-hidden z-0 mt-[-40px] sm:mt-[-20px]  md:mt-[20px] lg:mt-[-60px] xl:mt-[-100px]">
         <video
           className="w-full  md:h-auto md:mt-40 lg:mt-0 mt-[200px] md:object-cover object-center scale-[2] sm:scale-[1.4] md:scale-[1.6] lg:scale-[1] xl:scale-[1]"
@@ -29,6 +33,7 @@ const Hero = () => {
           playsInline
         />
       </div>
+          
 
       {/* Content */}
       {/* <div className="relative z-20 text-center text-[#1498cf] px-4 pt-22  mt-[360px] sm:mt-[390px] md:mt-[350px] lg:mt-[400px] xl:mt-[300px] ">
