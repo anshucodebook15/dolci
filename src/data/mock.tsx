@@ -390,8 +390,11 @@ export const locationData = {
         "No 108 , AGS Layout, New BEL Rd, Chikkamaranahalli, Bengaluru, Karnataka 560094",
       location: "",
       img: [
-        "https://res.cloudinary.com/dq7bzydqz/image/upload/v1761716210/New_BEL_Road_vpgtpv.webp",
-        "https://res.cloudinary.com/dq7bzydqz/image/upload/v1761716397/Lavelle_Road_rtkrht.webp",
+        "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762246888/DSC01764_11zon_p8bi6m.webp",
+        "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762246885/DSC01766_1__11zon_evxhug.webp",
+        "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762246771/DSC01684_11zon_1_wldvmd.jpg",
+        // "https://res.cloudinary.com/dq7bzydqz/image/upload/v1761716210/New_BEL_Road_vpgtpv.webp",
+        // "https://res.cloudinary.com/dq7bzydqz/image/upload/v1761716397/Lavelle_Road_rtkrht.webp",
       ],
       phone: "+91 9108518520",
       email: "+91 9740563404",
@@ -410,7 +413,12 @@ export const locationData = {
         "55/2-1, Lavelle Road, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001",
       location: "",
       img: [
+        // "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762246293/DSC05879-_1_fm9fzr.webp",
+        "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762246288/DSC05879_1_ziu9ws.webp",
         "https://res.cloudinary.com/dq7bzydqz/image/upload/v1761716397/Lavelle_Road_rtkrht.webp",
+        "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762246287/DSC06488-_1_m1ganp.webp"
+        // "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762246287/DSC06567_1_xirgfa.webp",
+        // "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762246287/DSC06488-_1_m1ganp.webp",
       ],
       phone: "+91 9108518523",
       email: "+91 9740563404",
@@ -429,6 +437,8 @@ export const locationData = {
         "18/3, Ali Askar Road, Near Honda Showroom Cunningham Road, Ali Asker Rd, Vasanth Nagar, Bengaluru, Karnataka 560052",
       location: "",
       img: [
+        "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762245374/DSC05879_yfmryi.webp",
+        "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762245372/DSC05872_1_cvkwwc.webp",
         "https://res.cloudinary.com/dq7bzydqz/image/upload/v1761716398/Cunningham_Road_e10usv.webp",
       ],
       phone: "+91 9108518522",

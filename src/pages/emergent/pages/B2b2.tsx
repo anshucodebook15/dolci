@@ -1,7 +1,14 @@
 import { useEffect, useState } from "react";
 // import { useAssets } from "../../../hooks/useAssets";
 import LayoutTwo from "../layout/layoutTwo";
-import { BadgeCheck, ChefHat, Salad, Sparkle } from "lucide-react";
+import {
+  BadgeCheck,
+  ChefHat,
+  ChevronLeft,
+  ChevronRight,
+  Salad,
+  Sparkle,
+} from "lucide-react";
 import { useLocation } from "react-router";
 import { useAssets } from "../../../hooks/useAssets";
 
@@ -46,11 +53,11 @@ const b2bannerImage = [
 
 const whatweoffer = [
   "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762244813/APN_0174_1_esv38g.webp",
+  "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762245033/APN_0012_1_rgxyg8.webp",
   "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762244750/APN_0043_1_tjdz99.webp",
   "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762244752/IMG_9326_1_x4sms0.webp",
-  "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762244755/IMG_9362_1_yluvne.webp",
   "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762244750/APN_0025_1_vukq8m.webp",
-  "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762245033/APN_0012_1_rgxyg8.webp",
+  "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762244755/IMG_9362_1_yluvne.webp",
 ];
 
 const B2b2 = () => {
@@ -58,6 +65,21 @@ const B2b2 = () => {
   const [showModal, setShowModal] = useState(false);
 
   const { images } = useAssets();
+
+  // Slider state
+  const [slideIndex, setSlideIndex] = useState(0);
+  const videoShorts = [
+    "https://www.youtube.com/embed/-J3VfhFJZpY",
+    "https://www.youtube.com/embed/CK04PkxwGX8",
+  ];
+
+  const nextSlide = () => {
+    setSlideIndex((prev) => (prev === videoShorts.length - 1 ? 0 : prev + 1));
+  };
+
+  const prevSlide = () => {
+    setSlideIndex((prev) => (prev === 0 ? videoShorts.length - 1 : prev - 1));
+  };
 
   // Auto-open modal after 2s
   useEffect(() => {
@@ -157,13 +179,65 @@ const B2b2 = () => {
             </div>
           </section>
 
-          <section className="max-w-6xl mx-auto overflow-hidden rounded-2xl border-1 p-4 border-dolci-blue mb-16">
+          {/* <section className="max-w-6xl mx-auto overflow-hidden rounded-2xl border-1 p-4 border-dolci-blue mb-16">
             <iframe
               className="w-full h-80 md:h-150"
               src="https://www.youtube.com/embed/-J3VfhFJZpY"
               title="Dolci Commissary"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             />
+
+            <iframe
+              width="378"
+              height="671"
+              src="https://www.youtube.com/embed/CK04PkxwGX8"
+              title="Commissary BTS"
+
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+
+            />
+
+
+          </section> */}
+
+          <section
+            id="location-image"
+            className="relative max-w-5xl mx-auto my-6 h-64 md:h-130 overflow-hidden rounded-2xl group border-1 p-4 border-dolci-blue mb-16"
+          >
+            <iframe
+              className="w-full h-full md:h-full"
+              src={videoShorts[slideIndex]}
+              title="Dolci Commissary"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            />
+
+            {/* Left Arrow */}
+            <button
+              onClick={prevSlide}
+              className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/70 backdrop-blur-sm p-2 rounded-full  md:flex hover:bg-white transition"
+            >
+              <ChevronLeft size={20} />
+            </button>
+
+            {/* Right Arrow */}
+            <button
+              onClick={nextSlide}
+              className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/70 backdrop-blur-sm p-2 rounded-full  md:flex hover:bg-white transition"
+            >
+              <ChevronRight size={20} />
+            </button>
+
+            {/* Mobile Swipe Hints dots */}
+            <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-2">
+              {videoShorts.map((_, i) => (
+                <div
+                  key={i}
+                  className={`w-2 h-2 rounded-full transition ${
+                    slideIndex === i ? "bg-dark-accent" : "bg-gray-300"
+                  }`}
+                />
+              ))}
+            </div>
           </section>
 
           {/* <div className="contain border-[1px] border-gray-200 mb-16"></div> */}
