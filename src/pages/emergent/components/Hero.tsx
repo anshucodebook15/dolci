@@ -67,7 +67,7 @@ const Hero = () => {
         </div>
       </div> */}
       </section>
-      <div className="relative z-20 text-center text-[#1498cf] px-4 py-30 mt-[-27rem]">
+      <div className="relative z-20 text-center text-[#1498cf] px-4 py-30 xl:mt-[-27rem] lg:mt-[-22rem] md:mt-[-15rem] mt-[-10rem]">
         <h1 className="font-playfair text-3xl sm:text-3xl md:text-4xl lg:text-[40px] xl:text-[42px] font-bold mb-2 leading-tight">
           Since 2008, Worth Discovering
         </h1>
