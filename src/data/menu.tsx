@@ -2,7 +2,7 @@
 
 export const completeMenuData = {
   categories: [
-     {
+    {
       id: "hot-beverages",
       name: "Hot Beverages",
       description: "Premium coffee and hot drinks",
@@ -549,7 +549,7 @@ export const completeMenuData = {
         },
       ],
     },
-   
+
     {
       id: "iced-coffee",
       name: "Iced Coffee",
@@ -793,10 +793,10 @@ export const completeMenuData = {
         },
         {
           id: 21,
-          name: "Hazelnut Shibuya Toast",
+          name: "Nutella Shibuya Toast",
           category: "veg",
           description:
-            "Pillowy Shibuya toast topped with creamy hazelnut spread, sliced nuts, and a touch of chocolate drizzle.​",
+            "Pillowy Shibuya toast topped with creamy nutella spread, sliced nuts, and a touch of chocolate drizzle.​",
           price: "-",
           image:
             "https://res.cloudinary.com/dq7bzydqz/image/upload/v1761712623/Hazelnut_Shibuya_q9jgg9.webp",

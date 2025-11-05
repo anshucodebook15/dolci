@@ -105,7 +105,7 @@ const Menu = () => {
       title: "Nutella Shibuya Toast",
       category: "veg",
       description:
-        "Pillowy Shibuya toast topped with creamy hazelnut spread, sliced nuts, and a touch of chocolate drizzle.​",
+        "Pillowy Shibuya toast topped with creamy Nutella spread, sliced nuts, and a touch of chocolate drizzle.​",
       price: "-",
       image:
         "https://res.cloudinary.com/dq7bzydqz/image/upload/v1761712623/Hazelnut_Shibuya_q9jgg9.webp",

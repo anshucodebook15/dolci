@@ -74,7 +74,6 @@ const Blog = () => {
 
   console.log("post---", post);
   console.log("error-----", error);
-
   console.log("id", id);
 
   return (
@@ -86,7 +85,7 @@ const Blog = () => {
 
           <section className="text- mb-16 max-w-4xl mx-auto">
             <p className="font-great-vibes text-2xl text-dark-accent mb-2">
-              Cakes
+              Dolci
             </p>
             <h1 className="font-playfair-display text-4xl md:text-5xl font-semibold text-midnight-blue mb-8 leading-16">
               {post?.title}
