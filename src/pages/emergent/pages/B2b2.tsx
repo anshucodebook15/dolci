@@ -52,12 +52,21 @@ const b2bannerImage = [
 ];
 
 const whatweoffer = [
-  "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762244813/APN_0174_1_esv38g.webp",
-  "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762245033/APN_0012_1_rgxyg8.webp",
-  "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762244750/APN_0043_1_tjdz99.webp",
-  "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762244752/IMG_9326_1_x4sms0.webp",
-  "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762244750/APN_0025_1_vukq8m.webp",
-  "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762244755/IMG_9362_1_yluvne.webp",
+  // "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762244813/APN_0174_1_esv38g.webp",
+  // "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762245033/APN_0012_1_rgxyg8.webp",
+  // "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762244750/APN_0043_1_tjdz99.webp",
+
+  // "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762244750/APN_0025_1_vukq8m.webp",
+  
+// -------------------------------------------------------------------------------------
+  "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762333537/APN_0164_m1evsp.webp",
+  "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762333532/cb8744ac-0f37-4f9a-93d7-fe53ed934df0_pd4fsr.jpg",
+  "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762333535/APN_0180_snkgfb.webp",
+    "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762244752/IMG_9326_1_x4sms0.webp",
+  "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762333534/APN_0196_ztlwjt.webp",
+  "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762244755/IMG_9362_1_yluvne.webp"
+
+
 ];
 
 const B2b2 = () => {
@@ -69,9 +78,11 @@ const B2b2 = () => {
   // Slider state
   const [slideIndex, setSlideIndex] = useState(0);
   const videoShorts = [
-    "https://www.youtube.com/embed/-J3VfhFJZpY",
+    "https://www.youtube.com/embed/KqRyHat_bGQ",
     "https://www.youtube.com/embed/CK04PkxwGX8",
   ];
+
+  // <iframe width="980" height="551" src="https://www.youtube.com/embed/KqRyHat_bGQ" title="Swiss Town" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
   const nextSlide = () => {
     setSlideIndex((prev) => (prev === videoShorts.length - 1 ? 0 : prev + 1));
@@ -568,7 +579,7 @@ const B2b2 = () => {
                   <div className="p-2 border-1 border-dolci-blue rounded-xl mb-6">
                     <div className="overflow-hidden w-full md:h-90 rounded-xl  ">
                       <img
-                        src={b2bannerImage[1].uri}
+                        src={'https://res.cloudinary.com/dq7bzydqz/image/upload/v1762067719/qqhjiyu5miz86nh6mw6y_xun7e5.webp'}
                         alt=""
                         className="w-full h-full object-cover"
                       />

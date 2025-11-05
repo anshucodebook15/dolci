@@ -367,7 +367,7 @@ export const galleryData = {
 
     {
       id: "34",
-      url: "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762239920/DSC06561_1_xvki4r.webp",
+      url: "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762333589/WhatsApp_Image_2025-11-05_at_10.07.35_AM_1_1_uimwuk.webp",
       alt: "",
       category: "ambience",
     },
@@ -414,7 +414,8 @@ export const locationData = {
       location: "",
       img: [
         // "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762246293/DSC05879-_1_fm9fzr.webp",
-        "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762246288/DSC05879_1_ziu9ws.webp",
+        // "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762246288/DSC05879_1_ziu9ws.webp",
+        "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762334178/WhatsApp_Image_2025-11-05_at_10.08.18_AM_1_ugz1ep.webp",
         "https://res.cloudinary.com/dq7bzydqz/image/upload/v1761716397/Lavelle_Road_rtkrht.webp",
         "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762246287/DSC06488-_1_m1ganp.webp"
         // "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762246287/DSC06567_1_xirgfa.webp",

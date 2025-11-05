@@ -641,7 +641,7 @@ export const completeMenuData = {
         // },
         {
           id: 25,
-          name: "Dolci Club egg Sandwich",
+          name: "Dolci Club Egg Sandwich",
           description:
             "Triple layer sandwich with egg, slaw, avocado, onion jam and double cheese melt",
           price: "₹399",
@@ -803,7 +803,7 @@ export const completeMenuData = {
         },
         {
           id: 30,
-          name: "Mango Shibuya",
+          name: "Mango Shibuya Toast",
           category: "veg",
           description:
             "Signature fluffy Shibuya toast layered with juicy mango chunks and sweet syrup—a tropical dessert special.",

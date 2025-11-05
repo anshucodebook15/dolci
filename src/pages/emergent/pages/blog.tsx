@@ -84,9 +84,9 @@ const Blog = () => {
           <div className="py-20"></div>
 
           <section className="text- mb-16 max-w-4xl mx-auto">
-            <p className="font-great-vibes text-2xl text-dark-accent mb-2">
+            {/* <p className="font-great-vibes text-2xl text-dark-accent mb-2">
               Dolci
-            </p>
+            </p> */}
             <h1 className="font-playfair-display text-4xl md:text-5xl font-semibold text-midnight-blue mb-8 leading-16">
               {post?.title}
             </h1>
