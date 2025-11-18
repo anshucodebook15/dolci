@@ -49,7 +49,7 @@
 }
 
 :root {
-  font-family: var(--font-cabinate-grotesk-400);
+  font-family: var(--font-playfair-display);
   line-height: 1.5;
   font-weight: 400;
 
@@ -69,7 +69,7 @@ html {
 html,
 body {
   width: 100%;
-  font-family: var(--font-cabinate-grotesk-400);
+  font-family: var(--font-playfair-display);
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
@@ -141,6 +141,44 @@ body {
 
     .menu {
       @apply text-[20px] md:text-[20px] font-cabinate-grotesk-400;
+    }
+
+    .contain {
+      @apply w-full max-w-[1230px] mx-auto px-4 sm:px-6 lg:px-8;
+    }
+    .lg-contain {
+      @apply w-full max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8;
+    }
+
+    .herobg {
+      @apply bg-[url('../../../assets/backgrounds/herobg.svg')] bg-no-repeat bg-cover bg-center;
+    }
+  }
+  .dolci_landing {
+    @apply bg-thinblue w-full min-h-dvh relative;
+
+    h1 {
+      @apply text-[54px] md:text-[86px] font-playfair-display leading-18 md:leading-28;
+    }
+
+    h2 {
+      @apply text-[36px] md:text-[56px] font-playfair-display leading-14 md:leading-20;
+    }
+
+    h3 {
+      @apply text-[20px] md:text-[24px] font-playfair-display leading-7 md:leading-10;
+    }
+
+    p {
+      @apply text-[18px] md:text-[20px]  text-textbrown md:leading-7 leading-[22px];
+    }
+
+    .cap {
+      @apply text-[20px] md:text-[24px] font-playfair-display font-normal leading-8 md:leading-10 text-textbrown;
+    }
+
+    .menu {
+      @apply text-[20px] md:text-[20px];
     }
 
     .contain {
