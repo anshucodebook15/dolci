@@ -25,7 +25,7 @@ import PassportCountdown from "./sections/PassportCounter";
 const Hero = () => {
   const endTime = new Date().getTime() + 7 * 60 * 60 * 1000;
   return (
-    <div className="pb-20 mt-[-5rem]">
+    <div className="pb-20 ">
       <PassportCountdown endTime={endTime} totalPassports={400} />
       <div className=" text-center md:py-4 py-10 px-10 md:mb-4 mb-10">
         <h1 className="md:text-5xl text-4xl md:mb-2 mb-4 md:leading-26 leading-14 font-playfair-display">
@@ -449,7 +449,7 @@ const ArriveAtDolci = () => {
             </button>
           </div>
 
-          <DolciPassportInfo />
+          {/* <DolciPassportInfo /> */}
         </div>
       </div>
     </>

@@ -38,10 +38,10 @@ const PassportCountdown = ({ endTime, totalPassports }: CountdownProps) => {
   }, [endTime]);
 
   return (
-    <div className="p-4 rounded-xl text-center ">
+    <div className=" rounded-xl text-center  ">
       {/* Time Left */}
       {!timeLeft.expired ? (
-        <h1 className="text-4xl font-semibold leading-8 mb-4">
+        <h1 className="text-3xl font-semibold leading-6 mb-6">
           {timeLeft.hours ?? 0}H: {timeLeft.minutes ?? 0}M:{" "}
           {timeLeft.seconds ?? 0}S
           {/* <span className="text-gray-600 font-normal text-[14px]"> remaining</span> */}
@@ -52,7 +52,7 @@ const PassportCountdown = ({ endTime, totalPassports }: CountdownProps) => {
 
       {/* Passports Left */}
       <div className="mt-2 text-xl text-[#2754a7]">
-        <span className="font-semibold">{passportsLeft}</span> Passports Left
+        <h2 className="text-[18px] leading-0">Only {passportsLeft} Passports Left Hurry Up!</h2> 
       </div>
     </div>
   );
