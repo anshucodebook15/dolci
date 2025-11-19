@@ -16,6 +16,7 @@ import {
 // import { useState } from "react";
 import { Link } from "react-router";
 import PassportCountdown from "./sections/PassportCounter";
+import { useEffect, useState } from "react";
 // import { useState } from "react";
 // import { ChevronLeft, ChevronRight } from "lucide-react";
 // import Features from "./sections/Features";
@@ -265,99 +266,99 @@ const GetStarted = () => {
           </div> */
 }
 
-const DolciPassportInfo = () => {
-  return (
-    <section className="dolci_landing_text max-w-3xl mx-auto px-4 py-20">
-      {/* Title */}
-      <h1 className="text-xl font-semibold mb-3">
-        Passport Usage, Rewards, and Redemption
-      </h1>
+// const DolciPassportInfo = () => {
+//   return (
+//     <section className="dolci_landing_text max-w-3xl mx-auto px-4 py-20">
+//       {/* Title */}
+//       <h1 className="text-xl font-semibold mb-3">
+//         Passport Usage, Rewards, and Redemption
+//       </h1>
 
-      {/* Point 1 */}
-      <p className="text-sm leading-snug text-gray-700 mb-2">
-        <strong>1.</strong> You must collect stamps on your Dolci “Europe
-        Passport” during each eligible visit to a designated Dolci outlet.
-      </p>
+//       {/* Point 1 */}
+//       <p className="text-sm leading-snug text-gray-700 mb-2">
+//         <strong>1.</strong> You must collect stamps on your Dolci “Europe
+//         Passport” during each eligible visit to a designated Dolci outlet.
+//       </p>
 
-      {/* Point 2 + bullets */}
-      <p className="text-sm leading-snug text-gray-700 mb-1">
-        <strong>2.</strong> Stamp collection and redemption will follow these
-        updated slabs for rewards:
-      </p>
+//       {/* Point 2 + bullets */}
+//       <p className="text-sm leading-snug text-gray-700 mb-1">
+//         <strong>2.</strong> Stamp collection and redemption will follow these
+//         updated slabs for rewards:
+//       </p>
 
-      <ul className="list-disc pl-6 space-y-1 text-sm leading-snug text-gray-700 mb-3">
-        <li>
-          On the first visit, you can earn up to four stamps: one for the visit,
-          one for referring a friend, leaving a review, and posting a story
-          tagging Dolci (maximum 4 stamps on the first day).
-        </li>
-        <li>
-          On the second visit with a friend, you will receive a stamp and redeem
-          a 15% discount on their bill, totaling five stamps by the end of this
-          visit.
-        </li>
-        <li>
-          On the third visit, you will receive one additional stamp (total: 6
-          stamps).
-        </li>
-        <li>
-          On the fourth visit, you will receive a stamp and are eligible to
-          redeem a 25% discount on the bill (total: 7 stamps).
-        </li>
-        <li>
-          On the fifth and sixth visits, you can collect one stamp per visit; on
-          the sixth visit, you can redeem a 30% discount on the bill for
-          purchases above 1500 INR (total: 9 stamps by the end of the sixth
-          visit).
-        </li>
-      </ul>
+//       <ul className="list-disc pl-6 space-y-1 text-sm leading-snug text-gray-700 mb-3">
+//         <li>
+//           On the first visit, you can earn up to four stamps: one for the visit,
+//           one for referring a friend, leaving a review, and posting a story
+//           tagging Dolci (maximum 4 stamps on the first day).
+//         </li>
+//         <li>
+//           On the second visit with a friend, you will receive a stamp and redeem
+//           a 15% discount on their bill, totaling five stamps by the end of this
+//           visit.
+//         </li>
+//         <li>
+//           On the third visit, you will receive one additional stamp (total: 6
+//           stamps).
+//         </li>
+//         <li>
+//           On the fourth visit, you will receive a stamp and are eligible to
+//           redeem a 25% discount on the bill (total: 7 stamps).
+//         </li>
+//         <li>
+//           On the fifth and sixth visits, you can collect one stamp per visit; on
+//           the sixth visit, you can redeem a 30% discount on the bill for
+//           purchases above 1500 INR (total: 9 stamps by the end of the sixth
+//           visit).
+//         </li>
+//       </ul>
 
-      {/* Ongoing Privileges */}
-      <h2 className="text-base font-semibold mb-1">Ongoing Privileges</h2>
+//       {/* Ongoing Privileges */}
+//       <h2 className="text-base font-semibold mb-1">Ongoing Privileges</h2>
 
-      <p className="text-sm leading-snug text-gray-700 mb-2">
-        After collecting nine stamps, you can become eligible for exclusive
-        perks, including free beverages, birthday discounts, Dolci merchandise,
-        special freebies, and VIP invites for tastings, new launches, and
-        limited edition previews.
-      </p>
+//       <p className="text-sm leading-snug text-gray-700 mb-2">
+//         After collecting nine stamps, you can become eligible for exclusive
+//         perks, including free beverages, birthday discounts, Dolci merchandise,
+//         special freebies, and VIP invites for tastings, new launches, and
+//         limited edition previews.
+//       </p>
 
-      {/* Point 3 */}
-      <p className="text-sm leading-snug text-gray-700 mb-2">
-        <strong>3.</strong> Rewards must be claimed in person by presenting the
-        physical passport with the required number of stamps at any
-        participating Dolci outlet.
-      </p>
+//       {/* Point 3 */}
+//       <p className="text-sm leading-snug text-gray-700 mb-2">
+//         <strong>3.</strong> Rewards must be claimed in person by presenting the
+//         physical passport with the required number of stamps at any
+//         participating Dolci outlet.
+//       </p>
 
-      {/* Point 4 */}
-      <p className="text-sm leading-snug text-gray-700 mb-2">
-        <strong>4.</strong> Offers and merchandise are subject to availability
-        and are non-transferable, non-exchangeable, and cannot be redeemed for
-        cash.
-      </p>
+//       {/* Point 4 */}
+//       <p className="text-sm leading-snug text-gray-700 mb-2">
+//         <strong>4.</strong> Offers and merchandise are subject to availability
+//         and are non-transferable, non-exchangeable, and cannot be redeemed for
+//         cash.
+//       </p>
 
-      {/* Point 5 */}
-      <p className="text-sm leading-snug text-gray-700 mb-2">
-        <strong>5.</strong> Multiple visits in a day are always welcome at any
-        outlet. However, only one reward slab can be claimed per visit, and
-        stamps will be marked as redeemed after usage to avoid repeat
-        redemption.
-      </p>
+//       {/* Point 5 */}
+//       <p className="text-sm leading-snug text-gray-700 mb-2">
+//         <strong>5.</strong> Multiple visits in a day are always welcome at any
+//         outlet. However, only one reward slab can be claimed per visit, and
+//         stamps will be marked as redeemed after usage to avoid repeat
+//         redemption.
+//       </p>
 
-      {/* Point 6 */}
-      <p className="text-sm leading-snug text-gray-700 mb-1">
-        <strong>6.</strong> Post your unique stickers on Instagram, tag #Dolci,
-        and enjoy a free dessert right away.
-      </p>
+//       {/* Point 6 */}
+//       <p className="text-sm leading-snug text-gray-700 mb-1">
+//         <strong>6.</strong> Post your unique stickers on Instagram, tag #Dolci,
+//         and enjoy a free dessert right away.
+//       </p>
 
-      <p className="text-sm leading-snug text-gray-700">
-        In addition, post a story on Instagram of your passport, tag #Dolci and
-        you will receive a free sticker that you can paste on the passport right
-        away.
-      </p>
-    </section>
-  );
-};
+//       <p className="text-sm leading-snug text-gray-700">
+//         In addition, post a story on Instagram of your passport, tag #Dolci and
+//         you will receive a free sticker that you can paste on the passport right
+//         away.
+//       </p>
+//     </section>
+//   );
+// };
 
 const ArriveAtDolci = () => {
   return (
@@ -417,9 +418,6 @@ const ArriveAtDolci = () => {
           </div> */}
 
           <div className="max-w-[820px] mx-auto">
-
-
-
             <div className="overflow-hidden p-2">
               <img
                 src="https://res.cloudinary.com/dq7bzydqz/image/upload/v1763535469/Paris_01_v1_vgmn7v.png"
@@ -491,6 +489,13 @@ const Home = () => {
   // const { backgrounds } = useAssets();
   // Set **end time** for countdown (example: 7 hours from now)
   // const endTime = new Date().getTime() + 7 * 60 * 60 * 1000;
+  // const { images } = useAssets();
+  const [showModal, setShowModal] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setShowModal(true), 2000);
+    return () => clearTimeout(timer);
+  }, []);
   return (
     <>
       <div className="dolci_landing">
@@ -507,6 +512,92 @@ const Home = () => {
         {/* <PassportCountdown endTime={endTime} totalPassports={400} /> */}
 
         <div className="py-10"></div>
+
+        {showModal && (
+          <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40">
+            <div className="bg-white rounded-2xl shadow-xl max-w-xl w-full relative overflow-hidden">
+              {/* 🔹 Banner */}
+              <div className="relative">
+                {/* <div className="w-full flex justify-center bg-dolci-blue py-1">
+                  <img
+                    // src={images.dolcilogo} // <-- replace with your bakery banner image
+                    alt="Bakery Banner"
+                    className="w-20 h-20 object-cover"
+                  />
+                </div> */}
+                {/* 🔹 Close button over banner */}
+                <button
+                  onClick={() => setShowModal(false)}
+                  className="absolute top-2 right-2 bg-white/80 hover:bg-white text-gray-700 hover:text-gray-900 rounded-full p-1.5 shadow"
+                >
+                  ✕
+                </button>
+              </div>
+
+              {/* 🔹 Modal Content */}
+              <div className="p-8">
+                {/* <h3 className="text-2xl font-bold font-playfair-display text-midnight-blue mb-4 text-center">
+                  Have a question?
+                </h3> */}
+                <div id="getstarted" className="contain ">
+                  <div className="max-w-[650px] mx-auto">
+                    <div className="px-10 mt-8 text-center mb-12">
+                      <h2 className="text-4xl leading-12 ">
+                        Claim Your Passport !
+                      </h2>
+                    </div>
+
+                    <div className="">
+                      <div className="flex items-center justify-center mb-10">
+                        <div className="w-full text-center">
+                          <p className="md:text-2xl text-2xl text-gray-600 leading-8">
+                            {" "}
+                            <i>Enter your delivery details.</i>
+                          </p>
+                        </div>
+                      </div>
+
+                      <div className="flex flex-col items-center justify-center mb-10">
+                        <input
+                          type="text"
+                          className="input border-1 p-4 border-[#56a4d1] md:w-[80%] w-[80%] rounded-2xl mb-4"
+                          placeholder="Name"
+                        />
+                        <input
+                          type="text"
+                          className="input border-1 p-4 border-[#56a4d1]  md:w-[80%] w-[80%] rounded-2xl mb-4"
+                          placeholder="Address"
+                        />
+                        <input
+                          type="number"
+                          className="input border-1 p-4 border-[#56a4d1] md:w-[80%] w-[80%] rounded-2xl mb-4"
+                          placeholder="Mobile Number"
+                        />
+
+                        <button className="hover:bg-[#468fba] bg-dolci-blue md:w-[80%] w-[80%] p-4 rounded-2xl cursor-pointer text-xl font-semibold">
+                          {" "}
+                          Claim My Europe Trip Today
+                        </button>
+                      </div>
+
+                      <div className="flex mb-10">
+                        <div className="w-full text-center">
+                          <p className="md:text-xl text-2xl text-gray-600 leading-8">
+                            {" "}
+                            <i>
+                              Your Dolci Explorer Passport will be processed and
+                              delivered to your doorstep within 48 hours.
+                            </i>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
         {/* <CollectMoreRewards /> */}
         {/* <Features />
       <Delights />
