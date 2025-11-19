@@ -1,7 +1,7 @@
 // import "./dolci.css";
 import "./style/theme.css";
 import {
-  Topbar,
+  // Topbar,
   Navbar,
   // Hero,
   // Delights,
@@ -15,6 +15,7 @@ import {
 } from "./sections";
 // import { useState } from "react";
 import { Link } from "react-router";
+import PassportCountdown from "./sections/PassportCounter";
 // import { useState } from "react";
 // import { ChevronLeft, ChevronRight } from "lucide-react";
 // import Features from "./sections/Features";
@@ -26,7 +27,8 @@ const Hero = () => {
     <div className="pt-5 pb-20">
       <div className=" text-center md:py-10 py-10 px-10 md:mb-4 mb-10">
         <h1 className="md:text-5xl text-4xl md:mb-2 mb-4 md:leading-26 leading-14 font-playfair-display">
-          YOUR EUROPE TRIP IS <span className="">CONFIRMED !</span>{" "}
+          {/* YOUR EUROPE TRIP IS <span className="">CONFIRMED !</span>{" "} */}
+          Your Europe Trip Is <span className="">Confirmed !</span>{" "}
         </h1>
         <h2 className="text-2xl text-dolci leading-8">
           {" "}
@@ -153,19 +155,19 @@ const GetStarted = () => {
       <div id="getstarted" className="contain md:py-20">
         <div className="max-w-[650px] mx-auto">
           <div className="px-10 mt-8 text-center mb-12">
-            <h2 className="text-4xl leading-12 ">How to get started?</h2>
+            <h2 className="text-4xl leading-12 ">Claim Your Passport !</h2>
           </div>
 
           <div className="">
-            <div className="flex items-center mb-10">
-              <div className="w-10 h-10 flex justify-center items-center bg-dolci-blue rounded-full text-xl mr-4">
+            <div className="flex items-center justify-center mb-10">
+              {/* <div className="w-10 h-10 flex justify-center items-center bg-dolci-blue rounded-full text-xl mr-4">
                 1.{" "}
-              </div>
+              </div> */}
 
-              <div className="w-full">
+              <div className="w-full text-center">
                 <p className="md:text-2xl text-2xl text-gray-600 leading-8">
                   {" "}
-                  <i>Click below and enter your Bangalore address.</i>
+                  <i>Enter your delivery details.</i>
                 </p>
               </div>
             </div>
@@ -173,35 +175,36 @@ const GetStarted = () => {
             <div className="flex flex-col items-center justify-center mb-10">
               <input
                 type="text"
-                className="input border-1 p-4 border-[#56a4d1] md:w-[60%] w-[80%] rounded-2xl mb-4"
+                className="input border-1 p-4 border-[#56a4d1] md:w-[80%] w-[80%] rounded-2xl mb-4"
                 placeholder="Name"
               />
               <input
                 type="text"
-                className="input border-1 p-4 border-[#56a4d1]  md:w-[60%] w-[80%] rounded-2xl mb-4"
+                className="input border-1 p-4 border-[#56a4d1]  md:w-[80%] w-[80%] rounded-2xl mb-4"
                 placeholder="Address"
               />
               {/* <input type="text" className="input border-1 p-4 border-dolci-blue w-[60%] rounded-2xl mb-4" placeholder="city"/>
             <input type="text" className="input border-1 p-4 border-dolci-blue w-[60%] rounded-2xl mb-4" placeholder="state"/> */}
               <input
                 type="number"
-                className="input border-1 p-4 border-[#56a4d1] md:w-[60%] w-[80%] rounded-2xl"
-                placeholder="Pincode"
+                className="input border-1 p-4 border-[#56a4d1] md:w-[80%] w-[80%] rounded-2xl mb-4"
+                placeholder="Mobile Number"
               />
-              <input type="text" className="Street" />
-              <button className="bg-dolci-blue md:w-[60%] w-[80%] p-4 rounded-2xl cursor-pointer text-xl font-bold">
+              {/* <input type="text" className="Street" /> */}
+
+              <button className="hover:bg-[#468fba] bg-dolci-blue md:w-[80%] w-[80%] p-4 rounded-2xl cursor-pointer text-xl font-semibold">
                 {" "}
                 Claim My Europe Trip Today
               </button>
             </div>
 
             <div className="flex mb-10">
-              <div className="w-10 h-10 flex justify-center items-center bg-dolci-blue rounded-[100%] text-xl mr-4">
+              {/* <div className="w-10 h-10 flex justify-center items-center bg-dolci-blue rounded-[100%] text-xl mr-4">
                 2.{" "}
-              </div>
+              </div> */}
 
-              <div className="w-full">
-                <p className="md:text-2xl text-2xl text-gray-600 leading-8">
+              <div className="w-full text-center">
+                <p className="md:text-xl text-2xl text-gray-600 leading-8">
                   {" "}
                   <i>
                     Your Dolci Explorer Passport will be processed and delivered
@@ -260,6 +263,100 @@ const GetStarted = () => {
           </div> */
 }
 
+const DolciPassportInfo = () => {
+  return (
+    <section className="dolci_landing_text max-w-3xl mx-auto px-4 py-20">
+      {/* Title */}
+      <h1 className="text-xl font-semibold mb-3">
+        Passport Usage, Rewards, and Redemption
+      </h1>
+
+      {/* Point 1 */}
+      <p className="text-sm leading-snug text-gray-700 mb-2">
+        <strong>1.</strong> You must collect stamps on your Dolci “Europe
+        Passport” during each eligible visit to a designated Dolci outlet.
+      </p>
+
+      {/* Point 2 + bullets */}
+      <p className="text-sm leading-snug text-gray-700 mb-1">
+        <strong>2.</strong> Stamp collection and redemption will follow these
+        updated slabs for rewards:
+      </p>
+
+      <ul className="list-disc pl-6 space-y-1 text-sm leading-snug text-gray-700 mb-3">
+        <li>
+          On the first visit, you can earn up to four stamps: one for the visit,
+          one for referring a friend, leaving a review, and posting a story
+          tagging Dolci (maximum 4 stamps on the first day).
+        </li>
+        <li>
+          On the second visit with a friend, you will receive a stamp and redeem
+          a 15% discount on their bill, totaling five stamps by the end of this
+          visit.
+        </li>
+        <li>
+          On the third visit, you will receive one additional stamp (total: 6
+          stamps).
+        </li>
+        <li>
+          On the fourth visit, you will receive a stamp and are eligible to
+          redeem a 25% discount on the bill (total: 7 stamps).
+        </li>
+        <li>
+          On the fifth and sixth visits, you can collect one stamp per visit; on
+          the sixth visit, you can redeem a 30% discount on the bill for
+          purchases above 1500 INR (total: 9 stamps by the end of the sixth
+          visit).
+        </li>
+      </ul>
+
+      {/* Ongoing Privileges */}
+      <h2 className="text-base font-semibold mb-1">Ongoing Privileges</h2>
+
+      <p className="text-sm leading-snug text-gray-700 mb-2">
+        After collecting nine stamps, you can become eligible for exclusive
+        perks, including free beverages, birthday discounts, Dolci merchandise,
+        special freebies, and VIP invites for tastings, new launches, and
+        limited edition previews.
+      </p>
+
+      {/* Point 3 */}
+      <p className="text-sm leading-snug text-gray-700 mb-2">
+        <strong>3.</strong> Rewards must be claimed in person by presenting the
+        physical passport with the required number of stamps at any
+        participating Dolci outlet.
+      </p>
+
+      {/* Point 4 */}
+      <p className="text-sm leading-snug text-gray-700 mb-2">
+        <strong>4.</strong> Offers and merchandise are subject to availability
+        and are non-transferable, non-exchangeable, and cannot be redeemed for
+        cash.
+      </p>
+
+      {/* Point 5 */}
+      <p className="text-sm leading-snug text-gray-700 mb-2">
+        <strong>5.</strong> Multiple visits in a day are always welcome at any
+        outlet. However, only one reward slab can be claimed per visit, and
+        stamps will be marked as redeemed after usage to avoid repeat
+        redemption.
+      </p>
+
+      {/* Point 6 */}
+      <p className="text-sm leading-snug text-gray-700 mb-1">
+        <strong>6.</strong> Post your unique stickers on Instagram, tag #Dolci,
+        and enjoy a free dessert right away.
+      </p>
+
+      <p className="text-sm leading-snug text-gray-700">
+        In addition, post a story on Instagram of your passport, tag #Dolci and
+        you will receive a free sticker that you can paste on the passport right
+        away.
+      </p>
+    </section>
+  );
+};
+
 const ArriveAtDolci = () => {
   return (
     <>
@@ -267,7 +364,7 @@ const ArriveAtDolci = () => {
         <div className="max-w-[920px] mx-auto px-6 md:px-0">
           <div className=" mt-8 text-center mb-12">
             <h2 className="text-3xl md:text-4xl leading-12 ">
-              What Happens When You Arrive at Dolci?
+              What Happens When You Arrive at Emigration?
             </h2>
           </div>
 
@@ -290,7 +387,7 @@ const ArriveAtDolci = () => {
             />
           </div> */}
 
-          <div className="grid md:grid-cols-3 grid-cols-1 gap-2 ">
+          {/* <div className="grid md:grid-cols-3 grid-cols-1 gap-2 ">
             {[
               {
                 title: "3 Unique Stickers",
@@ -315,6 +412,10 @@ const ArriveAtDolci = () => {
                 </div>
               </>
             ))}
+          </div> */}
+
+          <div className="overflow-hidden p-2">
+            <img src="https://res.cloudinary.com/dq7bzydqz/image/upload/v1763535469/Paris_01_v1_vgmn7v.png" alt="" className="w-full" />
           </div>
 
           <div className="flex justify-center mt-20">
@@ -322,30 +423,34 @@ const ArriveAtDolci = () => {
               Claim My Europe Trip Today
             </button>
           </div>
+
+          <DolciPassportInfo />
         </div>
       </div>
     </>
   );
 };
 
-const CollectMoreRewards = () => {
-  return (
-    <>
-      <div className=" bg-dolci-blue py-20">
-        <div className="max-w-[920px] mx-auto">
-          <div className="px-10 mt-8 text-center mb-12">
-            <h2 className="text-3xl leading-12 mb-2">Collect More Rewards</h2>
+// const CollectMoreRewards = () => {
+//   return (
+//     <>
+//       <div className="py-20 relative dbg">
+//         {/* 🔹 Light overlay */}
+//         <div className="absolute inset-0 bg-white/80 pointer-events-none"></div>
+//         <div className=" relative max-w-[920px] mx-auto z-20">
+//           <div className="px-10 mt-8 text-center mb-12">
+//             <h2 className="text-3xl leading-12 mb-2">Collect More Rewards</h2>
 
-            <p className="text bg-amber-200">
-              Post your unique stickers on Instagram, tag #Dolci, and enjoy a
-              free dessert right away.
-            </p>
-          </div>
-        </div>
-      </div>
-    </>
-  );
-};
+//             <p className="text">
+//               Post your unique stickers on Instagram, tag #Dolci, and enjoy a
+//               free dessert right away.
+//             </p>
+//           </div>
+//         </div>
+//       </div>
+//     </>
+//   );
+// };
 
 const Footer = () => {
   return (
@@ -359,30 +464,36 @@ const Footer = () => {
 
 const Home = () => {
   // const { backgrounds } = useAssets();
+  // Set **end time** for countdown (example: 7 hours from now)
+  const endTime = new Date().getTime() + 7 * 60 * 60 * 1000;
   return (
     <>
-      <div className=" relative">
-        <Topbar />
-        <Navbar />
-        <Hero />
-      </div>
+      <div className="dolci_landing">
+        <div className=" relative">
+          {/* <Topbar /> */}
+          <Navbar />
+          <Hero />
+        </div>
 
-      <OnePassport />
-      <GetStarted />
-      <ArriveAtDolci />
+        <OnePassport />
+        <GetStarted />
+        <ArriveAtDolci />
 
-      <div className="py-10"></div>
-      <CollectMoreRewards />
-      {/* <Features />
+        <PassportCountdown endTime={endTime} totalPassports={400} />
+
+        <div className="py-10"></div>
+        {/* <CollectMoreRewards /> */}
+        {/* <Features />
       <Delights />
       <Gallery />
       <Menu />
       <Ambience />
       <Baking /> */}
-      {/* <Snapshot /> */}
-      {/* <Signature />
+        {/* <Snapshot /> */}
+        {/* <Signature />
       <Units /> */}
-      <Footer />
+        <Footer />
+      </div>
     </>
   );
 };

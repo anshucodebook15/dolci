@@ -191,6 +191,54 @@ body {
     .herobg {
       @apply bg-[url('../../../assets/backgrounds/herobg.svg')] bg-no-repeat bg-cover bg-center;
     }
+
+    .dbg {
+      /* @apply bg-[url('../../../assets/backgrounds/herobg.svg')] bg-no-repeat bg-cover bg-center; */
+      @apply bg-[url('../../../assets/backgrounds/dbg.svg')] bg-no-repeat bg-cover bg-center;
+    }
+  }
+  .dolci_landing_text {
+    @apply bg-thinblue w-full min-h-dvh relative;
+
+    h1 {
+      @apply text-[54px] md:text-[86px] font-playfair-display leading-8 md:leading-14 mb-2;
+    }
+
+    h2 {
+      @apply text-[36px] md:text-[56px] font-playfair-display leading-8 md:leading-12;
+    }
+
+    h3 {
+      @apply text-[20px] md:text-[24px] font-playfair-display leading-7 md:leading-12;
+    }
+
+    p {
+      @apply text-[18px] md:text-[20px]  text-textbrown md:leading-7 leading-[10px] mb-2;
+    }
+
+    .cap {
+      @apply text-[20px] md:text-[24px] font-playfair-display font-normal leading-8 md:leading-10 text-textbrown;
+    }
+
+    .menu {
+      @apply text-[20px] md:text-[20px];
+    }
+
+    .contain {
+      @apply w-full max-w-[1230px] mx-auto px-4 sm:px-6 lg:px-8;
+    }
+    .lg-contain {
+      @apply w-full max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8;
+    }
+
+    .herobg {
+      @apply bg-[url('../../../assets/backgrounds/herobg.svg')] bg-no-repeat bg-cover bg-center;
+    }
+
+    .dbg {
+      /* @apply bg-[url('../../../assets/backgrounds/herobg.svg')] bg-no-repeat bg-cover bg-center; */
+      @apply bg-[url('../../../assets/backgrounds/dbg.svg')] bg-no-repeat bg-cover bg-center;
+    }
   }
 }
 
