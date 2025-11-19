@@ -367,7 +367,7 @@ const ArriveAtDolci = () => {
         <div className="max-w-[920px] mx-auto px-6 md:px-0">
           <div className=" mt-8 text-center mb-12">
             <h2 className="text-3xl md:text-4xl leading-12 ">
-              What Happens When You Arrive at Emigration?
+              What Happens When You Arrive at Immigration?
             </h2>
           </div>
 
