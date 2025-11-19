@@ -54,20 +54,26 @@
 import { useState } from "react";
 import { Instagram, MapPinHouse, Menu } from "lucide-react";
 import { useAssets } from "../../../hooks/useAssets";
+// import PassportCountdown from "./PassportCounter";
 
 const Navbar = () => {
   const { images } = useAssets();
   const [openDropdown, setOpenDropdown] = useState(false);
 
   const toggleDropdown = () => setOpenDropdown(!openDropdown);
+  // const endTime = new Date().getTime() + 7 * 60 * 60 * 1000;
 
   return (
     <div className="sticky top-0 z-50 py-2 md:py-2">
       <div className="contain">
-        <nav className="flex justify-between items-center px-2 backdrop-blur-md relative">
+        <nav className="flex justify-between items-center px-2 relative">
           <div className="text-shadow-initial">
             <img src={images.dolcilogo} alt="" className="w-16 md:w-22" />
           </div>
+
+          {/* <div>
+            <PassportCountdown endTime={endTime} totalPassports={400} />
+          </div> */}
 
           {/* Right Icons */}
           <div className="flex gap-2 relative">

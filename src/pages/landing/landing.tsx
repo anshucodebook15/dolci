@@ -23,9 +23,11 @@ import PassportCountdown from "./sections/PassportCounter";
 // import Ambience from "./sections/Ambience";
 
 const Hero = () => {
+  const endTime = new Date().getTime() + 7 * 60 * 60 * 1000;
   return (
-    <div className="pt-5 pb-20">
-      <div className=" text-center md:py-10 py-10 px-10 md:mb-4 mb-10">
+    <div className="pb-20 mt-[-5rem]">
+      <PassportCountdown endTime={endTime} totalPassports={400} />
+      <div className=" text-center md:py-4 py-10 px-10 md:mb-4 mb-10">
         <h1 className="md:text-5xl text-4xl md:mb-2 mb-4 md:leading-26 leading-14 font-playfair-display">
           {/* YOUR EUROPE TRIP IS <span className="">CONFIRMED !</span>{" "} */}
           Your Europe Trip Is <span className="">Confirmed !</span>{" "}
@@ -465,7 +467,7 @@ const Footer = () => {
 const Home = () => {
   // const { backgrounds } = useAssets();
   // Set **end time** for countdown (example: 7 hours from now)
-  const endTime = new Date().getTime() + 7 * 60 * 60 * 1000;
+  // const endTime = new Date().getTime() + 7 * 60 * 60 * 1000;
   return (
     <>
       <div className="dolci_landing">
@@ -479,7 +481,7 @@ const Home = () => {
         <GetStarted />
         <ArriveAtDolci />
 
-        <PassportCountdown endTime={endTime} totalPassports={400} />
+        {/* <PassportCountdown endTime={endTime} totalPassports={400} /> */}
 
         <div className="py-10"></div>
         {/* <CollectMoreRewards /> */}
