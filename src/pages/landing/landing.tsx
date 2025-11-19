@@ -416,8 +416,31 @@ const ArriveAtDolci = () => {
             ))}
           </div> */}
 
-          <div className="overflow-hidden p-2">
-            <img src="https://res.cloudinary.com/dq7bzydqz/image/upload/v1763535469/Paris_01_v1_vgmn7v.png" alt="" className="w-full" />
+          <div className="max-w-[820px] mx-auto">
+
+
+
+            <div className="overflow-hidden p-2">
+              <img
+                src="https://res.cloudinary.com/dq7bzydqz/image/upload/v1763535469/Paris_01_v1_vgmn7v.png"
+                alt=""
+                className="w-full"
+              />
+            </div>
+            <div className="overflow-hidden p-2">
+              <img
+                src="https://res.cloudinary.com/dq7bzydqz/image/upload/v1763537155/Paris_02_v1_vduqyl.png"
+                alt=""
+                className="w-full"
+              />
+            </div>
+            <div className="overflow-hidden p-2">
+              <img
+                src="https://res.cloudinary.com/dq7bzydqz/image/upload/v1763537154/backgrid_tajctp.png"
+                alt=""
+                className="w-full"
+              />
+            </div>
           </div>
 
           <div className="flex justify-center mt-20">
