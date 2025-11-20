@@ -18,6 +18,7 @@ import Error404 from "../pages/emergent/pages/404";
 // import Dolci from "../pages/dolci/dolci";
 import Landing from "../pages/landing/landing";
 import Dolci from "../pages/dolci/dolci";
+import { ThankYou } from "../pages/landing/sections/ThankYou";
 // import B2b from "../pages/emergent/pages/B2b";
 
 // const TestRouter = () => {
@@ -49,6 +50,7 @@ const MainRouter = () => {
         <Route path="/404" element={<Error404 />} />
         {/* <Route path="/emergent" element={<Emergent />} /> */}
         <Route path="/dolci" element={<Landing />} />
+        <Route path="/thank-you" element={<ThankYou />} />
         <Route path="/pre" element={<Dolci />} />
       </Routes>
     </Router>

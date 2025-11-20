@@ -54,6 +54,7 @@
 import { useState } from "react";
 import { Instagram, MapPinHouse, Menu } from "lucide-react";
 import { useAssets } from "../../../hooks/useAssets";
+import { Link } from "react-router";
 // import PassportCountdown from "./PassportCounter";
 
 const Navbar = () => {
@@ -78,9 +79,11 @@ const Navbar = () => {
           {/* Right Icons */}
           <div className="flex gap-2 relative">
             <div className="hidden md:flex gap-1 items-center">
-              <button className="text-[#8cb0c4] hover:bg-[#e4eef3] rounded-full p-2">
-                <Instagram size={30} />
-              </button>
+              <Link to={"https://www.instagram.com/dolci_blr"}>
+                <button className="text-[#8cb0c4] hover:bg-[#e4eef3] rounded-full p-2">
+                  <Instagram size={30} />
+                </button>
+              </Link>
 
               {/* Location Button */}
               <button
@@ -94,15 +97,21 @@ const Navbar = () => {
               {/* Dropdown */}
               {openDropdown && (
                 <div className="absolute right-0 top-12 w-44 bg-white shadow-lg rounded-lg py-2 border border-gray-100">
-                  <p className="px-4 py-2 text-sm font-bold hover:bg-gray-100 cursor-pointer">
-                    New Bel Road
-                  </p>
-                  <p className="px-4 py-2 text-sm font-bold hover:bg-gray-100 cursor-pointer">
-                    Cunningham Road
-                  </p>
-                  <p className="px-4 py-2 text-sm font-bold hover:bg-gray-100 cursor-pointer">
-                    Lavelle Road
-                  </p>
+                  <Link to={"https://share.google/mTlEVxzqb2UNFvpLS"}>
+                    <button className="w-full px-4 py-2 text-sm font-bold hover:bg-gray-100 cursor-pointer">
+                      New Bel Road
+                    </button>
+                  </Link>
+                  <Link to={"https://share.google/nn3eNGNHwfz9C7zqy"}>
+                    <button className="w-full px-4 py-2 text-sm font-bold hover:bg-gray-100 cursor-pointer">
+                      Cunningham Road
+                    </button>
+                  </Link>
+                  <Link to={"https://share.google/w9VGV5xIGs8hH3Lzo"}>
+                    <button className="w-full px-4 py-2 text-sm font-bold hover:bg-gray-100 cursor-pointer">
+                      Lavelle Road
+                    </button>
+                  </Link>
                 </div>
               )}
             </div>

@@ -46,7 +46,7 @@ export const useAssets = () => {
       images: importAll(images),
       icons: importAll(icons),
       backgrounds: importAll(backgrounds),
-      lottie: importAll(lottie),
+      lottiee: importAll(lottie),
       videos: importAll(videos),
     };
   }, []);
