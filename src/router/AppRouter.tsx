@@ -2,38 +2,25 @@ import {
   BrowserRouter as Router,
   Route,
   Routes,
-  // HashRouter,
+
 } from "react-router";
 
-// import App from "../App";
-// import Dolci from "../pages/dolci/dolci";
+
 import Emergent from "../pages/emergent/Emergent";
-// import B2b from "../pages/emergent/pages/B2b";
+
 import Directors from "../pages/emergent/pages/Directors";
 import ScrollToHash from "../pages/emergent/lib/ScrollToHash";
 import Blog from "../pages/emergent/pages/blog";
 import Blogs from "../pages/emergent/pages/blogs";
 import B2b2 from "../pages/emergent/pages/B2b2";
 import Error404 from "../pages/emergent/pages/404";
-// import Dolci from "../pages/dolci/dolci";
-import Landing from "../pages/landing/landing";
-import Dolci from "../pages/dolci/dolci";
-import { ThankYou } from "../pages/landing/sections/ThankYou";
-// import B2b from "../pages/emergent/pages/B2b";
 
-// const TestRouter = () => {
-//   return (
-//     <Router>
-//       <Routes>
-//         <Route path="/" element={<App />} />
-//         <Route path="/emergent" element={<Emergent />} />
-//         <Route path="/b2b" element={<B2b />} />
-//         <Route path="/directors" element={<Directors />} />
-//         <Route path="/dolci" element={<Dolci />} />
-//       </Routes>
-//     </Router>
-//   );
-// };
+import Landing from "../pages/landing/landing";
+// import Dolci from "../pages/dolci/dolci";
+import { ThankYou } from "../pages/landing/sections/ThankYou";
+
+
+
 
 const MainRouter = () => {
   return (
@@ -41,17 +28,20 @@ const MainRouter = () => {
       <ScrollToHash />
       <Routes>
         <Route path="/" element={<Emergent />} />
-
         <Route path=":id" element={<Blog />} />
         <Route path="/blogs" element={<Blogs />} />
-
         <Route path="/b2b" element={<B2b2 />} />
         <Route path="/directors" element={<Directors />} />
-        <Route path="/404" element={<Error404 />} />
+
         {/* <Route path="/emergent" element={<Emergent />} /> */}
         <Route path="/dolci" element={<Landing />} />
         <Route path="/thank-you" element={<ThankYou />} />
-        <Route path="/pre" element={<Dolci />} />
+        {/* <Route path="/pre" element={<Dolci />} /> */}
+
+
+        <Route path="/*" element={<Error404 />} />
+
+        {/* <Route path="/step" element={<StepPage />} /> */}
       </Routes>
     </Router>
   );

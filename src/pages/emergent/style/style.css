@@ -29,6 +29,7 @@ body {
 :root {
   /* Dolci Brand Colors */
   --dolci-blue: #b2d7ec;
+  --dolci-blue-hover: #6291ad;
   --white-sand: #fff9e9;
   --arctic-blue: #d7f7fb;
   --marine-blue: #b6e2d3;

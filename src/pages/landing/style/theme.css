@@ -1,12 +1,13 @@
 /* Inlcude all the Fonts */
+
+@import "tailwindcss";
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 @import url("https://db.onlinewebfonts.com/c/9e65328448e32690935f5e0dec7e40be?family=PP+Hatton+Medium");
 @import url("https://db.onlinewebfonts.com/c/b75ac497f8189c60b43d8f9d052d8a8c?family=Cabinet+Grotesk+Medium");
 @import url("https://db.onlinewebfonts.com/c/63e7e31dbe7aa38c7c04b413ef841103?family=Cabinet+Grotesk+Variable");
 @import url("https://db.onlinewebfonts.com/c/46ba2f9f15aa5c3da7df3e38fe5487f7?family=Cabinet+Grotesk+Light");
 
-@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 
 /* @font-face {
   font-family: "PP Hatton Medium";
@@ -46,6 +47,10 @@
   --color-thinblue: #f9faff;
   --color-textblack: #1b1b1b;
   --color-textbrown: #503d3f;
+
+  /* Dolci Brand Colors */
+  --color-dolci-blue: #b2d7ec;
+  --color-dolci-blue-hover: #6291ad;
 }
 
 :root {
@@ -56,10 +61,10 @@
   color: rgba(22, 22, 22, 0.87);
   background-color: #f6f6f6;
 
-  font-synthesis: none;
+  /* font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale; */
 }
 
 html {
@@ -69,7 +74,7 @@ html {
 html,
 body {
   width: 100%;
-  font-family: var(--font-playfair-display);
+  font-family: var(--font-cabinate-grotesk-400);
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
@@ -196,7 +201,12 @@ body {
       /* @apply bg-[url('../../../assets/backgrounds/herobg.svg')] bg-no-repeat bg-cover bg-center; */
       @apply bg-[url('../../../assets/backgrounds/dbg.svg')] bg-no-repeat bg-cover bg-center;
     }
+
+    .dolcibtn {
+      @apply md:w-[80%] disabled:bg-blue-400 bg-dolci-blue hover:bg-dolci-blue-hover w-[80%] p-4 rounded-2xl cursor-pointer text-xl font-semibold;
+    }
   }
+
   .dolci_landing_text {
     @apply bg-thinblue w-full min-h-dvh relative;
 

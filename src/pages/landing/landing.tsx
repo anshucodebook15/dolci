@@ -58,7 +58,6 @@ const Hero = () => {
     </div>
   );
 };
-
 const OnePassport = () => {
   return (
     <>
@@ -143,6 +142,8 @@ const LeadForm = () => {
   };
   const [details, setDetails] = useState(initialDetails);
   const [loading, setLoading] = useState(false);
+
+  const [selectAddressOption, setSelectAddressOption] = useState(false);
   // const [errors, setErrors] = useState("Please fill all the details");
 
   const navigate = useNavigate();
@@ -187,6 +188,8 @@ const LeadForm = () => {
         // alert("Form submitted successfully");
       });
   };
+
+  console.log("details", details);
   return (
     <>
       <div className="flex flex-col items-center justify-center mb-10">
@@ -198,14 +201,7 @@ const LeadForm = () => {
           value={details.name}
           onChange={(e) => handleChange(e)}
         />
-        <input
-          type="text"
-          className="input border-1 p-4 border-[#56a4d1]  md:w-[80%] w-[80%] rounded-2xl mb-4"
-          placeholder="Address"
-          name="address"
-          value={details.address}
-          onChange={handleChange}
-        />
+
         {/* <input type="text" className="input border-1 p-4 border-dolci-blue w-[60%] rounded-2xl mb-4" placeholder="city"/>
             <input type="text" className="input border-1 p-4 border-dolci-blue w-[60%] rounded-2xl mb-4" placeholder="state"/> */}
         <input
@@ -216,16 +212,55 @@ const LeadForm = () => {
           value={details.mobile_number}
           onChange={handleChange}
         />
-        {/* <input type="text" className="Street" /> */}
+
+        <select
+          name="address"
+          onChange={(e) => {
+            if (e.target.value === "dolci_store") {
+              setDetails({
+                ...details,
+                address: "Recieved from Dolci store",
+              });
+              setSelectAddressOption(false);
+            } else if (e.target.value === "home_delivery") {
+              setDetails({
+                ...details,
+                address: "",
+              });
+              setSelectAddressOption(true);
+            }
+          }}
+          id=""
+          className="input border-1 p-4 border-[#56a4d1] md:w-[80%] w-[80%] rounded-2xl mb-4"
+        >
+          <option defaultValue={"Select Your Delivery Option"}>
+            Select Your Delivery Option
+          </option>
+          <option value="dolci_store">Recieved from Dolci store</option>
+          <option value="home_delivery">
+            Enter your address for home delivery
+          </option>
+        </select>
+
+        {selectAddressOption && (
+          <input
+            type="text"
+            className="input border-1 p-4 border-[#56a4d1]  md:w-[80%] w-[80%] rounded-2xl mb-4"
+            placeholder="Address"
+            name="address"
+            value={details.address}
+            onChange={handleChange}
+          />
+        )}
 
         <button
           // onClick={OnSubmitForm}
           onClick={OnSubmitForm}
-          disabled={loading}
-          className="md:hover:bg-[#347093] disabled:bg-blue-900 bg-dolci-blue md:w-[80%] w-[80%] p-4 rounded-2xl cursor-pointer text-xl font-semibold"
+          disabled={false}
+          className={`md:w-[80%] disabled:bg-blue-400 bg-dolci-blue hover:bg-dolci-blue-hover w-[80%] p-4 rounded-2xl cursor-pointer text-xl font-semibold`}
         >
           {" "}
-          Claim My Europe Trip Today
+          {loading ? "Submitting..." : "Claim My Europe Trip Today "}
         </button>
       </div>
     </>

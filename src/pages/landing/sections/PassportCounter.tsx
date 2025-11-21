@@ -1,3 +1,4 @@
+import axios from "axios";
 import { useEffect, useState } from "react";
 
 type CountdownProps = {
@@ -14,7 +15,28 @@ type TimeLeft = {
 
 const PassportCountdown = ({ endTime, totalPassports }: CountdownProps) => {
   const [timeLeft, setTimeLeft] = useState<TimeLeft>({});
-  const [passportsLeft] = useState(totalPassports);
+  const [counts, setCounts] = useState<any>(0);
+
+  const [_passportsLeft] = useState(totalPassports);
+  const [_loading, setLoading] = useState(false);
+
+  const GetPassportCountandTimer = async () => {
+    setLoading(true);
+    await axios
+      .get("https://dolci.theasylum.in/wp-json/trip/v1/status")
+      .then((res) => {
+        console.log("res", res.data);
+        setCounts(res.data.remaining_count);
+        setLoading(false);
+      })
+      .catch((_err) => {
+        setLoading(false);
+      });
+  };
+
+  useEffect(() => {
+    GetPassportCountandTimer();
+  }, []);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -52,7 +74,9 @@ const PassportCountdown = ({ endTime, totalPassports }: CountdownProps) => {
 
       {/* Passports Left */}
       <div className="mt-2 text-xl text-[#2754a7]">
-        <h2 className="text-[18px] leading-0">Only {passportsLeft} Passports Left Hurry Up!</h2> 
+        <h2 className="text-[18px] leading-0">
+          Only {counts} Passports Left Hurry Up!
+        </h2>
       </div>
     </div>
   );

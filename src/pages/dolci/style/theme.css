@@ -8,20 +8,6 @@
 
 @import "tailwindcss";
 
-/* @font-face {
-  font-family: "PP Hatton Medium";
-  src: url("https://db.onlinewebfonts.com/t/9e65328448e32690935f5e0dec7e40be.eot");
-  src: url("https://db.onlinewebfonts.com/t/9e65328448e32690935f5e0dec7e40be.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/9e65328448e32690935f5e0dec7e40be.woff2")
-      format("woff2"),
-    url("https://db.onlinewebfonts.com/t/9e65328448e32690935f5e0dec7e40be.woff")
-      format("woff"),
-    url("https://db.onlinewebfonts.com/t/9e65328448e32690935f5e0dec7e40be.ttf")
-      format("truetype"),
-    url("https://db.onlinewebfonts.com/t/9e65328448e32690935f5e0dec7e40be.svg#PP Hatton Medium")
-      format("svg");
-} */
 
 @theme {
   --color-yellow: #e7d393;
