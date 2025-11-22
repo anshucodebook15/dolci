@@ -80,7 +80,8 @@ const Hero = () => {
       </section>
       <div className="relative z-20 text-center text-[#1498cf] px-4 py-30 xl:mt-[-24rem] lg:mt-[-22rem] md:mt-[-15rem] mt-[-22rem]">
         <h1 className="font-playfair text-3xl sm:text-3xl md:text-4xl lg:text-[40px] xl:text-[42px] font-bold mb-2 leading-tight">
-          Since 2008, Worth Discovering
+          {/* Since 2008, Worth Discovering */}
+          Dolci, obviously!
         </h1>
 
         <p className="font-montserrat text-gray-500 text-lg md:text-xl mb-6 max-w-2xl mx-auto opacity-90">

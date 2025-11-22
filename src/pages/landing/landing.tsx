@@ -133,7 +133,6 @@ const OnePassport = () => {
     </>
   );
 };
-
 const LeadForm = () => {
   const initialDetails = {
     name: "",
