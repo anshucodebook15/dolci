@@ -142,7 +142,9 @@ const LeadForm = () => {
   const [details, setDetails] = useState(initialDetails);
   const [loading, setLoading] = useState(false);
 
-  const [selectAddressOption, setSelectAddressOption] = useState(false);
+  const [_selectAddressOption, _setSelectAddressOption] = useState(false);
+
+  const [storeInfo, setStoreInfo] = useState("select_delivery");
   // const [errors, setErrors] = useState("Please fill all the details");
 
   const navigate = useNavigate();
@@ -216,32 +218,38 @@ const LeadForm = () => {
           name="address"
           onChange={(e) => {
             if (e.target.value === "dolci_store") {
-              setDetails({
-                ...details,
-                address: "Recieved from Dolci store",
-              });
-              setSelectAddressOption(false);
+              // setDetails({
+              //   ...details,
+              //   address: "Recieved from Dolci store",
+              // });
+              // setSelectAddressOption(false);
+
+              setStoreInfo('dolci_store');
+
+
             } else if (e.target.value === "home_delivery") {
+
+              setStoreInfo('home_delivery');
+
               setDetails({
                 ...details,
                 address: "",
               });
-              setSelectAddressOption(true);
+              // setSelectAddressOption(true);
             }
           }}
           id=""
           className="input border-1 p-4 border-[#56a4d1] md:w-[80%] w-[80%] rounded-2xl mb-4"
         >
-          <option defaultValue={"Select Your Delivery Option"}>
+          <option defaultValue={"select_delivery"}>
             Select Your Delivery Option
           </option>
-          <option value="dolci_store">Recieved from Dolci store</option>
-          <option value="home_delivery">
-            Enter your address for home delivery
-          </option>
+          <option value="dolci_store">Collect from Dolci store</option>
+          <option value="home_delivery">Home delivery</option>
         </select>
 
-        {selectAddressOption && (
+        {/* 
+        {selectAddressOption ? (
           <input
             type="text"
             className="input border-1 p-4 border-[#56a4d1]  md:w-[80%] w-[80%] rounded-2xl mb-4"
@@ -250,7 +258,62 @@ const LeadForm = () => {
             value={details.address}
             onChange={handleChange}
           />
-        )}
+        ) : (
+          <select
+            name="address"
+            onChange={(e) => {
+              if (e.target.value === "dolci_store") {
+                setDetails({
+                  ...details,
+                  address: e.target.value,
+                });
+                setSelectAddressOption(false);
+              }
+            }}
+            id=""
+            className="input border-1 p-4 border-[#56a4d1] md:w-[80%] w-[80%] rounded-2xl mb-4"
+          >
+            <option defaultValue={"select_delivery"}>
+              Collect from Dolci Store
+            </option>
+            <option value="New BEL Road">New BEL Road</option>
+            <option value="Cunningham Road">Cunningham Road</option>
+            <option value="Lavelle Road">Lavelle Road</option>
+          </select>
+        )} */}
+
+        {storeInfo === "home_delivery" ? (
+          <input
+            type="text"
+            className="input border-1 p-4 border-[#56a4d1]  md:w-[80%] w-[80%] rounded-2xl mb-4"
+            placeholder="Address"
+            name="address"
+            value={details.address}
+            onChange={handleChange}
+          />
+        ) : storeInfo === "dolci_store" ? (
+          <select
+            name="address"
+            onChange={(e) => {
+              // if (e.target.value === "dolci_store") {
+              setDetails({
+                ...details,
+                address: e.target.value,
+              });
+              // setSelectAddressOption(false);
+              // }
+            }}
+            id=""
+            className="input border-1 p-4 border-[#56a4d1] md:w-[80%] w-[80%] rounded-2xl mb-4"
+          >
+            <option defaultValue={"select_delivery"}>
+              Select Store
+            </option>
+            <option value="New BEL Road">New BEL Road</option>
+            <option value="Cunningham Road">Cunningham Road</option>
+            <option value="Lavelle Road">Lavelle Road</option>
+          </select>
+        ) : ""}
 
         <button
           // onClick={OnSubmitForm}
