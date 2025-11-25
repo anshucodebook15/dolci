@@ -78,7 +78,7 @@ const Navbar = () => {
 
           {/* Right Icons */}
           <div className="flex gap-2 relative">
-            <div className="hidden md:flex gap-1 items-center">
+            <div className="md:flex gap-1 items-center">
               <Link to={"https://www.instagram.com/dolci_blr"}>
                 <button className="text-[#8cb0c4] hover:bg-[#e4eef3] rounded-full p-2">
                   <Instagram size={30} />
@@ -117,7 +117,7 @@ const Navbar = () => {
             </div>
 
             {/* Mobile Menu Icon */}
-            <div className="md:hidden cursor-pointer">
+            <div className="md:hidden hidden cursor-pointer">
               <Menu strokeWidth={1.75} fill="#000000" />
             </div>
           </div>
