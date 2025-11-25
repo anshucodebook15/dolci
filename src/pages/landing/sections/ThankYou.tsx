@@ -15,7 +15,7 @@ const Footer = () => {
 };
 
 export const ThankYou = () => {
-//   const { lottiee } = useAssets();
+  //   const { lottiee } = useAssets();
   return (
     <>
       <div className="dolci_landing">
@@ -24,8 +24,8 @@ export const ThankYou = () => {
           <Navbar />
         </div>
 
-        <div className=" text-center pt-12 ">
-          <h1 className="text-[68px] leading-0 mb-20">
+        <div className=" text-center pt-12 px-14 ">
+          <h1 className="md:text-[68px] text-[40px] mb-2 leading-14">
             {" "}
             <i>Thank You, Enjoy Your Trip</i>
           </h1>

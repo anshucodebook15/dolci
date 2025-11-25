@@ -626,7 +626,7 @@ const Home = () => {
                 <div id="getstarted" className="contain ">
                   <div className="max-w-[650px] mx-auto">
                     <div className="md:px-10 px-4 mt-8 text-center md:mb-10 mb-10">
-                      <h2 className="md:text-3xl text-[28px] md:leading-12 leading-12">
+                      <h2 className="md:text-3xl text-[26px] md:leading-12 leading-12">
                         Claim Your Passport !
                       </h2>
                     </div>
