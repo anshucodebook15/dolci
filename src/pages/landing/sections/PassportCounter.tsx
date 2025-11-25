@@ -14,7 +14,7 @@ type TimeLeft = {
 };
 
 const PassportCountdown = ({ endTime, totalPassports }: CountdownProps) => {
-  const [timeLeft, setTimeLeft] = useState<TimeLeft>({});
+  const [_timeLeft, setTimeLeft] = useState<TimeLeft>({});
   const [counts, setCounts] = useState<any>(0);
 
   const [_passportsLeft] = useState(totalPassports);
@@ -62,15 +62,15 @@ const PassportCountdown = ({ endTime, totalPassports }: CountdownProps) => {
   return (
     <div className=" rounded-xl text-center  ">
       {/* Time Left */}
-      {!timeLeft.expired ? (
+      {/* {!timeLeft.expired ? (
         <h1 className="text-3xl font-semibold leading-6 mb-6">
           {timeLeft.hours ?? 0}H: {timeLeft.minutes ?? 0}M:{" "}
           {timeLeft.seconds ?? 0}S
-          {/* <span className="text-gray-600 font-normal text-[14px]"> remaining</span> */}
+
         </h1>
       ) : (
         <div className="text-red-600 font-bold text-lg">Offer Ended</div>
-      )}
+      )} */}
 
       {/* Passports Left */}
       <div className="mt-2 text-xl text-[#2754a7]">
