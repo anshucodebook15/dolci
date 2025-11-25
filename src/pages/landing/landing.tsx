@@ -193,10 +193,10 @@ const LeadForm = () => {
   console.log("details", details);
   return (
     <>
-      <div className="flex flex-col items-center justify-center mb-10">
+      <div className="flex flex-col items-center justify-center mb-8">
         <input
           type="text"
-          className="input border-1 p-4 border-[#56a4d1] md:w-[80%] w-[80%] rounded-2xl mb-4"
+          className="input border-1 p-4 border-[#56a4d1] md:w-[80%] w-[95%] rounded-2xl mb-4"
           placeholder="Name"
           name="name"
           value={details.name}
@@ -207,7 +207,7 @@ const LeadForm = () => {
             <input type="text" className="input border-1 p-4 border-dolci-blue w-[60%] rounded-2xl mb-4" placeholder="state"/> */}
         <input
           type="number"
-          className="input border-1 p-4 border-[#56a4d1] md:w-[80%] w-[80%] rounded-2xl mb-4"
+          className="input border-1 p-4 border-[#56a4d1] md:w-[80%] w-[95%] rounded-2xl mb-4"
           placeholder="Mobile Number"
           name="mobile_number"
           value={details.mobile_number}
@@ -224,12 +224,9 @@ const LeadForm = () => {
               // });
               // setSelectAddressOption(false);
 
-              setStoreInfo('dolci_store');
-
-
+              setStoreInfo("dolci_store");
             } else if (e.target.value === "home_delivery") {
-
-              setStoreInfo('home_delivery');
+              setStoreInfo("home_delivery");
 
               setDetails({
                 ...details,
@@ -239,7 +236,7 @@ const LeadForm = () => {
             }
           }}
           id=""
-          className="input border-1 p-4 border-[#56a4d1] md:w-[80%] w-[80%] rounded-2xl mb-4"
+          className="input border-1 p-4 border-[#56a4d1] md:w-[80%] w-[95%] rounded-2xl mb-4"
         >
           <option defaultValue={"select_delivery"}>
             Select Your Delivery Option
@@ -285,7 +282,7 @@ const LeadForm = () => {
         {storeInfo === "home_delivery" ? (
           <input
             type="text"
-            className="input border-1 p-4 border-[#56a4d1]  md:w-[80%] w-[80%] rounded-2xl mb-4"
+            className="input border-1 p-4 border-[#56a4d1]  md:w-[80%] w-[95%] rounded-2xl mb-4"
             placeholder="Address"
             name="address"
             value={details.address}
@@ -304,22 +301,22 @@ const LeadForm = () => {
               // }
             }}
             id=""
-            className="input border-1 p-4 border-[#56a4d1] md:w-[80%] w-[80%] rounded-2xl mb-4"
+            className="input border-1 p-4 border-[#56a4d1] md:w-[80%] w-[95%] rounded-2xl mb-4"
           >
-            <option defaultValue={"select_delivery"}>
-              Select Store
-            </option>
+            <option defaultValue={"select_delivery"}>Select Store</option>
             <option value="New BEL Road">New BEL Road</option>
             <option value="Cunningham Road">Cunningham Road</option>
             <option value="Lavelle Road">Lavelle Road</option>
           </select>
-        ) : ""}
+        ) : (
+          ""
+        )}
 
         <button
           // onClick={OnSubmitForm}
           onClick={OnSubmitForm}
           disabled={false}
-          className={`md:w-[80%] disabled:bg-blue-400 bg-dolci-blue hover:bg-dolci-blue-hover w-[80%] p-4 rounded-2xl cursor-pointer text-xl font-semibold`}
+          className={`md:w-[80%] disabled:bg-blue-400 bg-dolci-blue hover:bg-dolci-blue-hover w-[95%] p-4 rounded-2xl cursor-pointer text-xl font-semibold`}
         >
           {" "}
           {loading ? "Submitting..." : "Claim My Europe Trip Today "}
@@ -335,7 +332,9 @@ const GetStarted = () => {
       <div id="getstarted" className="contain md:py-20">
         <div className="max-w-[650px] mx-auto">
           <div className="px-10 mt-8 text-center mb-8">
-            <h2 className="text-4xl leading-12 ">Claim Your Passport !</h2>
+            <h2 className="md:text-4xl text-3xl leading-12 ">
+              Claim Your Passport !
+            </h2>
           </div>
 
           <div className="">
@@ -626,8 +625,8 @@ const Home = () => {
               <div className="p-8">
                 <div id="getstarted" className="contain ">
                   <div className="max-w-[650px] mx-auto">
-                    <div className="px-10 mt-8 text-center mb-12">
-                      <h2 className="text-4xl leading-12">
+                    <div className="md:px-10 px-4 mt-8 text-center mb-12">
+                      <h2 className="md:text-4xl text-3xl md:leading-12 leading-10">
                         Claim Your Passport !
                       </h2>
                     </div>
@@ -669,7 +668,7 @@ const Home = () => {
 
                       <div className="flex mb-10">
                         <div className="w-full text-center">
-                          <p className="md:text-xl text-2xl text-gray-600 leading-8">
+                          <p className="md:text-xl text-xl text-gray-600 md:leading-8 leading-7">
                             {" "}
                             <i>
                               Your Dolci Explorer Passport will be processed and
