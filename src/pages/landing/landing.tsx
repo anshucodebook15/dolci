@@ -331,8 +331,8 @@ const GetStarted = () => {
     <>
       <div id="getstarted" className="contain md:py-20">
         <div className="max-w-[650px] mx-auto">
-          <div className="px-10 mt-8 text-center mb-8">
-            <h2 className="md:text-4xl text-3xl leading-12 ">
+          <div className="px-10 mt-8 text-center mb-6">
+            <h2 className="md:text-4xl text-4xl md:leading-12 leading-12">
               Claim Your Passport !
             </h2>
           </div>
