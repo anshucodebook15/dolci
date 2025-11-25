@@ -608,8 +608,8 @@ const Home = () => {
         <div className="py-10"></div>
 
         {showModal && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40">
-            <div className="bg-white rounded-2xl shadow-xl max-w-xl w-full relative overflow-hidden">
+          <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 ">
+            <div className="bg-white rounded-2xl shadow-xl max-w-xl w-full relative overflow-hidden md:m-0 m-4">
               {/* 🔹 Banner */}
               <div className="relative">
                 {/* 🔹 Close button over banner */}
@@ -622,11 +622,11 @@ const Home = () => {
               </div>
 
               {/* 🔹 Modal Content */}
-              <div className="p-8">
+              <div className="p-6">
                 <div id="getstarted" className="contain ">
                   <div className="max-w-[650px] mx-auto">
-                    <div className="md:px-10 px-4 mt-8 text-center mb-12">
-                      <h2 className="md:text-4xl text-3xl md:leading-12 leading-10">
+                    <div className="md:px-10 px-4 mt-8 text-center md:mb-10 mb-10">
+                      <h2 className="md:text-3xl text-[28px] md:leading-12 leading-12">
                         Claim Your Passport !
                       </h2>
                     </div>
