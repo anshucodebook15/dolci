@@ -280,14 +280,21 @@ const LeadForm = () => {
         )} */}
 
         {storeInfo === "home_delivery" ? (
-          <input
-            type="text"
-            className="input border-1 p-4 border-[#56a4d1]  md:w-[80%] w-[95%] rounded-2xl mb-4"
-            placeholder="Address"
-            name="address"
-            value={details.address}
-            onChange={handleChange}
-          />
+          // <input
+          //   type="text"
+          //   className="input border-1 p-4 border-[#56a4d1]  md:w-[80%] w-[95%] rounded-2xl mb-4"
+          //   placeholder="Address"
+          //   name="address"
+          //   value={details.address}
+          //   onChange={handleChange}
+          // />
+
+          <div className="md:w-[80%] w-[95%] px-4 mb-4">
+            <p className="text-[16px] leading-5 text-pink-800">
+              Home deliveries with hampers are currently sold out as they were
+              available for the first 100 passport sign ups.
+            </p>
+          </div>
         ) : storeInfo === "dolci_store" ? (
           <select
             name="address"
