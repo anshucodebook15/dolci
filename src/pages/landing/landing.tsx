@@ -287,7 +287,7 @@ const LeadForm = () => {
         ) : (
           ""
         )} */}
-        
+
 
         {/* ********************************************* */}
 
@@ -374,8 +374,7 @@ const GetStarted = () => {
                 <p className="md:text-xl text-2xl text-gray-600 leading-8">
                   {" "}
                   <i>
-                    Your Dolci Explorer Passport will be processed and delivered
-                    to your doorstep within 48 hours.
+                    Your Dolci Explorer Passport will be ready to collect at your selected outlet right away!
                   </i>
                 </p>
               </div>
@@ -650,8 +649,7 @@ const Home = () => {
                           <p className="md:text-xl text-xl text-gray-600 md:leading-8 leading-7">
                             {" "}
                             <i>
-                              Your Dolci Explorer Passport will be processed and
-                              delivered to your doorstep within 48 hours.
+                             Your Dolci Explorer Passport will be ready to collect at your selected outlet right away!
                             </i>
                           </p>
                         </div>
