@@ -144,7 +144,7 @@ const LeadForm = () => {
 
   const [_selectAddressOption, _setSelectAddressOption] = useState(false);
 
-  const [storeInfo, setStoreInfo] = useState("select_delivery");
+  const [_storeInfo, _setStoreInfo] = useState("select_delivery");
   // const [errors, setErrors] = useState("Please fill all the details");
 
   const navigate = useNavigate();
@@ -217,13 +217,29 @@ const LeadForm = () => {
         <select
           name="address"
           onChange={(e) => {
-            if (e.target.value === "dolci_store") {
-              // setDetails({
-              //   ...details,
-              //   address: "Recieved from Dolci store",
-              // });
-              // setSelectAddressOption(false);
+            // if (e.target.value === "dolci_store") {
+            setDetails({
+              ...details,
+              address: e.target.value,
+            });
+            // setSelectAddressOption(false);
+            // }
+          }}
+          id=""
+          className="input border-1 p-4 border-[#56a4d1] md:w-[80%] w-[95%] rounded-2xl mb-4"
+        >
+          <option defaultValue={"select_delivery"}>Select Store</option>
+          <option value="New BEL Road">New BEL Road</option>
+          <option value="Cunningham Road">Cunningham Road</option>
+          <option value="Lavelle Road">Lavelle Road</option>
+        </select>
 
+        {/* ************************************************************************* */}
+
+        {/* <select
+          name="address"
+          onChange={(e) => {
+            if (e.target.value === "dolci_store") {
               setStoreInfo("dolci_store");
             } else if (e.target.value === "home_delivery") {
               setStoreInfo("home_delivery");
@@ -232,7 +248,6 @@ const LeadForm = () => {
                 ...details,
                 address: "",
               });
-              // setSelectAddressOption(true);
             }
           }}
           id=""
@@ -245,50 +260,7 @@ const LeadForm = () => {
           <option value="home_delivery">Home delivery</option>
         </select>
 
-        {/* 
-        {selectAddressOption ? (
-          <input
-            type="text"
-            className="input border-1 p-4 border-[#56a4d1]  md:w-[80%] w-[80%] rounded-2xl mb-4"
-            placeholder="Address"
-            name="address"
-            value={details.address}
-            onChange={handleChange}
-          />
-        ) : (
-          <select
-            name="address"
-            onChange={(e) => {
-              if (e.target.value === "dolci_store") {
-                setDetails({
-                  ...details,
-                  address: e.target.value,
-                });
-                setSelectAddressOption(false);
-              }
-            }}
-            id=""
-            className="input border-1 p-4 border-[#56a4d1] md:w-[80%] w-[80%] rounded-2xl mb-4"
-          >
-            <option defaultValue={"select_delivery"}>
-              Collect from Dolci Store
-            </option>
-            <option value="New BEL Road">New BEL Road</option>
-            <option value="Cunningham Road">Cunningham Road</option>
-            <option value="Lavelle Road">Lavelle Road</option>
-          </select>
-        )} */}
-
         {storeInfo === "home_delivery" ? (
-          // <input
-          //   type="text"
-          //   className="input border-1 p-4 border-[#56a4d1]  md:w-[80%] w-[95%] rounded-2xl mb-4"
-          //   placeholder="Address"
-          //   name="address"
-          //   value={details.address}
-          //   onChange={handleChange}
-          // />
-
           <div className="md:w-[80%] w-[95%] px-4 mb-4">
             <p className="text-[16px] leading-5 text-pink-800">
               Home deliveries with hampers are currently sold out as they were
@@ -299,13 +271,10 @@ const LeadForm = () => {
           <select
             name="address"
             onChange={(e) => {
-              // if (e.target.value === "dolci_store") {
               setDetails({
                 ...details,
                 address: e.target.value,
               });
-              // setSelectAddressOption(false);
-              // }
             }}
             id=""
             className="input border-1 p-4 border-[#56a4d1] md:w-[80%] w-[95%] rounded-2xl mb-4"
@@ -317,10 +286,13 @@ const LeadForm = () => {
           </select>
         ) : (
           ""
-        )}
+        )} */}
+        
+
+        {/* ********************************************* */}
 
         <button
-          // onClick={OnSubmitForm}
+
           onClick={OnSubmitForm}
           disabled={false}
           className={`md:w-[80%] disabled:bg-blue-400 bg-dolci-blue hover:bg-dolci-blue-hover w-[95%] p-4 rounded-2xl cursor-pointer text-xl font-semibold`}
