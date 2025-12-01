@@ -11,15 +11,26 @@ const Hero = () => {
   return (
     <div className="pb-20 ">
       <PassportCountdown endTime={endTime} totalPassports={400} />
-      <div className=" text-center md:py-4 py-10 px-10 md:mb-4 mb-10">
+
+      <div className=" text-center md:py-4 pt-10 px-10 md:mb-4 mb-10">
         <h1 className="md:text-5xl text-4xl md:mb-2 mb-4 md:leading-26 leading-14 font-playfair-display">
-          {/* YOUR EUROPE TRIP IS <span className="">CONFIRMED !</span>{" "} */}
           Your Europe Trip Is <span className="">Confirmed !</span>{" "}
         </h1>
-        <h2 className="text-2xl text-dolci leading-8">
-          {" "}
-          <i>Europe. Closer Than You Searched.</i>
-        </h2>
+
+        <div className="mb-">
+          <h2 className="text-2xl text-dolci leading-8">
+            {" "}
+            <i>Europe. Closer Than You Searched.</i>
+          </h2>
+        </div>
+      </div>
+
+      <div className="relative z-20 flex justify-center ">
+        <Link to={"#getstarted"}>
+          <button className="border-1 border-cyan-700 md:p-4 p-2 font-bold rounded-2xl md:text-2xl text-xl bg-amber-200 hover:bg-amber-500 cursor-pointer">
+            Claim My Europe Trip Today
+          </button>
+        </Link>
       </div>
 
       <div className="w-full overflow-hidden  flex justify-center mb-20 md:mt-[-24rem] mt-[-4rem]">
@@ -48,13 +59,13 @@ const Hero = () => {
           </p>
         </div>
       </div>
-      <div className="flex justify-center">
+      {/* <div className="flex justify-center">
         <Link to={"#getstarted"}>
           <button className="border-1 border-cyan-700 p-4 font-bold rounded-2xl text-2xl bg-amber-200 hover:bg-amber-500 cursor-pointer">
             Claim My Europe Trip Today
           </button>
         </Link>
-      </div>
+      </div> */}
     </div>
   );
 };
@@ -288,11 +299,9 @@ const LeadForm = () => {
           ""
         )} */}
 
-
         {/* ********************************************* */}
 
         <button
-
           onClick={OnSubmitForm}
           disabled={false}
           className={`md:w-[80%] disabled:bg-blue-400 bg-dolci-blue hover:bg-dolci-blue-hover w-[95%] p-4 rounded-2xl cursor-pointer text-xl font-semibold`}
@@ -374,7 +383,8 @@ const GetStarted = () => {
                 <p className="md:text-xl text-2xl text-gray-600 leading-8">
                   {" "}
                   <i>
-                    Your Dolci Explorer Passport will be ready to collect at your selected outlet right away!
+                    Your Dolci Explorer Passport will be ready to collect at
+                    your selected outlet right away!
                   </i>
                 </p>
               </div>
@@ -565,7 +575,7 @@ const Home = () => {
   // };
 
   useEffect(() => {
-    const timer = setTimeout(() => setShowModal(true), 2000);
+    const timer = setTimeout(() => setShowModal(true), 10000);
     return () => clearTimeout(timer);
   }, []);
   return (
@@ -649,7 +659,8 @@ const Home = () => {
                           <p className="md:text-xl text-xl text-gray-600 md:leading-8 leading-7">
                             {" "}
                             <i>
-                             Your Dolci Explorer Passport will be ready to collect at your selected outlet right away!
+                              Your Dolci Explorer Passport will be ready to
+                              collect at your selected outlet right away!
                             </i>
                           </p>
                         </div>
