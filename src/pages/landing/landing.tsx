@@ -156,7 +156,6 @@ const LeadForm = () => {
   const [_selectAddressOption, _setSelectAddressOption] = useState(false);
 
   const [_storeInfo, _setStoreInfo] = useState("select_delivery");
-  // const [errors, setErrors] = useState("Please fill all the details");
 
   const navigate = useNavigate();
 
@@ -214,8 +213,6 @@ const LeadForm = () => {
           onChange={(e) => handleChange(e)}
         />
 
-        {/* <input type="text" className="input border-1 p-4 border-dolci-blue w-[60%] rounded-2xl mb-4" placeholder="city"/>
-            <input type="text" className="input border-1 p-4 border-dolci-blue w-[60%] rounded-2xl mb-4" placeholder="state"/> */}
         <input
           type="number"
           className="input border-1 p-4 border-[#56a4d1] md:w-[80%] w-[95%] rounded-2xl mb-4"
@@ -228,13 +225,10 @@ const LeadForm = () => {
         <select
           name="address"
           onChange={(e) => {
-            // if (e.target.value === "dolci_store") {
             setDetails({
               ...details,
               address: e.target.value,
             });
-            // setSelectAddressOption(false);
-            // }
           }}
           id=""
           className="input border-1 p-4 border-[#56a4d1] md:w-[80%] w-[95%] rounded-2xl mb-4"
