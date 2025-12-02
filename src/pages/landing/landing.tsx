@@ -570,7 +570,7 @@ const Home = () => {
   // };
 
   useEffect(() => {
-    const timer = setTimeout(() => setShowModal(true), 10000);
+    const timer = setTimeout(() => setShowModal(true), 30000);
     return () => clearTimeout(timer);
   }, []);
   return (
