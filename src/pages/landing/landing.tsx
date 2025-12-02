@@ -14,7 +14,8 @@ const Hero = () => {
 
       <div className=" text-center md:py-4 pt-10 px-10 md:mb-4 mb-10">
         <h1 className="md:text-5xl text-4xl md:mb-2 mb-4 md:leading-26 leading-14 font-playfair-display">
-          Your Europe Trip Is <span className="">Confirmed !</span>{" "}
+          {/* Your Europe Trip Is <span className="">Confirmed !</span>{" "} */}
+          Claim Your Passport Today !
         </h1>
 
         <div className="mb-">
@@ -28,7 +29,7 @@ const Hero = () => {
       <div className="relative z-20 flex justify-center ">
         <Link to={"#getstarted"}>
           <button className="border-1 border-cyan-700 md:p-4 p-2 font-bold rounded-2xl md:text-2xl text-xl bg-amber-200 hover:bg-amber-500 cursor-pointer">
-            Claim My Europe Trip Today
+            Collect Yours Now
           </button>
         </Link>
       </div>
