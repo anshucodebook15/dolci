@@ -3,14 +3,14 @@
 import { Link } from "react-router";
 
 const Bevrages = () => {
-  const storyData = [
+  const BevragesFeatures = [
     {
       id: 1,
       title: "Inspired by",
       subtitle: "European café culture",
       link: "/dacadc",
       image:
-        "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764537/Hot_Chocolate_Square_alv4zz.webp",
+        "https://dolci.theasylum.in/wp-content/uploads/2025/12/Hot_Chocolate_Square_alv4zz-scaled.webp",
       gradient: "bg-gradient-to-t from-black/80 via-transparent to-transparent",
     },
     {
@@ -19,7 +19,7 @@ const Bevrages = () => {
       subtitle: "Dishes and pastries",
       link: "/dacadc",
       image:
-        "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764536/Dolci_Square_Web-Images_0002_Cappuccino-Square_fgr6qb.webp",
+        "https://dolci.theasylum.in/wp-content/uploads/2025/12/Dolci_Square_Web-Images_0000_Cafe-Mocha-Square_vbqpfu.webp",
       gradient: "bg-gradient-to-t from-black/80 via-transparent to-transparent",
     },
     {
@@ -29,34 +29,34 @@ const Bevrages = () => {
       // subtitle: "Blends and specialty drinks",
       subtitle: "Blends and drinks",
       image:
-        "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764535/Dolci_Square_Web-Images_0000_Cafe-Mocha-Square_vbqpfu.webp",
+        "https://dolci.theasylum.in/wp-content/uploads/2025/12/Hot_Chocolate_Square_alv4zz-1-scaled.webp",
       gradient: "bg-gradient-to-t from-black/80 via-transparent to-transparent",
     },
     {
-      id: 4,
+      id: 5,
       title: "Cozy Ambience",
       link: "/dacadc",
       subtitle: "Perfect for any occasion",
       image:
-        "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764535/Dolci_Square_Web-Images_0001_Caffe-Latte-square_rpomhy.webp",
+        "https://dolci.theasylum.in/wp-content/uploads/2025/12/Iced_Americano_Square_rzhld2-scaled.webp",
       gradient: "bg-gradient-to-t from-black/80 via-transparent to-transparent",
     },
     {
-      id: 4,
+      id: 6,
       title: "Cozy Ambience",
       link: "/dacadc",
       subtitle: "Perfect for any occasion",
       image:
-        "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764539/Orange_Cold_Brew_Square_degucl.webp",
+        "https://dolci.theasylum.in/wp-content/uploads/2025/12/Orange_Cold_Brew_Square_degucl-scaled.webp",
       gradient: "bg-gradient-to-t from-black/80 via-transparent to-transparent",
     },
     {
-      id: 4,
+      id: 7,
       title: "Cozy Ambience",
       link: "/dacadc",
       subtitle: "Perfect for any occasion",
       image:
-        "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764538/Iced_Americano_Square_rzhld2.webp",
+        "https://dolci.theasylum.in/wp-content/uploads/2025/12/Dolci_Square_Web-Images_0001_Caffe-Latte-square_rpomhy.webp",
       gradient: "bg-gradient-to-t from-black/80 via-transparent to-transparent",
     },
   ];
@@ -76,7 +76,7 @@ const Bevrages = () => {
         </div>
         {/* Image Highlights */}
         <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-6 gap-1 lg:gap-1 justify-center">
-          {storyData.map((item) => (
+          {BevragesFeatures.map((item) => (
             <Link to={"#"}>
               <div key={item.id} className="group cursor-pointer md:py-2 ">
                 <div className="overflow-hidden rounded-[5px] md:h-90 h-40">

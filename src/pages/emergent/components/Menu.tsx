@@ -20,24 +20,6 @@ import {
 } from "lucide-react";
 import { completeMenuData } from "../../../data/menu";
 
-// type Category = {
-//   id: string;
-//   name: string;
-//   description: string;
-//   items: {
-//     id: string;
-//     name: string;
-//     description: string;
-//     image: string;
-//     price: string;
-//     category: string;
-//   }[];
-// };
-
-// const DriveImgView = (path = "v1758733182/download_zjsopj.webp") => {
-//   return `https://res.cloudinary.com/dq7bzydqz/image/upload/${path}`;
-// };
-
 const Menu = () => {
   const [selectedCategory, setSelectedCategory] = useState("viennoiserie");
 
@@ -59,14 +41,59 @@ const Menu = () => {
     return icons[categoryId] || Star;
   };
 
-  // const getCategoryBadgeColor = (category: string): string => {
-  //   const colors: Record<string, string> = {
-  //     veg: "bg-green-100 text-green-800",
-  //     egg: "bg-yellow-100 text-yellow-800",
-  //     drink: "bg-blue-100 text-blue-800",
-  //   };
-  //   return colors[category] || "bg-gray-100 text-gray-800";
-  // };
+  // const chefchoice = [
+  //   {
+  //     id: 1,
+  //     title: "Dolci's Signature Tiramisu",
+  //     description: "Coffee-soaked perfection that started our legacy",
+  //     image:
+  //       "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764524/Dolci_Square_Web-Images_0017_Dolci_s-Signature-Tiramisu-Square_1_ryxknl.webp",
+  //   },
+  //   {
+  //     id: 2,
+  //     title: "French Classic Croissant",
+  //     description: "Authentic Parisian mornings in every flaky bite",
+  //     image:
+  //       "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764550/Dolci_Square_Web-Images_0024_Peach-_-Berry-Pocket-Square-_wo-fork_mnddvc.webp",
+  //   },
+  //   {
+  //     id: 3,
+  //     title: "Tres Leches Coconut",
+  //     description: "Our signature fusion of Latin American & tropical flavors",
+  //     image:
+  //       "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764544/Dolci_Square_Web-Images_0012_2_Tres-Leches-Coconut-Square_dciurr.webp",
+  //   },
+  //   {
+  //     id: 22,
+  //     title: "Apple Cinnamon Shibuya Toast",
+  //     category: "veg",
+  //     description:
+  //       "Fluffy Shibuya toast topped with warm apple slices, a sprinkle of cinnamon, and a hint of sweetness for a cozy dessert experience.",
+  //     price: "-",
+  //     image:
+  //       "https://res.cloudinary.com/dq7bzydqz/image/upload/v1761712793/Apple_Cinnamon_Toast_zkyuky.webp",
+  //   },
+  //   {
+  //     id: 21,
+  //     title: "Nutella Shibuya Toast",
+  //     category: "veg",
+  //     description:
+  //       "Pillowy Shibuya toast topped with creamy Nutella spread, sliced nuts, and a touch of chocolate drizzle.​",
+  //     price: "-",
+  //     image:
+  //       "https://res.cloudinary.com/dq7bzydqz/image/upload/v1761712623/Hazelnut_Shibuya_q9jgg9.webp",
+  //   },
+  //   {
+  //     id: 30,
+  //     title: "Mango Shibuya Toast",
+  //     category: "veg",
+  //     description:
+  //       "Signature fluffy Shibuya toast layered with juicy mango chunks and sweet syrup—a tropical dessert special.",
+  //     price: "-",
+  //     image:
+  //       "https://res.cloudinary.com/dq7bzydqz/image/upload/v1761714139/Mango_Shibuya_Toast_omc8xm.webp",
+  //   },
+  // ];
 
   const chefchoice = [
     {
@@ -74,21 +101,21 @@ const Menu = () => {
       title: "Dolci's Signature Tiramisu",
       description: "Coffee-soaked perfection that started our legacy",
       image:
-        "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764524/Dolci_Square_Web-Images_0017_Dolci_s-Signature-Tiramisu-Square_1_ryxknl.webp",
+        "https://dolci.theasylum.in/wp-content/uploads/2025/12/Dolci_Square_Web-Images_0017_Dolci_s-Signature-Tiramisu-Square_1_ryxknl-1.webp",
     },
     {
       id: 2,
       title: "French Classic Croissant",
       description: "Authentic Parisian mornings in every flaky bite",
       image:
-        "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764550/Dolci_Square_Web-Images_0024_Peach-_-Berry-Pocket-Square-_wo-fork_mnddvc.webp",
+        "https://dolci.theasylum.in/wp-content/uploads/2025/12/Dolci_Square_Web-Images_0024_Peach-_-Berry-Pocket-Square-_wo-fork_mnddvc-1.webp",
     },
     {
       id: 3,
       title: "Tres Leches Coconut",
       description: "Our signature fusion of Latin American & tropical flavors",
       image:
-        "https://res.cloudinary.com/dq7bzydqz/image/upload/v1758764544/Dolci_Square_Web-Images_0012_2_Tres-Leches-Coconut-Square_dciurr.webp",
+        "https://dolci.theasylum.in/wp-content/uploads/2025/12/Dolci_Square_Web-Images_0012_2_Tres-Leches-Coconut-Square_dciurr.webp",
     },
     {
       id: 22,
@@ -98,7 +125,7 @@ const Menu = () => {
         "Fluffy Shibuya toast topped with warm apple slices, a sprinkle of cinnamon, and a hint of sweetness for a cozy dessert experience.",
       price: "-",
       image:
-        "https://res.cloudinary.com/dq7bzydqz/image/upload/v1761712793/Apple_Cinnamon_Toast_zkyuky.webp",
+        "https://dolci.theasylum.in/wp-content/uploads/2025/12/Apple_Cinnamon_Toast_zkyuky-1-scaled.webp",
     },
     {
       id: 21,
@@ -108,7 +135,7 @@ const Menu = () => {
         "Pillowy Shibuya toast topped with creamy Nutella spread, sliced nuts, and a touch of chocolate drizzle.​",
       price: "-",
       image:
-        "https://res.cloudinary.com/dq7bzydqz/image/upload/v1761712623/Hazelnut_Shibuya_q9jgg9.webp",
+        "https://dolci.theasylum.in/wp-content/uploads/2025/12/Hazelnut_Shibuya_q9jgg9-1-scaled.webp",
     },
     {
       id: 30,
@@ -118,7 +145,7 @@ const Menu = () => {
         "Signature fluffy Shibuya toast layered with juicy mango chunks and sweet syrup—a tropical dessert special.",
       price: "-",
       image:
-        "https://res.cloudinary.com/dq7bzydqz/image/upload/v1761714139/Mango_Shibuya_Toast_omc8xm.webp",
+        "https://dolci.theasylum.in/wp-content/uploads/2025/12/Mango_Shibuya_Toast_omc8xm-1-scaled.webp",
     },
   ];
 
@@ -321,47 +348,6 @@ const Menu = () => {
           </div>
         </div>
       </div>
-
-      {/* CTA Section */}
-      {/* <div className="mt-24 text-center rounded-3xl p-10 lg:p-12 text-midnight-blue herobg">
-        <h3 className="font-playfair text-2xl lg:text-3xl font-bold mb-6">
-          Ready to Experience Dolci's Artisan Creations?
-        </h3>
-        <p className="font-montserrat text-midnight-blue/80 mb-10 max-w-3xl mx-auto text-base lg:text-lg">
-          Visit our café today and discover why we've been Bangalore's favorite
-          artisan destination since 2008. Every creation tells a story of
-          passion, tradition, and innovation.
-        </p>
-
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <button
-            className="btn btn-primary text-lg px-8 py-4"
-            onClick={() =>
-              document
-                .getElementById("location")
-                ?.scrollIntoView({ behavior: "smooth" })
-            }
-          >
-            <Store strokeWidth={1.2} className="mr-2" /> Visit Our Café
-          </button>
-          <button
-            className="btn btn-primary text-lg px-8 py-4"
-            onClick={() =>
-              document
-                .getElementById("location")
-                ?.scrollIntoView({ behavior: "smooth" })
-            }
-          >
-            <SquareMenu strokeWidth={1.2} className="mr-2" />
-            Explore Menu
-          </button>
-        </div>
-      </div> */}
-
-      {/* <div className="div">
-        test
-        <img src="https://drive.google.com/uc?export=view&id=105aHoA5-XUs5eSxsSNpjvWaCaY-o5fJO" alt="" />
-      </div> */}
     </section>
   );
 };

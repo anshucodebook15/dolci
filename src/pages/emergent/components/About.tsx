@@ -61,14 +61,54 @@ const About = () => {
   //   },
   // ];
 
-  const storyData = [
+  // const SweetStory = [
+  //   {
+  //     id: 1,
+  //     title: "Inspired by",
+  //     subtitle: "European café culture",
+  //     link: "/step-by-step-guide-to-the-perfect-classic-french-croissant",
+  //     image:
+  //       "https://res.cloudinary.com/dq7bzydqz/image/upload/v1759062395/DSC06580_1_plbdql.webp",
+  //     gradient: "bg-gradient-to-t from-black/80 via-transparent to-transparent",
+  //   },
+  //   {
+  //     id: 2,
+  //     title: "Handcrafted",
+  //     subtitle: "Dishes and pastries",
+  //     link: "/#",
+  //     image:
+  //       "https://res.cloudinary.com/dq7bzydqz/image/upload/v1759062694/DSC06519_1_vofrqk.webp",
+  //     gradient: "bg-gradient-to-t from-black/80 via-transparent to-transparent",
+  //   },
+  //   {
+  //     id: 3,
+  //     title: "Rich Coffee",
+  //     link: "/#",
+  //     // subtitle: "Blends and specialty drinks",
+  //     subtitle: "Blends and drinks",
+  //     image:
+  //       "https://res.cloudinary.com/dq7bzydqz/image/upload/v1759192838/DSC070741_ou2qg4.webp",
+  //     gradient: "bg-gradient-to-t from-black/80 via-transparent to-transparent",
+  //   },
+  //   {
+  //     id: 4,
+  //     title: "Cozy Ambience",
+  //     link: "/#",
+  //     subtitle: "Perfect for any occasion",
+  //     image:
+  //       "https://res.cloudinary.com/dq7bzydqz/image/upload/v1759062394/DSC06492_1_up59l0.webp",
+  //     gradient: "bg-gradient-to-t from-black/80 via-transparent to-transparent",
+  //   },
+  // ];
+
+  const SweetStory = [
     {
       id: 1,
       title: "Inspired by",
       subtitle: "European café culture",
       link: "/step-by-step-guide-to-the-perfect-classic-french-croissant",
       image:
-        "https://res.cloudinary.com/dq7bzydqz/image/upload/v1759062395/DSC06580_1_plbdql.webp",
+        "https://dolci.theasylum.in/wp-content/uploads/2025/12/DSC06580_1_plbdql-1.webp",
       gradient: "bg-gradient-to-t from-black/80 via-transparent to-transparent",
     },
     {
@@ -77,7 +117,7 @@ const About = () => {
       subtitle: "Dishes and pastries",
       link: "/#",
       image:
-        "https://res.cloudinary.com/dq7bzydqz/image/upload/v1759062694/DSC06519_1_vofrqk.webp",
+        "https://dolci.theasylum.in/wp-content/uploads/2025/12/DSC06519_1_vofrqk-1.webp",
       gradient: "bg-gradient-to-t from-black/80 via-transparent to-transparent",
     },
     {
@@ -87,7 +127,7 @@ const About = () => {
       // subtitle: "Blends and specialty drinks",
       subtitle: "Blends and drinks",
       image:
-        "https://res.cloudinary.com/dq7bzydqz/image/upload/v1759192838/DSC070741_ou2qg4.webp",
+        "https://dolci.theasylum.in/wp-content/uploads/2025/12/DSC070741_ou2qg4.webp",
       gradient: "bg-gradient-to-t from-black/80 via-transparent to-transparent",
     },
     {
@@ -96,7 +136,7 @@ const About = () => {
       link: "/#",
       subtitle: "Perfect for any occasion",
       image:
-        "https://res.cloudinary.com/dq7bzydqz/image/upload/v1759062394/DSC06492_1_up59l0.webp",
+        "https://dolci.theasylum.in/wp-content/uploads/2025/12/DSC06492_1_up59l0.webp",
       gradient: "bg-gradient-to-t from-black/80 via-transparent to-transparent",
     },
   ];
@@ -120,7 +160,7 @@ const About = () => {
 
               {/* Image Highlights */}
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-2 justify-center mb-20">
-                {storyData.map((item) => (
+                {SweetStory.map((item) => (
                   <Link to={item.link}>
                     <div
                       key={item.id}

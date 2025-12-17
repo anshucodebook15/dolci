@@ -573,6 +573,7 @@ const Home = () => {
     const timer = setTimeout(() => setShowModal(true), 30000);
     return () => clearTimeout(timer);
   }, []);
+
   return (
     <>
       <div className="dolci_landing">

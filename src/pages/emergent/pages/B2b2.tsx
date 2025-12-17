@@ -22,34 +22,34 @@ const ScrollToTop = () => {
   return null;
 };
 
-const b2bannerImage = [
-  {
-    title: "men making",
-    uri: "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762067719/qqhjiyu5miz86nh6mw6y_xun7e5.webp",
-  },
-  {
-    title: "machine making",
-    category: "our capabilites",
-    uri: "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762244451/APN_0047-_1_px4o0d.webp",
-  },
-  {
-    title: "machine2 making",
-    category: "our capabilites",
-    uri: "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762244451/APN_0084_1_oqbpaj.webp",
-  },
-  {
-    title: "gloves",
-    uri: "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762067717/dapidiu5wlaotyo5scse_sinajl.webp",
-  },
-  {
-    title: "biscutes",
-    uri: "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762067721/asns266wwhgsl7klnbfa_f2nj0t.webp",
-  },
-  {
-    title: "tray",
-    uri: "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762067718/fvirztlazxfw1jy58yt7_wqhji8.webp",
-  },
-];
+// const b2bannerImage = [
+//   {
+//     title: "men making",
+//     uri: "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762067719/qqhjiyu5miz86nh6mw6y_xun7e5.webp",
+//   },
+//   {
+//     title: "machine making",
+//     category: "our capabilites",
+//     uri: "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762244451/APN_0047-_1_px4o0d.webp",
+//   },
+//   {
+//     title: "machine2 making",
+//     category: "our capabilites",
+//     uri: "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762244451/APN_0084_1_oqbpaj.webp",
+//   },
+//   {
+//     title: "gloves",
+//     uri: "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762067717/dapidiu5wlaotyo5scse_sinajl.webp",
+//   },
+//   {
+//     title: "biscutes",
+//     uri: "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762067721/asns266wwhgsl7klnbfa_f2nj0t.webp",
+//   },
+//   {
+//     title: "tray",
+//     uri: "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762067718/fvirztlazxfw1jy58yt7_wqhji8.webp",
+//   },
+// ];
 
 const whatweoffer = [
   // "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762244813/APN_0174_1_esv38g.webp",
@@ -59,12 +59,21 @@ const whatweoffer = [
   // "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762244750/APN_0025_1_vukq8m.webp",
   
 // -------------------------------------------------------------------------------------
-  "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762333537/APN_0164_m1evsp.webp",
-  "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762333532/cb8744ac-0f37-4f9a-93d7-fe53ed934df0_pd4fsr.jpg",
-  "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762333535/APN_0180_snkgfb.webp",
-    "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762244752/IMG_9326_1_x4sms0.webp",
-  "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762333534/APN_0196_ztlwjt.webp",
-  "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762244755/IMG_9362_1_yluvne.webp"
+
+"https://dolci.theasylum.in/wp-content/uploads/2025/12/APN_0164_m1evsp-scaled.webp",
+"https://dolci.theasylum.in/wp-content/uploads/2025/12/cb8744ac-0f37-4f9a-93d7-fe53ed934df0_pd4fsr.jpg",
+"https://dolci.theasylum.in/wp-content/uploads/2025/12/APN_0180_snkgfb-scaled.webp",
+"https://dolci.theasylum.in/wp-content/uploads/2025/12/IMG_9326_1_x4sms0-scaled.webp",
+"https://dolci.theasylum.in/wp-content/uploads/2025/12/APN_0196_ztlwjt-scaled.webp",
+"https://dolci.theasylum.in/wp-content/uploads/2025/12/IMG_9362_1_yluvne-scaled.webp"
+
+
+  // "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762333537/APN_0164_m1evsp.webp",
+  // "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762333532/cb8744ac-0f37-4f9a-93d7-fe53ed934df0_pd4fsr.jpg",
+  // "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762333535/APN_0180_snkgfb.webp",
+  // "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762244752/IMG_9326_1_x4sms0.webp",
+  // "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762333534/APN_0196_ztlwjt.webp",
+  // "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762244755/IMG_9362_1_yluvne.webp"
 
 
 ];
@@ -361,14 +370,14 @@ const B2b2 = () => {
                   <div className="p-2 border-1 border-dolci-blue rounded-xl mb-6 grid lg:grid-cols-2 grid-cols-1  gap-2">
                     <div className="overflow-hidden w-full md:h-90  ">
                       <img
-                        src={b2bannerImage[1].uri}
+                        src={"https://dolci.theasylum.in/wp-content/uploads/2025/12/APN_0047-_1_px4o0d-scaled.webp"}
                         alt=""
                         className="w-full h-full object-cover"
                       />
                     </div>
                     <div className="overflow-hidden w-full md:h-90">
                       <img
-                        src={b2bannerImage[2].uri}
+                        src={"https://dolci.theasylum.in/wp-content/uploads/2025/12/APN_0084_1_oqbpaj-scaled.webp"}
                         alt=""
                         className="w-full h-full object-cover"
                       />
@@ -579,7 +588,7 @@ const B2b2 = () => {
                   <div className="p-2 border-1 border-dolci-blue rounded-xl mb-6">
                     <div className="overflow-hidden w-full md:h-90 rounded-xl  ">
                       <img
-                        src={'https://res.cloudinary.com/dq7bzydqz/image/upload/v1762067719/qqhjiyu5miz86nh6mw6y_xun7e5.webp'}
+                        src={'https://dolci.theasylum.in/wp-content/uploads/2025/12/qqhjiyu5miz86nh6mw6y_xun7e5-scaled.webp'}
                         alt=""
                         className="w-full h-full object-cover"
                       />
@@ -624,7 +633,7 @@ const B2b2 = () => {
                   <div className="p-2 border-1 border-dolci-blue rounded-xl mb-6">
                     <div className="overflow-hidden w-full md:h-90 rounded-xl  ">
                       <img
-                        src={b2bannerImage[3].uri}
+                        src={'https://dolci.theasylum.in/wp-content/uploads/2025/12/dapidiu5wlaotyo5scse_sinajl-scaled.webp'}
                         alt=""
                         className="w-full h-full object-cover"
                       />
@@ -744,7 +753,7 @@ const B2b2 = () => {
             />
 
             <div className="p-8">
-              <h2>
+              <h2 className="text-[18px]">
                 <b>Commissary address </b>- 206/6, Main Road, Canara Bank
                 Layout, Rajiv Gandhi Nagar, Kodigehalli, Bengaluru, Karnataka
                 560097
