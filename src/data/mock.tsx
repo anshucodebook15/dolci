@@ -641,7 +641,7 @@ export const locationData = {
       },
       isMain: false,
       zomato: "https://www.zomato.com/bangalore/dolci-sanjay-nagar-bangalore",
-      swiggy: null,
+      swiggy: 'https://www.swiggy.com/city/bangalore/dolci-new-bel-road-yeshwanthpur-rest1179723',
     },
     {
       id: 2,

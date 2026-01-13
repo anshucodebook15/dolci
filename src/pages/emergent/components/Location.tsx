@@ -289,6 +289,8 @@ const Location = () => {
                       </button>
                     )}
 
+
+
                     {/* Swiggy */}
                     {selectedLocation.swiggy && (
                       <button
@@ -296,14 +298,18 @@ const Location = () => {
                         onClick={() =>
                           window.open(selectedLocation.swiggy, "_blank")
                         }
-                        title="Order on Swiggy"
+                        title="Order on Zomato"
                       >
+                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/27/Swiggy_logo_%28old%29.svg/1200px-Swiggy_logo_%28old%29.svg.png" alt="" className="w-20" />
                         {/* <span className="font-montserrat font-semibold text-sm">
-                          Swiggy
+                          Zomato
                         </span> */}
-                        <img src={images.swiggy} alt="" className="w-20" />
                       </button>
                     )}
+
+
+
+
                   </div>
                 </div>
               </div>
