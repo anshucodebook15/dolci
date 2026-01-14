@@ -672,7 +672,7 @@ export const locationData = {
       },
       isMain: false,
       zomato: "https://www.zomato.com/bangalore/dolci-lavelle-road-bangalore",
-      swiggy: null,
+      swiggy: 'https://www.swiggy.com/restaurants/dolci-lavelle-road-lavelle-road-bangalore-1070124/dineout',
     },
     {
       id: 3,
