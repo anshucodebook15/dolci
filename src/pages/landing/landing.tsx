@@ -40,8 +40,13 @@ const Hero = () => {
           alt=""
           className="md:w-[70%] w-full"
         /> */}
-        <img
+        {/* <img
           src="https://res.cloudinary.com/dq7bzydqz/image/upload/v1763465271/Dolci_Landing_Page_Section_copy_3_cpzb39.svg"
+          alt=""
+          className="md:w-[98%] w-300 "
+        /> */}
+        <img
+          src="https://dolci.theasylum.in/wp-content/uploads/2026/01/Dolci-Landing-Page-Section-copy-3.svg"
           alt=""
           className="md:w-[98%] w-300 "
         />
@@ -91,16 +96,21 @@ const OnePassport = () => {
             <div className="flex gap-4">
               <div className="overflow-hidden bg-gray-100">
                 <img
-                  src="https://res.cloudinary.com/dq7bzydqz/image/upload/v1762952229/Dolci_Passport_Stamp_Sticker_08_apc1na.webp"
+                  src="https://dolci.theasylum.in/wp-content/uploads/2025/12/Dolci_Passport_Stamp_Sticker_02_scikub.webp"
                   alt=""
                   className="w-30"
                 />
+                {/* <img
+                  src="https://res.cloudinary.com/dq7bzydqz/image/upload/v1762952229/Dolci_Passport_Stamp_Sticker_08_apc1na.webp"
+                  alt=""
+                  className="w-30"
+                /> */}
                 {/* <h3 className="text-[12px] mt-[-5px] ml-[10px]"> Santorini</h3> */}
               </div>
 
               <div className="overflow-hidden bg-gray-100">
                 <img
-                  src="https://res.cloudinary.com/dq7bzydqz/image/upload/v1762952231/Dolci_Passport_Stamp_Sticker_02_scikub.webp"
+                  src="https://dolci.theasylum.in/wp-content/uploads/2025/12/Dolci_Passport_Stamp_Sticker_05_y4apop.webp"
                   alt=""
                   className="w-30"
                 />
@@ -108,7 +118,7 @@ const OnePassport = () => {
               </div>
               <div className="overflow-hidden bg-gray-100">
                 <img
-                  src="https://res.cloudinary.com/dq7bzydqz/image/upload/v1762952229/Dolci_Passport_Stamp_Sticker_09_jvywwo.webp"
+                  src="https://dolci.theasylum.in/wp-content/uploads/2025/12/Dolci_Passport_Stamp_Sticker_04_wfu8au.webp"
                   alt=""
                   className="w-30"
                 />
@@ -119,22 +129,27 @@ const OnePassport = () => {
 
           <div className="w-full overflow-hidden grid grid-cols-2 gap-2 md:p-4 p-6">
             <div className="w-full md:h-80  col-span-2 overflow-hidden rounded-xl">
-              <img
+              {/* <img
                 src="https://res.cloudinary.com/dq7bzydqz/image/upload/v1763391286/Gemini_Generated_Image_keqjc5keqjc5keqj_fzawhq.webp"
+                alt=""
+                className="w-full h-full object-cover object-center transform scale-[1.2]"
+              /> */}
+              <img
+                src="https://dolci.theasylum.in/wp-content/uploads/2025/12/Gemini_Generated_Image_va827lva827lva82_1_s0a1kq.webp"
                 alt=""
                 className="w-full h-full object-cover object-center transform scale-[1.2]"
               />
             </div>
             <div className="w-full h-60 object-cover overflow-hidden rounded-xl">
               <img
-                src="https://res.cloudinary.com/dq7bzydqz/image/upload/v1763391285/Gemini_Generated_Image_va827lva827lva82_1_s0a1kq.webp"
+                src="https://dolci.theasylum.in/wp-content/uploads/2025/12/Gemini_Generated_Image_keqjc5keqjc5keqj_fzawhq.webp"
                 alt=""
                 className=" w-full h-full object-cover"
               />
             </div>
             <div className="w-full h-60 object-cover overflow-hidden rounded-xl">
               <img
-                src="https://res.cloudinary.com/dq7bzydqz/image/upload/v1763391285/Gemini_Generated_Image_13vpkx13vpkx13vp_yxvlha.webp"
+                src="https://dolci.theasylum.in/wp-content/uploads/2025/12/Gemini_Generated_Image_13vpkx13vpkx13vp_yxvlha.webp"
                 alt=""
                 className=" w-full h-full object-cover"
               />
@@ -386,6 +401,9 @@ const GetStarted = () => {
             </div>
           </div>
         </div>
+
+
+        {/* 
         <div className="p-8 md:p-0 md:py-12 grid md:grid-cols-6 grid-cols-3 gap-2 mt-[0rem]">
           {[
             "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762952231/Dolci_Passport_Stamp_Sticker_06_fzgaqa.webp",
@@ -398,7 +416,34 @@ const GetStarted = () => {
           ].map((item) => (
             <img src={item} alt="" className="w-full" />
           ))}
+        </div> */}
+
+
+        <div className="p-8 md:p-0 md:py-12 grid md:grid-cols-6 grid-cols-3 gap-2 mt-[0rem]">
+          {[
+            "https://dolci.theasylum.in/wp-content/uploads/2025/12/Dolci_Passport_Stamp_Sticker_06_fzgaqa.webp",
+            "https://dolci.theasylum.in/wp-content/uploads/2025/12/Dolci_Passport_Stamp_Sticker_07_bxriro.webp",
+            "https://dolci.theasylum.in/wp-content/uploads/2025/12/Dolci_Passport_Stamp_Sticker_02_scikub.webp",
+            "https://dolci.theasylum.in/wp-content/uploads/2025/12/Dolci_Passport_Stamp_Sticker_05_y4apop.webp",
+            "https://dolci.theasylum.in/wp-content/uploads/2025/12/Dolci_Passport_Stamp_Sticker_04_wfu8au.webp",
+            "https://dolci.theasylum.in/wp-content/uploads/2025/12/Dolci_Passport_Stamp_Sticker_09_jvywwo.webp",
+
+
+            // "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762952231/Dolci_Passport_Stamp_Sticker_06_fzgaqa.webp",
+            // "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762952231/Dolci_Passport_Stamp_Sticker_07_bxriro.webp",
+            // "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762952231/Dolci_Passport_Stamp_Sticker_02_scikub.webp",
+            // "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762952230/Dolci_Passport_Stamp_Sticker_05_y4apop.webp",
+            // "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762952229/Dolci_Passport_Stamp_Sticker_04_wfu8au.webp",
+            // "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762952229/Dolci_Passport_Stamp_Sticker_09_jvywwo.webp",
+            ,
+          ].map((item) => (
+            <img src={item} alt="" className="w-full" />
+          ))}
         </div>
+
+
+
+
       </div>
     </>
   );
@@ -464,21 +509,21 @@ const ArriveAtDolci = () => {
           <div className="max-w-[820px] mx-auto">
             <div className="overflow-hidden p-2">
               <img
-                src="https://res.cloudinary.com/dq7bzydqz/image/upload/v1763535469/Paris_01_v1_vgmn7v.png"
+                src="https://dolci.theasylum.in/wp-content/uploads/2025/12/Paris_01_v1_vgmn7v.png"
                 alt=""
                 className="w-full"
               />
             </div>
             <div className="overflow-hidden p-2">
               <img
-                src="https://res.cloudinary.com/dq7bzydqz/image/upload/v1763537155/Paris_02_v1_vduqyl.png"
+                src="https://dolci.theasylum.in/wp-content/uploads/2025/12/Paris_02_v1_vduqyl.png"
                 alt=""
                 className="w-full"
               />
             </div>
             <div className="overflow-hidden p-2">
               <img
-                src="https://res.cloudinary.com/dq7bzydqz/image/upload/v1763537154/backgrid_tajctp.png"
+                src="https://dolci.theasylum.in/wp-content/uploads/2025/12/backgrid_tajctp.png"
                 alt=""
                 className="w-full"
               />
