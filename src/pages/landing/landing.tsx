@@ -323,7 +323,6 @@ const LeadForm = () => {
     </>
   );
 };
-
 const GetStarted = () => {
   return (
     <>
@@ -402,7 +401,6 @@ const GetStarted = () => {
           </div>
         </div>
 
-
         {/* 
         <div className="p-8 md:p-0 md:py-12 grid md:grid-cols-6 grid-cols-3 gap-2 mt-[0rem]">
           {[
@@ -418,7 +416,6 @@ const GetStarted = () => {
           ))}
         </div> */}
 
-
         <div className="p-8 md:p-0 md:py-12 grid md:grid-cols-6 grid-cols-3 gap-2 mt-[0rem]">
           {[
             "https://dolci.theasylum.in/wp-content/uploads/2025/12/Dolci_Passport_Stamp_Sticker_06_fzgaqa.webp",
@@ -428,27 +425,22 @@ const GetStarted = () => {
             "https://dolci.theasylum.in/wp-content/uploads/2025/12/Dolci_Passport_Stamp_Sticker_04_wfu8au.webp",
             "https://dolci.theasylum.in/wp-content/uploads/2025/12/Dolci_Passport_Stamp_Sticker_09_jvywwo.webp",
 
-
             // "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762952231/Dolci_Passport_Stamp_Sticker_06_fzgaqa.webp",
             // "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762952231/Dolci_Passport_Stamp_Sticker_07_bxriro.webp",
             // "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762952231/Dolci_Passport_Stamp_Sticker_02_scikub.webp",
             // "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762952230/Dolci_Passport_Stamp_Sticker_05_y4apop.webp",
             // "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762952229/Dolci_Passport_Stamp_Sticker_04_wfu8au.webp",
             // "https://res.cloudinary.com/dq7bzydqz/image/upload/v1762952229/Dolci_Passport_Stamp_Sticker_09_jvywwo.webp",
+
             ,
           ].map((item) => (
             <img src={item} alt="" className="w-full" />
           ))}
         </div>
-
-
-
-
       </div>
     </>
   );
 };
-
 const ArriveAtDolci = () => {
   return (
     <>
@@ -542,7 +534,6 @@ const ArriveAtDolci = () => {
     </>
   );
 };
-
 const Footer = () => {
   return (
     <>
@@ -554,7 +545,6 @@ const Footer = () => {
     </>
   );
 };
-
 const Home = () => {
   // const { backgrounds } = useAssets();
   // Set **end time** for countdown (example: 7 hours from now)
