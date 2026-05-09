@@ -29,7 +29,7 @@ const MenuTabs = () => {
   const currentTab = menuTabs[activeTab];
 
   return (
-    <section className="py-20 px-4 bg-white">
+    <section id="menu" className="py-20 px-4 bg-white">
       <div className="max-w-5xl mx-auto">
         {/* Heading */}
         <div className="text-center mb-14">
