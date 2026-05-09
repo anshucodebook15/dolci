@@ -14,7 +14,7 @@ import MenuTabs from "./components/MenuTabs";
 const Hero = lazy(() => import("./components/Hero"));
 const About = lazy(() => import("./components/About"));
 const Bevrages = lazy(() => import("./components/bevrages"));
-const Menu = lazy(() => import("./components/Menu"));
+// const Menu = lazy(() => import("./components/Menu"));
 const Delights = lazy(() => import("./components/Delight"));
 const Testimonials = lazy(() => import("./components/Testimonials"));
 const Location = lazy(() => import("./components/Location"));
