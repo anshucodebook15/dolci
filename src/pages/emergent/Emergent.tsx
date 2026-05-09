@@ -1,6 +1,7 @@
 import "./Emergent.css";
 import { lazy, Suspense } from "react";
 import Layout from "./layout/layout";
+import MenuTabs from "./components/MenuTabs";
 // import Bevrages from "./components/bevrages";
 // import About from "./components/About";
 // import Menu from "./components/Menu";
@@ -28,7 +29,8 @@ const Emergent = () => {
         <Hero />
         <Bevrages />
         <About />
-        <Menu />
+        {/* <Menu /> */}
+        <MenuTabs />
         <Delights />
         <Testimonials />
         <Location />

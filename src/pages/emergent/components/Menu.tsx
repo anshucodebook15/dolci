@@ -20,6 +20,11 @@ import {
 } from "lucide-react";
 import { completeMenuData } from "../../../data/menu";
 
+
+// 1.Read this Component and , Keep the styling same, now create a new menu Component from scractch, here only two button tabs are there, one named Dolci and Other Salato, tab works like that, on Click tab A title Body and On Call to Action Button called Explore Our Menu Appears,  Dolci Tab Button color is same Dolci Blue, But Salvato Changes to Orange
+
+
+
 const Menu = () => {
   const [selectedCategory, setSelectedCategory] = useState("viennoiserie");
 
